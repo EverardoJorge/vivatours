@@ -57,7 +57,7 @@ abstract class NF_Abstracts_Migration
         $result = $wpdb->query( $sql );
         // If we got anything back, say so.
         if ( ! empty( $result ) ) $response = true;
-        return $result;
+        return $response;
     }
 
 

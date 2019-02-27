@@ -626,6 +626,9 @@ class wfScanner {
 		
 		$runningStatus[$stageID]['started'] += 1;
 		wfConfig::set_ser('scanStageStatuses', $runningStatus, false, wfConfig::DONT_AUTOLOAD);
+		if (wfCentral::isConnected()) {
+			wfCentral::updateScanStatus($runningStatus);
+		}
 	}
 	
 	/**
@@ -656,6 +659,10 @@ class wfScanner {
 		}
 		
 		wfConfig::set_ser('scanStageStatuses', $runningStatus, false, wfConfig::DONT_AUTOLOAD);
+		if (wfCentral::isConnected()) {
+			wfCentral::updateScanStatus($runningStatus);
+		}
+
 	}
 	
 	/**

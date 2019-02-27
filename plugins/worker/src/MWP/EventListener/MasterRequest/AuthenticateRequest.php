@@ -14,10 +14,13 @@ class MWP_EventListener_MasterRequest_AuthenticateRequest implements Symfony_Eve
 
     private $signer;
 
-    function __construct(MWP_Worker_Configuration $configuration, MWP_Signer_Interface $signer)
+    private $context;
+
+    function __construct(MWP_Worker_Configuration $configuration, MWP_Signer_Interface $signer, MWP_WordPress_Context $context)
     {
         $this->configuration = $configuration;
         $this->signer        = $signer;
+        $this->context       = $context;
     }
 
     public static function getSubscribedEvents()
@@ -39,13 +42,20 @@ class MWP_EventListener_MasterRequest_AuthenticateRequest implements Symfony_Eve
             return;
         }
 
+        $siteId                      = $request->getSiteId();
+        $establishedNewCommunication = $this->context->optionGet('mwp_new_communication_established', false);
+
+        if (!empty($establishedNewCommunication) && !empty($siteId)) {
+            throw new MWP_Worker_Exception(MWP_Worker_Exception::AUTHENTICATION_INVALID_SERVICE_SIGNATURE, "Invalid message signature. Please re-add this website to your ManageWP account.");
+        }
+
         $publicKey = $this->configuration->getPublicKey();
 
         if (!$publicKey) {
             throw new MWP_Worker_Exception(MWP_Worker_Exception::AUTHENTICATION_PUBLIC_KEY_EMPTY, "Authentication failed. Deactivate and activate the ManageWP Worker plugin on this site, then re-add it to your ManageWP account.");
         }
 
-        $messageId  = $request->getAction().$request->getNonce();
+        $messageId = $request->getAction().$request->getNonce();
         $signature = $request->getSignature();
 
         if (!$messageId) {

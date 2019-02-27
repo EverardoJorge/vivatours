@@ -3,7 +3,7 @@
  * Plugin Name: Slider by 10Web
  * Plugin URI: https://10web.io/plugins/wordpress-slider/
  * Description: This is a responsive plugin, which allows adding sliders to your posts/pages and to custom location. It uses large number of transition effects and supports various types of layers.
- * Version: 1.2.20
+ * Version: 1.2.23
  * Author: 10Web
  * Author URI: https://10web.io/pricing/
  * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -78,8 +78,8 @@ final class WDS {
     $this->plugin_dir = WP_PLUGIN_DIR . "/" . plugin_basename(dirname(__FILE__));
     $this->plugin_url = plugins_url(plugin_basename(dirname(__FILE__)));
     $this->main_file = plugin_basename(__FILE__);
-    $this->plugin_version = '1.2.20';
-    $this->db_version = '1.2.20';
+    $this->plugin_version = '1.2.23';
+    $this->db_version = '1.2.23';
     $this->prefix = 'wds';
     $this->nicename = __('Slider', $this->prefix);
     $this->use_home_url();
@@ -104,7 +104,7 @@ final class WDS {
     }
 
     if ( $site_url != $home_url ) {
-      $this->front_url = home_url("wp-content/plugins/" . plugin_basename(dirname(__FILE__)));
+      $this->front_url = home_url(str_replace(site_url(), '', $this->plugin_url));
     }
     else {
       $this->front_url = $this->plugin_url;
@@ -174,8 +174,9 @@ final class WDS {
     }
   	add_action('plugins_loaded', array($this, 'plugins_loaded'), 9);
 
+    add_filter('tw_get_plugin_blocks', array($this,'wds_register_plugin_block'));
   	// Enqueue block editor assets for Gutenberg.
-    add_filter('tw_get_block_editor_assets', array($this, 'register_block_editor_assets'));
+    add_filter('tw_get_block_editor_assets', array($this, 'wds_register_block_editor_assets'));
     add_action( 'enqueue_block_editor_assets', array($this, 'enqueue_block_editor_assets') );
 
     // Privacy policy.
@@ -185,10 +186,15 @@ final class WDS {
     add_action('elementor/widgets/widgets_registered', array($this, 'register_elementor_widget'));
     // Register 10Web category for Elementor widget if 10Web builder doesn't installed.
     add_action('elementor/elements/categories_registered', array($this, 'register_widget_category'), 1, 1);
+    //fires after elementor editor styles and scripts are enqueued.
+    add_action('elementor/editor/after_enqueue_styles', array($this, 'enqueue_editor_styles'), 11);
 
     // Import slider from builder
     add_filter('builder_import_slider', array('WDW_S_Library', 'twbb_wds_import'));
+  }
 
+  public function enqueue_editor_styles() {
+    wp_enqueue_style('twbb-editor-styles', $this->plugin_url . '/css/wds_elementor_icon/wds_elementor_icon.css', array(), '1.0.0');
   }
 
   /**
@@ -1158,9 +1164,22 @@ final class WDS {
 
     return $meta_fields;
   }
-
-  public function register_block_editor_assets($assets) {
-    $version = '2.0.0';
+  public function wds_register_plugin_block($blocks) {
+    $key = 'tw/' . $this->prefix;
+    $plugin_name = $this->nicename;
+    $data = WDW_S_Library::get_shortcode_data();
+    $blocks[$key] = array(
+      'title' => $plugin_name,
+      'titleSelect' => sprintf(__('Select %s', $this->prefix), $plugin_name),
+      'iconUrl' => $this->plugin_url . '/images/wt-gb/wd_slider.svg',
+      'iconSvg' => array('width' => 20, 'height' => 20, 'src' => $this->plugin_url . '/images/wt-gb/icon.svg'),
+      'isPopup' => false,
+      'data' => $data,
+    );
+    return $blocks;
+  }
+  public function wds_register_block_editor_assets($assets) {
+    $version = '2.0.3';
     $js_path = $this->plugin_url . '/js/tw-gb/block.js';
     $css_path = $this->plugin_url . '/css/tw-gb/block.css';
     if (!isset($assets['version']) || version_compare($assets['version'], $version) === -1) {
@@ -1175,31 +1194,6 @@ final class WDS {
    * Enqueue block editor assets.
    */
 	public function enqueue_block_editor_assets() {
-		$key = 'tw/' . $this->prefix;
-		$plugin_name = $this->nicename;
-		$data = WDW_S_Library::get_shortcode_data();
-		$icon_url = $this->plugin_url . '/images/wt-gb/wd_slider.svg';
-		$icon_svg = $this->plugin_url . '/images/wt-gb/icon.svg';
-		?>
-		<script>
-		  if ( !window['tw_gb'] ) {
-		  	window['tw_gb'] = {};
-		  }
-		  if ( !window['tw_gb']['<?php echo $key; ?>'] ) {
-				window['tw_gb']['<?php echo $key; ?>'] = {
-				title: '<?php echo $plugin_name; ?>',
-				titleSelect: '<?php echo sprintf(__('Select %s', $this->prefix), $plugin_name); ?>',
-				iconUrl: '<?php echo $icon_url; ?>',
-				iconSvg: { 
-					width: '30',
-					height: '30',
-					src: '<?php echo $icon_svg; ?>'
-				},
-				data: '<?php echo $data; ?>',
-			};
-		  }		  
-		</script>
-		<?php
 		// Remove previously registered or enqueued versions
 		$wp_scripts = wp_scripts();
 		foreach ($wp_scripts->registered as $key => $value) {
@@ -1209,13 +1203,15 @@ final class WDS {
 			wp_deregister_style( $key );
 		  }
 		}
+        $blocks = apply_filters('tw_get_plugin_blocks', array());
 		// Get the last version from all 10Web plugins.
 		$assets = apply_filters('tw_get_block_editor_assets', array());
 		// Not performing unregister or unenqueue as in old versions all are with prefixes.
 		wp_enqueue_script('tw-gb-block', $assets['js_path'], array( 'wp-blocks', 'wp-element' ), $assets['version']);
-		wp_localize_script('tw-gb-block', 'tw_obj', array(
+		wp_localize_script('tw-gb-block', 'tw_obj_translate', array(
 		  'nothing_selected' => __('Nothing selected.', $this->prefix),
 		  'empty_item' => __('- Select -', $this->prefix),
+          'blocks' => json_encode($blocks)
 		));
 		wp_enqueue_style('tw-gb-block', $assets['css_path'], array( 'wp-edit-blocks' ), $assets['version']);
 	}

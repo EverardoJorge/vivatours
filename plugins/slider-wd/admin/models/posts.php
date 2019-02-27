@@ -5,13 +5,13 @@
  */
 class WDSModelposts {
   public function get_rows_data() {
-    $search_value = ((isset($_POST['search_value'])) ? esc_html(stripslashes($_POST['search_value'])) : '');
-    $category_id = ((isset($_POST['category_id']) && esc_html(stripslashes($_POST['category_id'])) != -1) ? esc_html(stripslashes($_POST['category_id'])) : '');
+    $search_value = ((isset($_POST['search_value'])) ? sanitize_text_field($_POST['search_value']) : '');
+    $category_id = ((isset($_POST['category_id']) && $_POST['category_id'] != -1) ? sanitize_text_field($_POST['category_id']) : '');
     $category_name = $category_id ? get_the_category_by_ID($category_id) : '';
-    $asc_or_desc = ((isset($_POST['asc_or_desc'])) ? esc_html(stripslashes($_POST['asc_or_desc'])) : 'ASC');
-    $order_by = (isset($_POST['order_by']) ? esc_html(stripslashes($_POST['order_by'])) : 'date');
+    $asc_or_desc = ((isset($_POST['asc_or_desc'])) ? sanitize_text_field($_POST['asc_or_desc']) : 'ASC');
+    $order_by = (isset($_POST['order_by']) ? sanitize_text_field($_POST['order_by']) : 'date');
     if (isset($_POST['page_number']) && $_POST['page_number']) {
-      $limit = ((int) $_POST['page_number'] - 1) * 20;
+      $limit = ((int) sanitize_text_field($_POST['page_number']) - 1) * 20;
     }
     else {
       $limit = 0;

@@ -42,14 +42,14 @@ if (!wfConfig::liveTrafficEnabled($overridden)):
 	<div id="wordfenceLiveActivitySecurityOnly"><p>
 			<strong><?php _e('Traffic logging mode: Security-related traffic only', 'wordfence') ?><?php
 				if ($overridden) {
-					_e(' (host setting)', 'wordfence');
+					printf(__(' (host setting <a href="%s" class="wfhelp" target="_blank" rel="noopener noreferrer"></a>)', 'wordfence'), wfSupportController::supportURL(wfSupportController::ITEM_TOOLS_LIVE_TRAFFIC_OPTION_ENABLE));
 				} ?>.</strong> <?php _e('Login and firewall activity will appear below.', 'wordfence') ?></p>
 	</div>
 <?php else: ?>
 	<div id="wordfenceLiveActivityAll"><p>
 			<strong><?php _e('Traffic logging mode: All traffic', 'wordfence') ?><?php
 				if ($overridden) {
-					_e(' (host setting)', 'wordfence');
+					printf(__(' (host setting <a href="%s" class="wfhelp" target="_blank" rel="noopener noreferrer"></a>)', 'wordfence'), wfSupportController::supportURL(wfSupportController::ITEM_TOOLS_LIVE_TRAFFIC_OPTION_ENABLE));
 				} ?>.</strong> <?php _e('Regular traffic and security-related traffic will appear below.', 'wordfence') ?></p>
 	</div>
 <?php endif; ?>

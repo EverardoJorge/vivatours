@@ -31,7 +31,7 @@ else if (wfConfig::get('touppPromptNeeded')) {
 		</div>
 		<div class="wf-row">
 			<div class="wf-col-xs-12">
-				<div class="wf-block wf-active">
+				<div class="wf-block wf-active wf-add-bottom">
 					<div class="wf-block-content">
 						<ul class="wf-block-list">
 							<li>
@@ -195,7 +195,7 @@ else if (wfConfig::get('touppPromptNeeded')) {
 		<!-- end notifications -->
 		<div class="wf-row">
 			<div class="wf-col-xs-12">
-				<div class="wf-block wf-active">
+				<div class="wf-block wf-active wf-add-bottom">
 					<div class="wf-block-content">
 						<ul class="wf-block-list">
 							<li>

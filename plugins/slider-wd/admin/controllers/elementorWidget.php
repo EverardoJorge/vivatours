@@ -25,7 +25,7 @@ class WDSElementor extends \Elementor\Widget_Base {
    * @return string Widget icon.
    */
   public function get_icon() {
-    return 'fa fa-image';
+    return 'fa twbb-slider-wd twbb-widget-icon';
   }
 
   /**

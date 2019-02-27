@@ -325,34 +325,15 @@ function mmb_response($response = false, $success = true)
 
 function mmb_remove_site($params)
 {
-    $deactivate = (bool)@$params['deactivate'];
-    mwp_core()->deactivate($deactivate);
+    mwp_core()->deactivate(false, false);
+    mwp_remove_current_key();
 
-    include_once ABSPATH.'wp-admin/includes/plugin.php';
-    $plugin_slug = 'worker/init.php';
-
-    if ($deactivate) {
-        deactivate_plugins($plugin_slug, true);
-    } else {
-        // Prolong the worker deactivation upon site removal.
-        update_option('mmb_worker_activation_time', time());
-    }
-
-    if (!is_plugin_active($plugin_slug)) {
-        mmb_response(
-            array(
-                'deactivated' => 'Site removed successfully. <br /><br />ManageWP Worker plugin successfully deactivated.',
-            ),
-            true
-        );
-    } else {
-        mmb_response(
-            array(
-                'removed_data' => 'Site removed successfully. <br /><br /><b>ManageWP Worker plugin was not deactivated.</b>',
-            ),
-            true
-        );
-    }
+    mmb_response(
+        array(
+            'removed_data' => 'Site removed successfully. <br /><br /><b>ManageWP Worker plugin was not deactivated.</b>',
+        ),
+        true
+    );
 }
 
 function mwp_get_stats(array $params)
@@ -655,29 +636,116 @@ function mwp_get_service_key()
     return $serviceKey;
 }
 
-function mwp_get_communication_key()
+function mwp_get_communication_keys()
 {
-    return mwp_context()->optionGet('mwp_communication_key');
+    return mwp_context()->optionGet('mwp_communication_keys', array());
+}
+
+function mwp_remove_current_key()
+{
+    mwp_remove_communication_key(!empty($_SERVER['HTTP_MWP_SITE_ID']) ? $_SERVER['HTTP_MWP_SITE_ID'] : 'any');
+}
+
+function mwp_remove_communication_key($siteId)
+{
+    if ($siteId === 'any') {
+        mwp_context()->optionDelete('mwp_communication_key');
+        return;
+    }
+
+    $keys = mwp_context()->optionGet('mwp_communication_keys', array());
+
+    if (empty($keys[$siteId])) {
+        return;
+    }
+
+    unset($keys[$siteId]);
+    mwp_context()->optionSet('mwp_communication_keys', $keys, true);
+}
+
+function mwp_get_basic_communication_key()
+{
+    $key = mwp_context()->optionGet('mwp_communication_key');
+    if (!empty($key)) {
+        mwp_context()->optionSet('mwp_key_last_used_any', time(), true);
+    }
+
+    return $key;
+}
+
+function mwp_add_as_site_communication_key($key)
+{
+    $siteId = !empty($_SERVER['HTTP_MWP_SITE_ID']) ? $_SERVER['HTTP_MWP_SITE_ID'] : null;
+
+    if (empty($siteId)) {
+        return;
+    }
+
+    $keys = mwp_context()->optionGet('mwp_communication_keys', array());
+
+    if (is_array($keys) && !empty($keys[$siteId])) {
+        return;
+    }
+
+    mwp_accept_potential_key($key);
+}
+
+function mwp_get_communication_key($id = null)
+{
+    $siteId = !empty($_SERVER['HTTP_MWP_SITE_ID']) ? $_SERVER['HTTP_MWP_SITE_ID'] : $id;
+
+    if (empty($siteId)) {
+        return mwp_get_basic_communication_key();
+    }
+
+    $keys = mwp_context()->optionGet('mwp_communication_keys', array());
+
+    if (is_array($keys) && !empty($keys[$siteId])) {
+        mwp_context()->optionSet('mwp_key_last_used_'.$siteId, time(), true);
+
+        return $keys[$siteId]['key'];
+    }
+
+    return mwp_get_basic_communication_key();
 }
 
 function mwp_accept_potential_key($keyToAccept = '')
 {
-    $potentialKey = !empty($keyToAccept) ? $keyToAccept : mwp_get_potential_key();
+    $siteId = !empty($_SERVER['HTTP_MWP_SITE_ID']) ? $_SERVER['HTTP_MWP_SITE_ID'] : null;
+    $addKey = !empty($keyToAccept) ? $keyToAccept : mwp_get_potential_key();
 
-    mwp_context()->optionSet('mwp_communication_key', $potentialKey, true);
+    if (!empty($siteId)) {
+        $keys = mwp_context()->optionGet('mwp_communication_keys', array());
+
+        if (empty($keys) || !is_array($keys)) {
+            $keys = array();
+        }
+
+        $time          = time();
+        $keys[$siteId] = array(
+            'key'   => $addKey,
+            'added' => $time,
+        );
+
+        mwp_context()->optionSet('mwp_communication_keys', $keys, true);
+        mwp_context()->optionSet('mwp_key_last_used_'.$addKey, $time, true);
+    } else {
+        mwp_context()->optionSet('mwp_communication_key', $addKey, true);
+    }
+
     mwp_context()->optionDelete('mwp_potential_key', true);
     mwp_context()->optionDelete('mwp_potential_key_time', true);
 
-    return $potentialKey;
+    return $addKey;
 }
 
 function mwp_get_potential_key()
 {
-    $potentialKey     = mwp_context()->optionGet('mwp_potential_key');
-    $potentialKeyTime = mwp_context()->optionGet('mwp_potential_key_time');
+    $potentialKey     = mwp_context()->optionGet('mwp_potential_key', null);
+    $potentialKeyTime = mwp_context()->optionGet('mwp_potential_key_time', 0);
     $now              = time();
 
-    if (empty($potentialKey) || empty($potentialKeyTime) || ($now - $potentialKeyTime) > 86400) {
+    if (empty($potentialKey) || empty($potentialKeyTime) || !is_numeric($potentialKeyTime) || ($now - $potentialKeyTime) > 86400) {
         $potentialKey     = mwp_generate_uuid4();
         $potentialKeyTime = $now;
         mwp_context()->optionSet('mwp_potential_key', $potentialKey, true);
@@ -721,6 +789,7 @@ function mwp_refresh_live_public_keys($params = array())
         return;
     }
 
+    mwp_context()->optionSet('mwp_public_keys_refresh_time', time(), true);
     mwp_context()->optionSet('mwp_public_keys', $liveKeys, true);
 }
 
@@ -813,8 +882,9 @@ EOL;
     return $content;
 }
 
-function site_in_mwp_maintenance_mode() {
-    $class = 'notice notice-warning is-dismissible';
-    $message = __( 'The site is currently in maintenance mode.', 'worker');
-    printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
+function site_in_mwp_maintenance_mode()
+{
+    $class   = 'notice notice-warning is-dismissible';
+    $message = esc_html__('The site is currently in maintenance mode.', 'worker');
+    printf('<div class="%1$s"><p>%2$s</p></div>', esc_attr($class), esc_html($message));
 }

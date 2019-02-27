@@ -207,18 +207,18 @@ class FilemanagerController {
 
     $msg = '';
 
-    $file_names = explode('**#**', (isset($_REQUEST['clipboard_files']) ? stripslashes($_REQUEST['clipboard_files']) : ''));
-    $src_dir = (isset($_REQUEST['clipboard_src']) ? stripslashes($_REQUEST['clipboard_src']) : '');
+    $file_names = explode('**#**', (isset($_REQUEST['clipboard_files']) ? sanitize_text_field($_REQUEST['clipboard_files']) : ''));
+    $src_dir = (isset($_REQUEST['clipboard_src']) ? esc_url_raw($_REQUEST['clipboard_src']) : '');
     $src_dir = $src_dir == '' ? $this->uploads_dir : $this->uploads_dir . '/' . $src_dir;
     $src_dir = htmlspecialchars_decode($src_dir, ENT_COMPAT | ENT_QUOTES);
     $src_dir = $this->esc_dir($src_dir);
 
-    $dest_dir = (isset($_REQUEST['clipboard_dest']) ? stripslashes($_REQUEST['clipboard_dest']) : '');
+    $dest_dir = (isset($_REQUEST['clipboard_dest']) ? esc_url_raw($_REQUEST['clipboard_dest']) : '');
     $dest_dir = $dest_dir == '' ? $this->uploads_dir : $this->uploads_dir . '/' . $dest_dir;
     $dest_dir = htmlspecialchars_decode($dest_dir, ENT_COMPAT | ENT_QUOTES);
     $dest_dir = $this->esc_dir($dest_dir);
 
-    switch ((isset($_REQUEST['clipboard_task']) ? stripslashes($_REQUEST['clipboard_task']) : '')) {
+    switch ((isset($_REQUEST['clipboard_task']) ? sanitize_text_field($_REQUEST['clipboard_task']) : '')) {
       case 'copy':
         foreach ($file_names as $file_name) {
           $file_name = htmlspecialchars_decode($file_name, ENT_COMPAT | ENT_QUOTES);

@@ -30,7 +30,7 @@ class FilemanagerView {
     // Public Methods                                                                     //
     ////////////////////////////////////////////////////////////////////////////////////////
     public function display() {
-      if (isset($_GET['filemanager_msg']) && esc_html($_GET['filemanager_msg']) != '') {
+      if (isset($_GET['filemanager_msg']) && $_GET['filemanager_msg'] != '') {
         ?>
         <div id="file_manager_message" style="height:40px;">
           <div  style="background-color: #FFEBE8; border: 1px solid #CC0000; margin: 5px 15px 2px; padding: 5px 10px;">
@@ -193,9 +193,9 @@ class FilemanagerView {
                   <div id="explorer_body" data-files_count="<?php echo $file_manager_data["files_count"]; ?>">
                     <?php
                     foreach ($file_manager_data['files'] as $key => $file) {
-                      $file['name'] = esc_html($file['name']);
-                      $file['filename'] = esc_html($file['filename']);
-                      $file['thumb'] = esc_html($file['thumb']);
+                      $file['name'] = esc_attr($file['name']);
+                      $file['filename'] = esc_attr($file['filename']);
+                      $file['thumb'] = esc_attr($file['thumb']);
                       ?>
                       <div class="explorer_item" draggable="true"
                            name="<?php echo $file['name']; ?>"
@@ -252,7 +252,7 @@ class FilemanagerView {
                   <span>
                   </span>
                 </span>
-                <a class="ctrl_bar_btn btn_open wd-btn wd-btn-primary wd-btn-icon-add wd-btn-add none_select" onclick="onBtnOpenClick(event, this);"><?php echo ((isset($_REQUEST['image_for']) && esc_html($_REQUEST['image_for']) == 'add_slides') ? 'Add selected images to slider' : 'Add image to slider'); ?></a>
+                <a class="ctrl_bar_btn btn_open wd-btn wd-btn-primary wd-btn-icon-add wd-btn-add none_select" onclick="onBtnOpenClick(event, this);"><?php echo ((isset($_REQUEST['image_for']) && $_REQUEST['image_for'] == 'add_slides') ? 'Add selected images to slider' : 'Add image to slider'); ?></a>
                 <span class="ctrl_bar_empty_devider"></span>
                 <a class="ctrl_bar_btn btn_cancel wd-btn wd-btn-primary wd-btn-icon wd-btn-cancel none_select" onclick="onBtnCancelClick(event, this);"><?php _e('Cancel', WDS()->prefix); ?></a>
               </div>
@@ -348,11 +348,11 @@ class FilemanagerView {
           </div>
         </div>
         <input type="hidden" name="task" value="" />
-        <input type="hidden" name="extensions" value="<?php echo (isset($_REQUEST['extensions']) ? esc_html($_REQUEST['extensions']) : 'jpg,jpeg,png,gif'); ?>" />
-        <input type="hidden" name="callback" value="<?php echo (isset($_REQUEST['callback']) ? esc_html($_REQUEST['callback']) : 'wds_add_image'); ?>" />
-        <input type="hidden" name="image_for" value="<?php echo (isset($_REQUEST['image_for']) ? esc_html($_REQUEST['image_for']) : 'add_slides'); ?>" />
-        <input type="hidden" name="slide_id" value="<?php echo (isset($_REQUEST['slide_id']) ? esc_html($_REQUEST['slide_id']) : ''); ?>" />
-        <input type="hidden" name="layer_id" value="<?php echo (isset($_REQUEST['layer_id']) ? esc_html($_REQUEST['layer_id']) : ''); ?>" />
+        <input type="hidden" name="extensions" value="<?php echo (isset($_REQUEST['extensions']) ? esc_attr($_REQUEST['extensions']) : 'jpg,jpeg,png,gif'); ?>" />
+        <input type="hidden" name="callback" value="<?php echo (isset($_REQUEST['callback']) ? esc_attr($_REQUEST['callback']) : 'wds_add_image'); ?>" />
+        <input type="hidden" name="image_for" value="<?php echo (isset($_REQUEST['image_for']) ? esc_attr($_REQUEST['image_for']) : 'add_slides'); ?>" />
+        <input type="hidden" name="slide_id" value="<?php echo (isset($_REQUEST['slide_id']) ? esc_attr($_REQUEST['slide_id']) : ''); ?>" />
+        <input type="hidden" name="layer_id" value="<?php echo (isset($_REQUEST['layer_id']) ? esc_attr($_REQUEST['layer_id']) : ''); ?>" />
         <input type="hidden" name="sort_by" value="<?php echo $sort_by; ?>" />
         <input type="hidden" name="sort_order" value="<?php echo $sort_order; ?>" />
         <input type="hidden" name="items_view" value="<?php echo $items_view; ?>" />

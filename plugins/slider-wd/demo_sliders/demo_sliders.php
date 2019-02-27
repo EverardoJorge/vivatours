@@ -1,25 +1,13 @@
 <?php
-if( isset($_REQUEST['wds_import_submit']) && ! empty($_FILES['fileimport']) ) {
-  require_once(WDS()->plugin_dir . '/framework/WDW_S_Library.php');
-  global $wpdb;
-  $flag = FALSE;
-  $file = $_FILES['fileimport'];
-  $dest_dir = ABSPATH . WDS()->upload_dir;
-  if ( ! file_exists( $dest_dir ) ) {
-    mkdir( $dest_dir, 0777, true );
-  }
-  if ( move_uploaded_file($file["tmp_name"], $dest_dir .'/'. $file["name"]) ) {
-    $flag = WDW_S_Library::wds_import_zip_action( $dest_dir, $file["name"] );
-  }
-
-  $message_id = 24;
-  if ( $flag ) {
-    $message_id = 23;
-  }
-  WDW_S_Library::spider_redirect( add_query_arg( array( 'page' => 'sliders_wds', 'message' => $message_id), admin_url('admin.php') ) );
-}
-
 function spider_demo_sliders() {
+  $error_ext_mess = '';
+  if( !function_exists( 'simplexml_load_string' ) ) {
+    $error_ext_mess = WDW_S_Library::message_id(0, __('Slider import will not work correctly, as PHP XML Extension is disabled on your website. Please contact your hosting provider and ask them to enable it. ', WDS()->prefix),'error');
+  }
+  if ( !class_exists('ZipArchive') ) {
+    $error_ext_mess .= WDW_S_Library::message_id(0, __('Slider import will not work correctly, as ZipArchive PHP extension is disabled on your website. Please contact your hosting provider and ask them to enable it. ', WDS()->prefix),'error');
+  }
+
   $demo_sliders = array(
 	'presentation' => array(
 						'name' => __('Presentation', WDS()->prefix),
@@ -74,9 +62,14 @@ function spider_demo_sliders() {
             ?>
             <form method="post" enctype="multipart/form-data">
               <div class="wd-group">
-                <input <?php echo WDS()->is_free ? 'disabled="disabled"' : ''; ?> type="file" name="fileimport" id="fileimport">
-                <input <?php echo WDS()->is_free ? 'disabled="disabled"' : ''; ?> type="submit" name="wds_import_submit" class="button button-primary" onclick="<?php echo(WDS()->is_free ? 'alert(\'' . addslashes(__('This functionality is disabled in free version.', WDS()->prefix)) . '\'); return false;' : 'if(!wds_getfileextension(document.getElementById(\'fileimport\').value)){ return false; }'); ?>" value="<?php _e('Import', WDS()->prefix); ?>">
+                <input <?php echo ( WDS()->is_free || $error_ext_mess != '' ) ? 'disabled="disabled"' : ''; ?> type="file" name="fileimport" id="fileimport">
+                <input <?php echo ( WDS()->is_free || $error_ext_mess != '' ) ? 'disabled="disabled"' : ''; ?> type="submit" name="wds_import_submit" class="button button-primary" onclick="<?php echo(WDS()->is_free ? 'alert(\'' . addslashes(__('This functionality is disabled in free version.', WDS()->prefix)) . '\'); return false;' : 'if(!wds_getfileextension(document.getElementById(\'fileimport\').value)){ return false; }'); ?>" value="<?php _e('Import', WDS()->prefix); ?>">
                 <p class="description"><?php _e('Browse the .zip file of the slider.', WDS()->prefix); ?></p>
+                <?php
+                if ( $error_ext_mess != '' && !WDS()->is_free ) {
+                  echo $error_ext_mess;
+                }
+                ?>
               </div>
             </form>
           </div>

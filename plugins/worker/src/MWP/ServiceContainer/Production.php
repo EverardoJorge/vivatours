@@ -36,7 +36,7 @@ class MWP_ServiceContainer_Production extends MWP_ServiceContainer_Abstract
 
         $dispatcher->addSubscriber(new MWP_EventListener_MasterRequest_AuthenticateServiceRequest($this->getConfiguration(), $this->getSigner(), $this->getWordPressContext()));
         $dispatcher->addSubscriber(new MWP_EventListener_MasterRequest_VerifyConnectionInfo($this->getWordPressContext(), $this->getSigner()));
-        $dispatcher->addSubscriber(new MWP_EventListener_MasterRequest_AuthenticateRequest($this->getConfiguration(), $this->getSigner()));
+        $dispatcher->addSubscriber(new MWP_EventListener_MasterRequest_AuthenticateRequest($this->getConfiguration(), $this->getSigner(), $this->getWordPressContext()));
         $dispatcher->addSubscriber(new MWP_EventListener_MasterRequest_SetErrorHandler($this->getErrorLogger(), $this->getErrorHandler(), $this->getRequestStack(), $this->getResponseCallback(), $this, $this->getParameter('log_errors'), $this->getParameter('fatal_error_reserved_memory_size')));
         $dispatcher->addSubscriber(new MWP_EventListener_MasterRequest_AttachJsonMessageHandler($this->getLogger(), $this->getJsonMessageHandler()));
         $dispatcher->addSubscriber(new MWP_EventListener_MasterRequest_RemoveUsernameParam());

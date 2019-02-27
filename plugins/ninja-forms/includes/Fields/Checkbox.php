@@ -71,7 +71,7 @@ class NF_Fields_Checkbox extends NF_Abstracts_Input
      * Custom Columns
      * Creates what is displayed in the columns on the submissions page.
      * @since 3.0
-     *
+     *nf_subs_export_pre_value
      * @param $value checkbox value
      * @param $field field model.
      * @return $value string|void
@@ -163,7 +163,7 @@ class NF_Fields_Checkbox extends NF_Abstracts_Input
         }
 
         // If the the value and check to see if we have checked and unchecked settings...
-        if ( 1 == $value && ! empty( $checked_setting ) ) {
+        if ( ( 1 == $value || 'on' == $value ) && ! empty( $checked_setting ) ) {
             // ...if we do return checked setting
             return $checked_setting;
         } elseif ( 0 == $value && ! empty( $unchecked_setting ) ) {
@@ -172,7 +172,7 @@ class NF_Fields_Checkbox extends NF_Abstracts_Input
         /*
          * These checks are for checkbox fields that were created before version 3.2.7.
          */
-        } elseif ( 1 == $value  ) {
+        } elseif ( 1 == $value || 'on' == $value ) {
             return __( 'checked', 'ninja-forms' );
         } elseif ( 0 == $value ) {
             return __( 'unchecked', 'ninja-forms' );

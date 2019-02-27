@@ -3,7 +3,7 @@
 Plugin Name: Ninja Forms
 Plugin URI: http://ninjaforms.com/
 Description: Ninja Forms is a webform builder with unparalleled ease of use and features.
-Version: 3.4.2
+Version: 3.4.4
 Author: The WP Ninjas
 Author URI: http://ninjaforms.com
 Text Domain: ninja-forms
@@ -58,7 +58,7 @@ if( get_option( 'ninja_forms_load_deprecated', FALSE ) && ! ( isset( $_POST[ 'nf
          * @since 3.0
          */
 
-        const VERSION = '3.4.2';
+        const VERSION = '3.4.4';
         
         /**
          * @since 3.4.0
@@ -490,13 +490,15 @@ if( get_option( 'ninja_forms_load_deprecated', FALSE ) && ! ( isset( $_POST[ 'nf
             global $wpdb;
             $sql = "SELECT COUNT( `id` ) AS total FROM `{$wpdb->prefix}nf3_forms`;";
             $result = $wpdb->get_results( $sql, 'ARRAY_A' );
-            $threshold = 5; // Threshold percentage for our required updates.
+            $threshold = 10; // Threshold percentage for our required updates.
             // If we got back a list of updates...
             // AND If we have any forms on the site...
             // AND If the gate is open...
+            // To avoid errors on older upgrades, ignore the gatekeeper if the db version is the baseline (1.0)...
             if ( ! empty( $required_updates ) 
                 && 0 < $result[ 0 ][ 'total' ]
-                &&  WPN_Helper::gated_release( $threshold ) ) {
+                &&  ( WPN_Helper::gated_release( $threshold )
+                || '1.0' == self::$db_version ) ) {
 				// Record that we have updates to run.
 				update_option( 'ninja_forms_needs_updates', 1 );
 			} // Otherwise... (Sanity check)

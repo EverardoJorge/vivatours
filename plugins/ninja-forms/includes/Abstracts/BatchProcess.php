@@ -114,6 +114,29 @@ abstract class NF_Abstracts_BatchProcess
     }
 
     /**
+     * Adds an error to the response object.
+     * 
+     * @param $slug (String) The slug for this error code.
+     * @param $msg (String) The error message to be displayed.
+     * @param $type (String) warning or fatal, depending on the error.
+     *                       Defaults to warning.
+     * 
+     * @since UPDATE_VERSION_ON_MERGE
+     */
+    public function add_error( $slug, $msg, $type = 'warning' )
+    {
+        // Setup our errors array if it doesn't exist already.
+        if ( ! isset( $this->response[ 'errors' ] ) ) {
+            $this->response[ 'errors' ] = array();
+        }
+        $this->response[ 'errors' ][] = array(
+            'code' => $slug,
+            'message' => $msg,
+            'type' => $type
+        );
+    }
+
+    /**
      * Function to cleanup any lingering temporary elements of a batch process after completion.
      *
      * @since 3.4.0
@@ -167,10 +190,15 @@ abstract class NF_Abstracts_BatchProcess
      * Method that encodes $this->response and sends the data to the front-end.
      * 
      * @since 3.4.0
+     * @updated UPDATE_VERSION_ON_MERGE
      * @return  void 
      */
     public function respond()
     {
+        if ( ! empty( $this->response[ 'errors' ] ) ) {
+            $this->response[ 'errors' ] = array_unique( $this->response[ 'errors' ] );
+        }
+
         echo wp_json_encode( $this->response );
         wp_die();
     }

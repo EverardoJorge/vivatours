@@ -3,7 +3,7 @@ Contributors: wpninjasllc, kstover, jameslaws, kbjohnson90, klhall1987, krmoorho
 Tags: form, forms, contact form, custom form, form builder, form creator, form manager, form creation, contact forms, custom forms, forms builder, forms creator, forms manager, forms creation, form administration,
 Requires at least: 4.8
 Tested up to: 5.0
-Stable tag: 3.4.2
+Stable tag: 3.4.4
 License: GPLv2 or later
 
 Drag and drop fields in an intuitive UI to create contact forms, email subscription forms, order forms, payment forms, send emails and more!
@@ -111,21 +111,33 @@ For help and video tutorials, please visit our website: [Ninja Forms Documentati
 
 == Upgrade Notice ==
 
-= 3.4.2 (17 January 2019) =
+= 3.4.4 (13 February 2019) =
 
 *Bugs:*
 
-* Resolved an issue that sometimes caused fields to not appear on the form after publish.
-* Corrected an error that was causing form duplication to fail.
-* Sites with WP_DEBUG enabled should no longer display an undefined 'maintenance' column error on form load.
+* Resolved an issue that was sometimes causing the submission sequence to reset.
 
 == Changelog ==
 
+= 3.4.4 (13 February 2019) =
+
+*Bugs:*
+
+* Resolved an issue that was sometimes causing the submission sequence to reset.
+
+= 3.4.3 (5 February 2019) =
+
+*Bugs:*
+
+* Resolved an issue that was causing some form imports to fail.
+* Submission exports of checkbox fields that have been modified by an admin should now display their proper value in the csv.
+* Resolved an issue that was rarely causing actions to fire twice.
+
 = 3.4.2 (17 January 2019) =
 
 *Bugs:*
 
-* Resolved an issue that sometimes caused fields to not appear on the form after publish.
+* Resolved an issue that sometimes caused fields to not appear on the form after publish. (Special thanks to Tim de Hoog and Sidekick-IT).
 
 = 3.4.1 (15 January 2019) =
 
