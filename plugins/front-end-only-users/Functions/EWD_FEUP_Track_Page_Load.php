@@ -18,7 +18,7 @@ function EWD_FEUP_Track_Page_Load() {
 	$Title = get_the_title();
 	$URL = get_permalink();
 
-	//Add_User_Event($User_ID, $Event_Type, $URL, $ID, $Title);
+	Add_User_Event($User_ID, $Event_Type, $URL, $ID, $Title);
 }
 
 ?>
