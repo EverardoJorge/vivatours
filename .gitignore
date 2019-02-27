@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 uploads
 ai1wm-backups
 cache
@@ -7,3 +8,24 @@ mu-plugins
 updraft
 w3tc-config
 wflogs
+=======
+*.log
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+/.htaccess
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+
+>>>>>>> 7c048173987339b32e739276f2cbb68521cb4219
