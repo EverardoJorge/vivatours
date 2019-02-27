@@ -1,0 +1,44 @@
+{
+  "name": "wpmu-lib",
+  "title": "WPMU Dev code library",
+  "description": "Framework to support creating WordPress plugins and themes.",
+  "version": "3.0.9",
+  "homepage": "http://premium.wpmudev.org/",
+  "author": [
+    {
+      "name": "Philipp Stracker",
+      "email": "philipp@stracker.net",
+      "url": "http://premium.wpmudev.org/"
+    },
+    {
+      "name": "Joel James",
+      "email": "joel@incsub.com",
+      "url": "http://premium.wpmudev.org/"
+    },
+    {
+      "name": "Marcin Pietrzak",
+      "email": "marcin@incsub.pl",
+      "url": "http://premium.wpmudev.org/"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "^1",
+    "grunt-contrib-clean": "^1",
+    "grunt-contrib-compress": "^1",
+    "grunt-contrib-concat": "^1",
+    "grunt-contrib-copy": "^1",
+    "grunt-contrib-cssmin": "^2",
+    "grunt-contrib-jshint": "^1",
+    "grunt-contrib-nodeunit": "^1",
+    "grunt-contrib-sass": "^1",
+    "grunt-contrib-uglify": "^1",
+    "grunt-contrib-watch": "^1",
+    "grunt-phpunit": "^0"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:incsub/wpmu-lib.git"
+  },
+  "license": "GPL-2.0"
+}

@@ -1,0 +1,6 @@
+[08-Apr-2018 10:31:42 America/Mexico_City] PHP Fatal error:  Using $this when not in object context in /home/viajesvi/public_html/wp-content/plugins/pdfword/pdf/includes/CJKdata.php on line 18
+[08-Apr-2018 10:35:04 America/Mexico_City] PHP Fatal error:  Using $this when not in object context in /home/viajesvi/public_html/wp-content/plugins/pdfword/pdf/includes/upperCase.php on line 2
+[11-Apr-2018 09:31:45 America/Mexico_City] PHP Fatal error:  Using $this when not in object context in /home/viajesvi/public_html/wp-content/plugins/pdfword/pdf/includes/CJKdata.php on line 18
+[11-Apr-2018 09:32:49 America/Mexico_City] PHP Fatal error:  Using $this when not in object context in /home/viajesvi/public_html/wp-content/plugins/pdfword/pdf/includes/upperCase.php on line 2
+[25-Jul-2018 02:56:01 America/Mexico_City] PHP Fatal error:  Using $this when not in object context in /home/viajesvi/public_html/wp-content/plugins/pdfword/pdf/includes/CJKdata.php on line 18
+[25-Jul-2018 02:56:43 America/Mexico_City] PHP Fatal error:  Using $this when not in object context in /home/viajesvi/public_html/wp-content/plugins/pdfword/pdf/includes/upperCase.php on line 2

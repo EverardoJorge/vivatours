@@ -1,0 +1,140 @@
+.ewd-feup-field-label {
+  padding:10px;
+  width:200px;
+}
+
+.ewd-feup-text-input {
+    margin-bottom: .4em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.ewd-feup-submit {
+
+}
+.ewd-feup-textarea {
+  
+}
+.ewd-feup-select {
+  
+}
+.ewd-feup-radio {
+  
+}
+.ewd-feup-checkbox {
+  
+}
+.ewd-feup-error {
+  
+}
+.ewd-feup-user-data {
+  
+}
+.ewd-feup-clear {
+  
+}
+
+.ewd-feup-req-symbol {
+    color: red;
+}
+
+.ewd-feup-negative-top {
+    margin-top: -8px;
+}
+.ewd-feup-date-input {
+    font-family: inherit;
+    font-size: 1.5rem;
+    width: 215px;
+}
+#ewd-feup-password-result {
+    padding: 10px;
+}
+.ewd-feup-password-mismatch,
+.ewd-feup-password-short {
+    background: #CC0000;
+    color: #EEEEEE;
+}
+.ewd-feup-password-weak {
+    background: #FF3333;
+    color: #EEEEEE;
+}
+.ewd-feup-password-good {
+    background: #CCFF66;
+    color: #333333;
+}
+.ewd-feup-password-strong {
+    background: #33FF00;
+    color: #333333;
+}
+
+.ewd-feup-profile-picture {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 12px;
+}
+.ewd-feup-update-picture {
+    margin-left: 10em;
+    padding-left: 20px;
+}
+.feup-pure-control-group .ewd-feup-text-input {
+    float: left;
+    width: auto !important;
+}
+
+
+/*Stripe Payment Form Styling Updates*/
+#stripe-payment-form input[data-stripe="exp_month"],
+#stripe-payment-form input[data-stripe="exp_year"] {
+    width: 40%;
+    float: left;
+}
+#stripe-payment-form .form-row span {
+    float: left;
+    margin: 4px 12px 0;
+}
+#stripe-payment-form .form-row {
+    width: 100%;
+    float: left;
+}
+#stripe-payment-form #stripe-submit {
+    clear: both;
+    margin: 24px 0 48px;
+}
+.ewd-feup-discount-form .feup-pure-control-group {
+    padding-left: 0 !important;
+    float: left;
+    width: auto;
+}
+#ewd-feup-paypal-discount-code-div {
+    padding-left: 0 !important;
+    width: auto;
+    float: left;
+}
+.ewd-feup-discount-form .ewd-feup-submit {
+    margin-top: -4px;
+}
+
+
+/*User search results table*/
+.ewd-feup-user-search-results {
+    margin-bottom: 24px;
+}
+.ewd-feup-user-search-results,
+.ewd-feup-user-search-results tr,
+.ewd-feup-user-search-results th,
+.ewd-feup-user-search-results td {
+    border: none;
+}
+.ewd-feup-user-search-results tr {
+    border-bottom: 1px solid #eee;
+}
+.ewd-feup-user-search-results th {
+    font-weight: bold;
+}
+
+
+
+
+

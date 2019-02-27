@@ -1,0 +1,678 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate WP Mail\n"
+"POT-Creation-Date: 2018-12-21 13:43-0500\n"
+"PO-Revision-Date: 2018-12-21 13:43-0500\n"
+"Last-Translator: \n"
+"Language-Team: Etoile Web Design\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Functions/EWD_UWPM_Deactivation_Survey.php:41
+msgid "Quick Feedback"
+msgstr ""
+
+#: Functions/EWD_UWPM_Deactivation_Survey.php:42
+msgid ""
+"If you have a moment, please share why you are deactivating Ultimate WP Mail:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Deactivation_Survey.php:57
+msgid "Submit and Deactivate"
+msgstr ""
+
+#: Functions/EWD_UWPM_Deactivation_Survey.php:58
+msgid "Skip and Deactivate"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:4
+msgid "Build Email"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:5
+msgid "Send Events"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:6
+msgid "Send Email"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:19
+msgid "Receiving Email Address:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:23
+msgid "Send Test E-mail"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:66
+msgid "1-Column"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:67
+msgid "2-Column"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:68
+msgid "3-Column"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:69
+msgid "4-Column"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:70
+msgid "1:2 Column"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:71
+msgid "2:1 Column"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:73
+msgid "Full Screen Editor"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:74
+msgid "Exit Full Screen Editor"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:84
+msgid "Start building with an email template:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:87
+msgid "Newsletter"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:91
+msgid "Product Showcase"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:95
+msgid "Thank You"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:99
+msgid "Promotion/Discount"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:103
+msgid "Follow-Up Email"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:107
+msgid "Tutorial/Help for Product/Service"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:111
+msgid "Or start building an email manually using the buttons at the top."
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:123
+msgid "Styling Options"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:124
+msgid "Content Alignment:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:127
+msgid "Left"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:128
+msgid "Center"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:129
+msgid "Right"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:134
+msgid "Max Email Width:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:138
+msgid "Email Background Color:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:142
+msgid "Body Background Color:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:146
+msgid "Blocks Background Color:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:150
+msgid "Blocks Border:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:153
+msgid "Styling settings will only display in emails after saving!"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:161
+msgid "Advanced"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:162 html/ListsPage.php:114
+msgid "Save"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:170
+msgid "Close Preview"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:177
+msgid "Plain Text Version"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:218
+msgid "Previous Email Sends"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:222
+msgid "Send Time"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:223
+msgid "Send Type"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:224
+msgid "Recipient(s)"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:225
+msgid "Successful Sends"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:226
+msgid "Number of Opens"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:227
+msgid "Number of Links Clicked"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:286
+msgid "Save email first to be able to track opens and clicks"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:289
+msgid "Send Now"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:290
+msgid "Send Later"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:302
+msgid "Email User"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:308
+msgid " Users"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:310
+msgid "Automatically Created Lists"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:311
+msgid "Select a list..."
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:315
+msgid "Email User List"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:319
+msgid "Email All Users"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:323
+msgid "Send Test Email"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:329
+msgid "Interest Lists"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:330
+msgid "WooCommerce Lists"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:334
+#: Shortcodes/Display_Subscription_Interests.php:127
+msgid "Post Categories"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:343
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:45
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:55
+#: Shortcodes/Display_Subscription_Interests.php:141
+msgid "Email Categories"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:352
+msgid "WooCommerce Categories"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:364
+msgid "All Previous Purchasers"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:366
+msgid "Previous Purchasers of:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:376
+msgid "Previous Purchasers of Product in:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Edit_Email_Content.php:386
+msgid "Send Email to Selected Groups"
+msgstr ""
+
+#: Functions/EWD_UWPM_Manage_User_Interests.php:23
+msgid "Interests successfully updated."
+msgstr ""
+
+#: Functions/EWD_UWPM_Scheduled_Send.php:23
+msgid "Email has been scheduled to send at "
+msgstr ""
+
+#: Functions/EWD_UWPM_Scheduled_Send.php:23
+msgid " server timezone"
+msgstr ""
+
+#: Functions/EWD_UWPM_Send_Emails.php:306
+#: Functions/EWD_UWPM_Send_Emails.php:343
+msgid "Email successfully sent to "
+msgstr ""
+
+#: Functions/EWD_UWPM_Send_Emails.php:308
+#: Functions/EWD_UWPM_Send_Emails.php:345
+msgid "Email failed to send"
+msgstr ""
+
+#: Functions/EWD_UWPM_Send_Emails.php:398
+msgid "Test email sent to "
+msgstr ""
+
+#: Functions/EWD_UWPM_Send_Emails.php:400
+msgid "Test email failed to send"
+msgstr ""
+
+#: Functions/EWD_UWPM_Send_Emails.php:415 html/OptionsPage.php:349
+msgid "Unsubscribe"
+msgstr ""
+
+#: Functions/EWD_UWPM_Subscribe_Unsubscribe_Checkboxes.php:9
+#: Functions/EWD_UWPM_Subscribe_Unsubscribe_Checkboxes.php:43
+msgid "Subscribe to Email Updates"
+msgstr ""
+
+#: Functions/EWD_UWPM_Subscribe_Unsubscribe_Checkboxes.php:15
+msgid "Unsubscribe from Email Updates"
+msgstr ""
+
+#: Functions/EWD_UWPM_Subscribe_Unsubscribe_Checkboxes.php:56
+msgid "Unsubscribe to Email Updates"
+msgstr ""
+
+#: Functions/EWD_UWPM_Widgets.php:10
+msgid "Email Interests Widget"
+msgstr ""
+
+#: Functions/EWD_UWPM_Widgets.php:11
+msgid "Insert a set of checkboxes with interests for emails"
+msgstr ""
+
+#: Functions/EWD_UWPM_Widgets.php:40
+msgid "Post Categories:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Widgets.php:44
+msgid "Email Categories:"
+msgstr ""
+
+#: Functions/EWD_UWPM_Widgets.php:48
+msgid "WooCommerce Categories:"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:5
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:7 Main.php:81
+msgid "Emails"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:6
+msgid "Email"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:8 Main.php:82
+msgid "Add New"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:9
+msgid "Add New Email"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:10
+msgid "Edit Email"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:11
+msgid "New Email"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:12
+msgid "View Email"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:13
+msgid "Search Emails"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:14
+msgid "Nothing found"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:15
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:46
+msgid "Email Category"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:47
+msgid "Search Email Categories"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:48
+msgid "All Email Categories"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:49
+msgid "Parent Email Category"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:50
+msgid "Parent Email Category:"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:51
+msgid "Edit Email Category"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:52
+msgid "Update Email Category"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:53
+msgid "Add New Email Category"
+msgstr ""
+
+#: Functions/Register_EWD_UWPM_Posts_Taxonomies.php:54
+msgid "New Email Category Name"
+msgstr ""
+
+#: Functions/Update_EWD_UWPM_Admin_Databases.php:77
+msgid "Options have been successfully updated."
+msgstr ""
+
+#: Functions/Update_EWD_UWPM_Admin_Databases.php:105
+msgid "Lists have been successfully updated."
+msgstr ""
+
+#: Functions/Update_EWD_UWPM_Content.php:17
+#: Functions/Update_EWD_UWPM_Front_End_Actions.php:11
+msgid "The form has not worked correctly. Please contact the plugin developer."
+msgstr ""
+
+#: Functions/uwpm_register_custom_element.php:14
+msgid "Custom element name must be between 1 and 20 characters"
+msgstr ""
+
+#: Functions/uwpm_register_custom_element_section.php:14
+msgid "Section name must be between 1 and 30 characters"
+msgstr ""
+
+#: Main.php:79
+msgid "MENU"
+msgstr ""
+
+#: Main.php:80
+msgid "Dashboard"
+msgstr ""
+
+#: Main.php:83
+msgid "Categories"
+msgstr ""
+
+#: Main.php:84
+msgid "Lists"
+msgstr ""
+
+#: Main.php:85
+msgid "User Stats"
+msgstr ""
+
+#: Main.php:86
+msgid "Options"
+msgstr ""
+
+#: Shortcodes/Display_Subscription_Interests.php:107 html/OptionsPage.php:353
+msgid ""
+"Log in to your account so that you can subscribe to topics you're interested "
+"in!"
+msgstr ""
+
+#: Shortcodes/Display_Subscription_Interests.php:109 html/OptionsPage.php:357
+msgid ""
+"Select topics you're interested in below to receive emails when new items "
+"are posted!"
+msgstr ""
+
+#: Shortcodes/Display_Subscription_Interests.php:114
+msgid "Login"
+msgstr ""
+
+#: Shortcodes/Display_Subscription_Interests.php:155
+msgid "Product Categories"
+msgstr ""
+
+#: Shortcodes/Display_Subscription_Interests.php:170 html/OptionsPage.php:345
+msgid "Subscribe"
+msgstr ""
+
+#: blocks/ewd-uwpm-blocks.php:6 html/AdminHeader.php:2
+msgid "Ultimate WP Mail"
+msgstr ""
+
+#: html/DashboardPage.php:15
+msgid "Title"
+msgstr ""
+
+#: html/DashboardPage.php:16
+msgid "Created Date"
+msgstr ""
+
+#: html/DashboardPage.php:17 html/UserStatsPage.php:55
+#: html/UserStatsPage.php:76
+msgid "Emails Sent"
+msgstr ""
+
+#: html/DashboardPage.php:29
+msgid ""
+"No emails to display yet. Create an email and then view it for it to be "
+"displayed here."
+msgstr ""
+
+#: html/ListsPage.php:12
+msgid "Lists Options"
+msgstr ""
+
+#: html/ListsPage.php:61
+msgid "&plus;&nbsp;&nbsp;ADD"
+msgstr ""
+
+#: html/ListsPage.php:87
+msgid "List name: "
+msgstr ""
+
+#: html/ListsPage.php:92 html/ListsPage.php:104
+msgid "Add Users"
+msgstr ""
+
+#: html/ListsPage.php:107
+msgid "Current Users"
+msgstr ""
+
+#: html/ListsPage.php:110
+msgid "Remove Users"
+msgstr ""
+
+#: html/OptionsPage.php:52
+msgid ""
+"<strong>REMINDER:</strong> If you're having trouble with sending emails, we "
+"recommend you use a plugin such as <a href=\"https://wordpress.org/plugins/"
+"wp-mail-smtp/\" target=\"_blank\">WP Mail SMTP</a> to configure your SMTP "
+"settings."
+msgstr ""
+
+#: html/OptionsPage.php:57
+msgid "Basic Options"
+msgstr ""
+
+#: html/OptionsPage.php:238
+msgid "Send On Events"
+msgstr ""
+
+#: html/OptionsPage.php:245
+msgid "Enable?"
+msgstr ""
+
+#: html/OptionsPage.php:246
+msgid "Action Type"
+msgstr ""
+
+#: html/OptionsPage.php:247
+msgid "Include"
+msgstr ""
+
+#: html/OptionsPage.php:248
+msgid "Email to Send"
+msgstr ""
+
+#: html/OptionsPage.php:249
+msgid "Delay"
+msgstr ""
+
+#: html/OptionsPage.php:261
+msgid "On Registration"
+msgstr ""
+
+#: html/OptionsPage.php:262
+msgid "When Profile Updated"
+msgstr ""
+
+#: html/OptionsPage.php:263
+msgid "When Role Changes"
+msgstr ""
+
+#: html/OptionsPage.php:264
+msgid "Password is Reset"
+msgstr ""
+
+#: html/OptionsPage.php:265
+msgid "X Time Since Last Login"
+msgstr ""
+
+#: html/OptionsPage.php:268
+msgid "Post Published"
+msgstr ""
+
+#: html/OptionsPage.php:269
+msgid "Post Published in Interest"
+msgstr ""
+
+#: html/OptionsPage.php:270
+msgid "New Comment after Commenting"
+msgstr ""
+
+#: html/OptionsPage.php:273
+msgid "X Time after Cart Abandoned"
+msgstr ""
+
+#: html/OptionsPage.php:274
+msgid "X Time after Purchase"
+msgstr ""
+
+#: html/OptionsPage.php:275
+msgid "Product Added"
+msgstr ""
+
+#: html/OptionsPage.php:276
+msgid "Product Purchased"
+msgstr ""
+
+#: html/OptionsPage.php:280
+msgid "Any Product"
+msgstr ""
+
+#: html/OptionsPage.php:308
+msgid "Delete"
+msgstr ""
+
+#: html/OptionsPage.php:315
+msgid "Add New Send-On"
+msgstr ""
+
+#: html/OptionsPage.php:338
+msgid "Subscriptions"
+msgstr ""
+
+#: html/UserStatsDetailsPage.php:16 html/UserStatsDetailsPage.php:33
+msgid "Email Sent"
+msgstr ""
+
+#: html/UserStatsDetailsPage.php:19 html/UserStatsDetailsPage.php:36
+msgid "Email Opened?"
+msgstr ""
+
+#: html/UserStatsDetailsPage.php:22 html/UserStatsDetailsPage.php:39
+#: html/UserStatsPage.php:61 html/UserStatsPage.php:82
+msgid "Links Clicked"
+msgstr ""
+
+#: html/UserStatsDetailsPage.php:25 html/UserStatsDetailsPage.php:42
+msgid "Send Date/Time"
+msgstr ""
+
+#: html/UserStatsPage.php:33
+msgid "users"
+msgstr ""
+
+#: html/UserStatsPage.php:37
+msgid "of"
+msgstr ""
+
+#: html/UserStatsPage.php:50 html/UserStatsPage.php:71
+msgid "Username"
+msgstr ""
+
+#: html/UserStatsPage.php:58 html/UserStatsPage.php:79
+msgid "Email Opened"
+msgstr ""

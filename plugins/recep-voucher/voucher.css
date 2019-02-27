@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+////////////////////VOUCHER////////////////
+
+.Tablas_titulos{background-color:#66CC00;		vertical-align:middle;	font-family:Arial, Helvetica, sans-serif;	font-weight:bold;	text-align:center;	color:#003300;}
+
+.Tablas_titulos,
+
+a.Tablas_titulos:link {
+	background-color: #0066FF;
+	vertical-align: middle;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.Tablas_titulos:visited {background-color:#66CC00;  vertical-align:middle; font-family:Arial, Helvetica, sans-serif;	font-weight:bold; text-align:center; color:#003300;text-decoration:none;}
+
+a.Tablas_titulos:hover { background-color:#66CC00;  vertical-align:middle; font-family:Arial, Helvetica, sans-serif; font-weight:bold; text-align:center;	color:#003300;text-decoration:underline;}
+
+body {
+	text-align: center;
+}	
+
+.logo_voucher {	background-color:#fff	}	
+
+.titulos_voucher{	background-color:#3aa0ac;	font-family:'Arial', Helvetica, sans-serif;	font-size:9px; color:#ffffff;	text-align:center;	height:20px; vertical-align:middle; font-weight:bold; margin-left: 10px;}
+
+.titulos2_voucher{	background-color:#aedfe5;	font-family:'Arial', Helvetica, sans-serif;	font-size:9px;	font-weight:bold;	color:#000;	text-align:center;	height:15px;}
+
+.folios_voucher{		font-family:'Arial', Helvetica, sans-serif;	font-size:24px;	font-weight:bold;	color:#b90076;	text-align:center;}
+
+.titulos_folio_voucher{	background-color:#00225d;	font-family:'Arial', Helvetica, sans-serif;	font-size:16px;	font-weight:bold;	color:#FFF;	vertical-align:middle;}
+
+
+
+.titulos_DATOS_voucher{	font-family:'Arial', Helvetica, sans-serif;	font-size:11px;	font-weight:normal;	color:#000; margin-left: 10px;}
+
+	.titulos_DATOS_voucher2{	font-family:'Arial', Helvetica, sans-serif;	font-size:11px;	font-weight:normal;	color:#fff; background-color:#3aa0ac; font-weight: bold;}
+
+.input_voucher{	height:15px;	width:30px;	vertical-align:middle;	text-align:center;	padding-top:10px;}	
+
+.advertencia_voucher{	font-family:Arial, Helvetica, sans-serif;	font-size:10px;	color:#000;	font-style:italic;	font-weight:bold;	vertical-align:baseline; padding-bottom:10px; margin-left: 10px;!important}	
+
+.datos_voucher{	font-family:Arial, Helvetica, sans-serif;	font-size:11px;	color:#000;	font-weight:bold;}	
+
+	
+
+.nobord_voucher { scrollbar-face-color: #ffffff;scrollbar-highlight-color: #ffffff;scrollbar-3dlight-color: #ffffff;scrollbar-darkshadow-color: #ffffff;scrollbar-shadow-color: #ffffff; scrollbar-arrow-color: #ffffff;scrollbar-track-color: #ffffff;font-size:11px; }
+
+ 
+
+.textos_voucher{ font-size:10px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+
+.textos_voucher a:link {font-size:10px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; text-decoration:none;  color:#030;}
+
+.textos_voucher a:visited {font-size:10px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; text-decoration:none; color:#030;}
+
+.textos_voucher a:hover { font-size:10px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; text-decoration:underline; color:#f00;}
+
+
+
+.datos_voucher{ font-size:10px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+
+
+
+.contenido_voucher{	font-family:'Arial', Helvetica, sans-serif;	font-size:9px; color:#000;	text-align:center;	height:20px; vertical-align:middle;}
+
+.crm_contenidos{ font-size:12px;}

@@ -1,0 +1,1 @@
+<div class="sui-footer">Made with <i class="sui-icon-heart"></i> by WPMU DEV</div>

@@ -1,0 +1,253 @@
+.wd-admin-notice {
+  background: #fff;
+  border: 4px;
+  display: block;
+  min-height: 68px;
+  padding: 10px 40px 10px 125px;
+  position: relative;
+}
+.wd-admin-notice a {
+  color: #10738B;
+}
+.wds-notice-logo {
+  clear: both;
+  content: "";
+  display: block;
+  background-image: url("../images/notice.png");
+  background-size: 108px auto;
+  background-repeat: no-repeat;
+  background-position: 0 45%;
+  width: 125px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+}
+.wd-admin-notice > .dashicons {
+  color: #424242;
+  position: absolute;
+  right: 20px;
+  top: 40%;
+}
+.wd-notice-title {
+  font-size: 24px;
+  margin: 0;
+}
+.wd-notice-body {
+  font-weight: normal;
+  margin: 5px 0;
+}
+.wd-notice-body:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.wd-notice-body li {
+  float: left;
+  margin-right: 20px;
+}
+.wd-notice-body .dashicons {
+  font-size: 17px;
+}
+.wd-blue {
+  color: #10738B;
+}
+
+.admin-notice-promo {
+  background: #fff;
+  border-top: 4px;
+  display: block;
+  min-height: 68px;
+  padding: 10px 40px 0px 10px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.admin-notice-promo:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.close-promo {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.hny {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 800px 200px;
+  height: 200px;
+  max-width: 100%;
+}
+
+.hny a {
+  display: block;
+  height: 100%;
+}
+
+.wds_pro_container {
+  text-align: right;
+  width: 100%;
+}
+.wds_pro_link {
+  border: none;
+  box-shadow: none !important;
+  text-decoration: none;
+}
+a.wds_pro_text,
+a.wds_pro_text:active,
+a.wds_pro_text:visited, a.wds_pro_text:hover {
+  background-color: #D8D8D8;
+  color: #175c8b;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  height: 54px;
+  line-height: 50px;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+.wds_pro_image {
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Top bar start */
+.wds-topbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 20px 0 20px 0;
+  font-family: Roboto;
+}
+.wds-topbar-container * {
+  box-sizing: border-box;
+}
+.wds-topbar {
+  background-color: #FFFFFF;
+  border: 1px solid #D0D0D080;
+  border-radius: 7px;
+  color: #000000;
+  padding: 5px;
+}
+.wds-topbar-content {
+  display: flex;
+  justify-content: space-between;
+  flex: auto;
+  margin: 0 2px 0 0;
+  padding: 10px 15px;
+  height: 60px;
+}
+.wds-topbar-links {
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 0 2px;
+  height: 60px;
+}
+.wds-topbar-links-container {
+  display: flex;
+  justify-content: space-around;
+  height: 80%;
+}
+.wds-topbar-links-item {
+  display: flex;
+  flex: 1;
+  align-self: center;
+  justify-content: center;
+  width: 170px;
+  line-height: 50px;
+}
+.wds-topbar-links * {
+  font-size: 18px;
+}
+.wds-topbar-links a,
+.wds-topbar-links a:focus {
+  text-decoration: none;
+  align-self: center;
+  box-shadow: none;
+  color: #000000;
+  cursor:pointer;
+}
+.wds-topbar-links a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+.wds-topbar-separator {
+  background-color: #C2C2C280;
+  width: 1px;
+  height: 100%;
+}
+.wds-topbar-content-title {
+  color: #0C4D68;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.wds-topbar-content-body {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.wds-topbar-content-container {
+  display: flex;
+  flex-direction: column;
+}
+.wds-topbar-content-button-container,
+.wds-free-message-button-container {
+  align-self: center;
+}
+.wds-topbar-upgrade-button,
+.wds-topbar-upgrade-button:focus {
+  background-color: #29B311;
+  border-radius: 20px;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 5px 44px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.wds-topbar-upgrade-button:hover {
+  text-decoration: none;
+  color: #FFFFFFCC;
+}
+@media screen and (max-width: 1366px) {
+  .wds-topbar-links {
+    font-size: 15px;
+  }
+  .wds-topbar-content-title {
+    font-size: 15px;
+  }
+  .wds-topbar-content-body {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1285px) {
+  .wds-topbar-container {
+    flex-direction: column;
+  }
+  .wds-topbar-links,
+  .wds-topbar-content {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+  .wds-topbar-content {
+    flex-direction: column;
+    height: auto;
+  }
+  .wds-topbar-content-container,
+  .wds-topbar-content-container * {
+    align-self: center;
+    padding-bottom: 4px;
+  }
+}
+/* Top bar end */

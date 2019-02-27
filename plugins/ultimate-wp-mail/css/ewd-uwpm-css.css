@@ -1,0 +1,27 @@
+.ewd-uwpm-clear {
+	clear:both;
+}
+
+.ewd-uwpm-si-columns-2 {
+	width: 48%;
+	padding-right: 2%;
+	float: left;
+	max-width: 360px;
+}
+.ewd-uwpm-si-columns-3 {
+	width: 32%;
+	padding-right: 1%;
+	float: left;
+	max-width: 360px;
+}
+
+@media screen and (max-width: 600px) {
+	.ewd-uwpm-si-columns-3 {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.ewd-uwpm-si-columns-2 {
+		width: 100%;
+	}
+}

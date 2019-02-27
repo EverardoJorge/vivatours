@@ -1,0 +1,1369 @@
+# Copyright (C) 2016 Front-End Users Plugin
+# This file is distributed under the same license as the Front-End Users Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Front-End Users Plugin 2.6.13\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/front-end-only-"
+"users\n"
+"POT-Creation-Date: 2016-02-22 08:48+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-02-24 09:30+0100\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.7\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#: Functions/EWD_FEUP_Add_Captcha.php:11
+msgid "Image Number: "
+msgstr "Noteer getal:"
+
+#: Functions/EWD_FEUP_Full_Page_Restriction.php:5
+#: Functions/EWD_FEUP_Full_Page_Restriction.php:12
+msgid "Front-End Users"
+msgstr "Front-End Users"
+
+#: Functions/EWD_FEUP_Full_Page_Restriction.php:110
+#: Shortcodes/Insert_User_List.php:32 Shortcodes/Insert_User_Search.php:31
+#: Shortcodes/Privilege_Level.php:51
+msgid "Please log in to access this content."
+msgstr "Log alsjeblieft in om toegang te krijgen tot deze inhoud."
+
+#: Functions/EWD_FEUP_Styling.php:5
+msgid "Styles have been succesfully reset."
+msgstr "De stijlen zijn succesvol gereset."
+
+#: Functions/EWD_FEUP_Widgets.php:10
+msgid "FEUP Login/Logout Toggle"
+msgstr "FEUP Inloggen/Uitloggen Knop"
+
+#: Functions/EWD_FEUP_Widgets.php:11
+msgid "Insert a login form or logout button, depending on login status"
+msgstr ""
+"Voegt een inlog formulier of een uitlog knop toe, afhankelijk van de inlog "
+"status"
+
+#: Functions/EWD_FEUP_Widgets.php:36
+msgid "Form Heading"
+msgstr "Formulier Hoofd"
+
+#: Functions/EWD_FEUP_Widgets.php:37
+msgid "Login Redirect Page"
+msgstr "Inlog Doorverbind Pagina"
+
+#: Functions/EWD_FEUP_Widgets.php:38
+msgid "Logout Redirect Page"
+msgstr "Uitlog Doorverbind Pagina"
+
+#: Functions/EWD_FEUP_Widgets.php:41
+msgid "Form Heading:"
+msgstr "Formulier Hoofd:"
+
+#: Functions/EWD_FEUP_Widgets.php:45
+msgid "Login Redirect Page:"
+msgstr "Inlog Doorverbind Pagina"
+
+#: Functions/EWD_FEUP_Widgets.php:49
+msgid "Logout Redirect Page:"
+msgstr "Uitlog Doorverbind Pagina"
+
+#: Functions/Initial_Data.php:13
+msgid "First Name"
+msgstr "Voornaam"
+
+#: Functions/Initial_Data.php:14
+msgid "Your first name."
+msgstr "Je voornaam."
+
+#: Functions/Initial_Data.php:16 Functions/Initial_Data.php:17
+#: Functions/Initial_Data.php:18 Functions/Initial_Data.php:26
+#: Functions/Initial_Data.php:27 Functions/Initial_Data.php:28
+#: Functions/Initial_Data.php:36 Functions/Initial_Data.php:37
+#: Functions/Initial_Data.php:38
+msgid "Yes"
+msgstr "Ja"
+
+#: Functions/Initial_Data.php:23
+msgid "Last Name"
+msgstr "Achternaam"
+
+#: Functions/Initial_Data.php:24
+msgid "Your last name."
+msgstr "Je achternaam."
+
+#: Functions/Initial_Data.php:33
+#: Shortcodes/Insert_Confirm_Forgot_Password.php:38
+#: Shortcodes/Insert_Edit_Account.php:46
+#: Shortcodes/Insert_Forgot_Password.php:43 Shortcodes/Insert_Login_Form.php:57
+#: Shortcodes/Insert_Login_Form.php:58 Shortcodes/Insert_Register_Form.php:66
+#: Shortcodes/Insert_Register_Form.php:70
+#: Shortcodes/Insert_Reset_Password.php:46 html/UsersPage.php:297
+msgid "Email"
+msgstr "Email"
+
+#: Functions/Initial_Data.php:34
+msgid "Your e-mail address."
+msgstr "Je e-mailadres."
+
+#: Functions/Initial_Data.php:44
+msgid "Regular User"
+msgstr "Normale Gebruiker"
+
+#: Functions/Prepare_Data_For_Insertion.php:36
+msgid "You are currently logged in. Please log out to create a new account."
+msgstr ""
+"Je bent momenteel ingelogd. Log alsjeblieft uit om een nieuwe account aan te "
+"maken."
+
+#: Functions/Prepare_Data_For_Insertion.php:86
+msgid "The passwords you entered did not match."
+msgstr "De wachtwoorden die zijn ingevoerd koment niet overeen."
+
+#: Functions/Prepare_Data_For_Insertion.php:88
+msgid "The password entered was too short."
+msgstr "Het wachtwoord dat is ingevoerd is te kort."
+
+#: Functions/Prepare_Data_For_Insertion.php:90
+msgid ""
+"There is already a user with that Username, please select a different one."
+msgstr ""
+"Er is al een gebruiker met die Gebruikersnaam, kies alsjeblieft een andere "
+"gebruikersnaam."
+
+#: Functions/Prepare_Data_For_Insertion.php:91
+msgid "Username must be at least 3 characters."
+msgstr "De gebruikersnaam moet minstens 3 karakters lang zijn."
+
+#: Functions/Prepare_Data_For_Insertion.php:120
+msgid ""
+"There is already an account with that Username. Please select a different "
+"one."
+msgstr ""
+"Er is al een account met die Gebruikersnaam. Kies alsjeblieft een andere "
+"Gebruikersnaam."
+
+#: Functions/Prepare_Data_For_Insertion.php:135
+msgid "Your account has been succesfully created."
+msgstr "Je account is succesvol aangemaakt."
+
+#: Functions/Prepare_Data_For_Insertion.php:292
+#: Functions/Prepare_Data_For_Insertion.php:360
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr ""
+"Het geüploade bestand is groter dan de upload_max_filesize regel in php.ini"
+
+#: Functions/Prepare_Data_For_Insertion.php:295
+#: Functions/Prepare_Data_For_Insertion.php:363
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form"
+msgstr ""
+"Het geüploade bestand is groter dan de MAX_FILE_SIZE regel die is "
+"gespecificeerd in het HTML formulier"
+
+#: Functions/Prepare_Data_For_Insertion.php:298
+#: Functions/Prepare_Data_For_Insertion.php:366
+msgid "The uploaded file was only partially uploaded"
+msgstr "Het geüploade bestand is alleen gedeeltelijk geüpload"
+
+#: Functions/Prepare_Data_For_Insertion.php:301
+#: Functions/Prepare_Data_For_Insertion.php:369
+#: Functions/Prepare_Data_For_Insertion.php:414
+#: Functions/Prepare_Data_For_Insertion.php:416
+msgid "No file was uploaded."
+msgstr "Er is geen bestand geüpload."
+
+#: Functions/Prepare_Data_For_Insertion.php:305
+#: Functions/Prepare_Data_For_Insertion.php:373
+msgid "Missing a temporary folder"
+msgstr "Er mist een tijdelijke map"
+
+#: Functions/Prepare_Data_For_Insertion.php:308
+#: Functions/Prepare_Data_For_Insertion.php:376
+msgid "Failed to write file to disk"
+msgstr "Het is mislukt om het bestand naar de schijf te schrijven"
+
+#: Functions/Prepare_Data_For_Insertion.php:311
+#: Functions/Prepare_Data_For_Insertion.php:379
+msgid "File upload stopped by extension"
+msgstr "Het uploaden van het bestand is gestopt door de extensie"
+
+#: Functions/Prepare_Data_For_Insertion.php:315
+#: Functions/Prepare_Data_For_Insertion.php:383
+msgid "No error code avaiable"
+msgstr "Er is geen foutcode beschikbaar"
+
+#: Functions/Prepare_Data_For_Insertion.php:320
+#: Functions/Prepare_Data_For_Insertion.php:388
+msgid "No file was uploaded here.."
+msgstr "Er is hier geen bestand geüpload.."
+
+#: Functions/Prepare_Data_For_Insertion.php:324
+msgid "File must be .xls or .xlsx"
+msgstr "Het bestand moet .xls of .xlsx zijn"
+
+#: Functions/Prepare_Data_For_Insertion.php:459
+#: Functions/Prepare_Data_For_Insertion.php:520
+msgid "Users have been successfully deleted."
+msgstr "De gebruikers zijn succesvol verwijderd."
+
+#: Functions/Prepare_Data_For_Insertion.php:488
+msgid "Users have been successfully approved."
+msgstr "De gebruikers zijn succesvol goedgekeurd."
+
+#: Functions/Prepare_Data_For_Insertion.php:503
+msgid "User levels have been successfully updated."
+msgstr "De gebruikers niveaus zijn succesvol geüpdatet."
+
+#: Functions/Prepare_Data_For_Insertion.php:569
+#: Functions/Prepare_Data_For_Insertion.php:665
+msgid "Fields have been successfully deleted."
+msgstr "De velden zijn succesvol verwijderd."
+
+#: Functions/Prepare_Data_For_Insertion.php:622
+msgid "Payments have been successfully deleted."
+msgstr "De betalingen zijn succesvol verwijderd."
+
+#: Functions/Prepare_Data_For_Insertion.php:696
+msgid ""
+"Pages have been successfully added. Check the 'Pages' section to modify them."
+msgstr ""
+"De pagina's zijn succesvol toegevoegd. Controleer de 'Pagina'-sectie om ze "
+"aan te passen."
+
+#: Functions/Process_Front_End_Forms.php:81
+msgid "Login successful"
+msgstr "Succesvol ingelogd"
+
+#: Functions/Process_Front_End_Forms.php:83
+msgid "Login failed - you need to confirm your e-mail before you can log in"
+msgstr ""
+"Het inloggen is gefaald - je moet je e-mail bevestigen voordat je kan "
+"inloggen"
+
+#: Functions/Process_Front_End_Forms.php:85
+msgid ""
+"Login failed - an administrator needs to approve your registration before "
+"you can log in"
+msgstr ""
+"Het inloggen is gefaald - een admin moet je registratie goedkeuren, voordat "
+"je kan inloggen"
+
+#: Functions/Process_Front_End_Forms.php:87
+msgid ""
+"Payment required. Please use the form below to pay your membership or "
+"subscription fee."
+msgstr ""
+"Betaling is vereist. Gebruik alsjeblieft het formulier beneden om je "
+"lidmaatschap of de inschrijfkosten te betalen."
+
+#: Functions/Process_Front_End_Forms.php:91
+msgid "Login failed - incorrect username or password"
+msgstr ""
+"Het inloggen is gefaald - de ingevoerde gebruikersnaam of wachtwoord is "
+"onjuist"
+
+#: Functions/Process_Front_End_Forms.php:148
+msgid "Password reset requested from "
+msgstr "Aanvraag om het wachtwoord te resetten van "
+
+#: Functions/Process_Front_End_Forms.php:154
+msgid "Greetings from "
+msgstr "Hallo, hier is een melding van "
+
+#: Functions/Process_Front_End_Forms.php:155
+msgid ""
+"Somebody requested a password reset for you. If this wasn't you, you can "
+"ignore this mail."
+msgstr ""
+"Iemand heeft gevraagd om je wachtwoord te resetten. Als jij dit niet was, "
+"dan kan je deze email negeren."
+
+#: Functions/Process_Front_End_Forms.php:156
+msgid "If you want to reset the password, please visit "
+msgstr "Als je het wachtwoord wilt resetten, bezoek dan alsjeblieft "
+
+#: Functions/Process_Front_End_Forms.php:157
+msgid "If the link above doesn't work, go to "
+msgstr "Als de link hierboven niet werkt, ga dan naar "
+
+#: Functions/Process_Front_End_Forms.php:157
+msgid " and enter your email address and the following code:"
+msgstr " en voer je e-mailadres in en de volgende code:"
+
+#: Functions/Process_Front_End_Forms.php:167
+#: Functions/Process_Front_End_Forms.php:173
+msgid ""
+"For completing the password reset procedure, please follow the instructions "
+"in your email."
+msgstr ""
+"Volg alsjeblieft de instructies in je email, om de wachtwoord reset "
+"procedure uit te voeren."
+
+#: Functions/Process_Front_End_Forms.php:229
+msgid ""
+"Your password has been successfully changed. You can log in using your new "
+"password now."
+msgstr ""
+"Je wachtwoord is succesvol gewijzigd. Je kan nu inloggen met je nieuwe "
+"wachtwoord."
+
+#: Functions/Process_Front_End_Forms.php:231
+msgid ""
+"The password reset code you entered was wrong. You need to get a new one "
+"before using this function again."
+msgstr ""
+"De wachtwoord reset code die je hebt ingevoerd is verkeerd. Je moet een "
+"nieuwe code krijgen voordat je weer gebruik kan maken van deze functie."
+
+#: Functions/Process_Front_End_Forms.php:244
+msgid ""
+"This password reset code is too old and we have disabled it for your "
+"security. Please use the 'I forgot my password' function to acquire a new "
+"one."
+msgstr ""
+"De wachtwoord reset code is te oud en we hebben deze uitgeschakeld voor je "
+"veiligheid. Gebruik alsjeblieft de 'Ik ben mijn wachtwoord vergeten' functie "
+"om een nieuwe code te krijgen."
+
+#: Functions/Process_Front_End_Forms.php:247
+#: Functions/Process_Front_End_Forms.php:256
+msgid ""
+"You need a password reset code to reset your password. Please use the 'I "
+"forgot my password' function first to acquire one."
+msgstr ""
+"Je hebt een wachtwoord reset code nodig om je wachtwoord te resetten. "
+"Gebruik alsjeblieft de 'Ik ben mijn wachtwoord vergeten' functie om een "
+"nieuwe code te krijgen."
+
+#: Functions/Process_Front_End_Forms.php:250
+msgid "Please select a new password"
+msgstr "Kies alsjeblieft een nieuw wachtwoord"
+
+#: Functions/Process_Front_End_Forms.php:253
+msgid "The passwords you entered did not match"
+msgstr "De ingevoerde wachtwoorden komen niet overeen"
+
+#: Functions/Update_Admin_Databases.php:10
+msgid "User has been successfully created."
+msgstr "De gebruiker is succesvol aangemaakt."
+
+#: Functions/Update_Admin_Databases.php:24
+msgid "User has been successfully edited."
+msgstr "De gebruiker is succesvol aangepast."
+
+#: Functions/Update_Admin_Databases.php:43
+msgid "User has been successfully deleted."
+msgstr "De gebruiker is succesvol verwijderd."
+
+#: Functions/Update_Admin_Databases.php:59
+msgid "There has been a validation error."
+msgstr "Er is een validatie fout opgetreden."
+
+#: Functions/Update_Admin_Databases.php:94
+msgid "You have a column which is not recognized: "
+msgstr "Je hebt een kolom die niet wordt herkend: "
+
+#: Functions/Update_Admin_Databases.php:94
+msgid ""
+". <br>Please make sure that the column names match the user field labels "
+"exactly."
+msgstr ""
+". <br>Zorg er alsjeblieft voor dat de kolomnaam exact overeenkomt met de "
+"label van het gebruikersveld."
+
+#: Functions/Update_Admin_Databases.php:99
+msgid ""
+"You have a blank column that has been edited.<br>Please delete that column "
+"and re-upload your spreadsheet."
+msgstr ""
+"Je hebt een lege kolom dat is aangepast.<br>Verwijder alsjeblieft de kolom "
+"en herüpload je spreadsheet."
+
+#: Functions/Update_Admin_Databases.php:183
+msgid "Users added successfully."
+msgstr "De gebruikers zijn succesvol toegevoegd."
+
+#: Functions/Update_Admin_Databases.php:203
+#: Functions/Update_Admin_Databases.php:252
+msgid "Field has been successfully created."
+msgstr "De velden zijn succesvol aangemaakt."
+
+#: Functions/Update_Admin_Databases.php:222
+#: Functions/Update_Admin_Databases.php:268
+msgid "Field has been successfully edited."
+msgstr "De velden zijn succesvol aangepast."
+
+#: Functions/Update_Admin_Databases.php:235
+#: Functions/Update_Admin_Databases.php:281
+msgid "Field has been successfully deleted."
+msgstr "De velden zijn succesvol verwijderd."
+
+#: Functions/Update_Admin_Databases.php:300
+msgid "Payment has been successfully created."
+msgstr "De betaling is succesvol aangemaakt."
+
+#: Functions/Update_Admin_Databases.php:320
+msgid "Payment has been successfully edited."
+msgstr "De betaling is succesvol aangepast."
+
+#: Functions/Update_Admin_Databases.php:333
+msgid "Payment has been successfully deleted."
+msgstr "De betaling is succesvol verwijderd."
+
+#: Functions/Update_Admin_Databases.php:348
+msgid "Level has been successfully created."
+msgstr "Het niveau is succesvol aangemaakt."
+
+#: Functions/Update_Admin_Databases.php:363
+msgid "Level has been successfully edited."
+msgstr "Het niveau is succesvol aangepast."
+
+#: Functions/Update_Admin_Databases.php:377
+msgid "Level has been successfully deleted."
+msgstr "Het niveau is succesvol verwijderd."
+
+#: Functions/Update_Admin_Databases.php:400
+msgid "Event has been successfully created."
+msgstr "De gebeurtenis is succesvol aangemaakt."
+
+#: Functions/Update_Admin_Databases.php:525
+msgid "Options have been succesfully updated."
+msgstr "De opties zijn succesvol geüpdatet."
+
+#: Functions/Update_Admin_Databases.php:579
+msgid "Email options have been succesfully updated."
+msgstr "De emailopties zijn succesvol geüpdatet."
+
+#: Main.php:200 Shortcodes/Insert_Account_Payment.php:86
+msgid "Next"
+msgstr "Volgende"
+
+#: Main.php:201
+msgid "Close"
+msgstr "Sluiten"
+
+#: Shortcodes/Insert_Account_Payment.php:52
+msgid "Upgrade Account"
+msgstr "Account upgraden"
+
+#: Shortcodes/Insert_Account_Payment.php:53
+msgid "Select the level you'd like to upgrade to using the form below:"
+msgstr ""
+"Selecteer het niveau waarnaar je wilt upgraden door het formulier beneden te "
+"gebruiker:"
+
+#: Shortcodes/Insert_Account_Payment.php:58
+#: Shortcodes/Insert_Account_Payment.php:64
+#: Shortcodes/Insert_Edit_Account.php:52 Shortcodes/Insert_Login_Form.php:60
+#: Shortcodes/Insert_Login_Form.php:61 Shortcodes/Insert_Register_Form.php:73
+#: Shortcodes/Insert_Register_Form.php:75 html/PaymentDetails.php:21
+#: html/PaymentsPage.php:51 html/PaymentsPage.php:92
+#: html/StatisticsPage.php:180 html/StatisticsPage.php:213
+#: html/UsersPage.php:300
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: Shortcodes/Insert_Account_Payment.php:72
+msgid "Level"
+msgstr "Niveau"
+
+#: Shortcodes/Insert_Account_Payment.php:264
+msgid "Have a discount code? Enter it below."
+msgstr "Heb je een kortingscode? Voer het beneden in."
+
+#: Shortcodes/Insert_Account_Payment.php:272 html/PaymentDetails.php:51
+#: html/PaymentsPage.php:79 html/PaymentsPage.php:120
+msgid "Discount Code"
+msgstr "Kortingscode"
+
+#: Shortcodes/Insert_Account_Payment.php:276
+msgid "Use Discount Code"
+msgstr "Gebruike kortingscode"
+
+#: Shortcodes/Insert_Confirm_Forgot_Password.php:19
+msgid "Change password"
+msgstr "Wachtwoord aanpassen"
+
+#: Shortcodes/Insert_Confirm_Forgot_Password.php:42
+msgid "Reset code"
+msgstr "Reset code"
+
+#: Shortcodes/Insert_Confirm_Forgot_Password.php:46
+#: Shortcodes/Insert_Edit_Account.php:58 Shortcodes/Insert_Login_Form.php:65
+#: Shortcodes/Insert_Register_Form.php:79
+#: Shortcodes/Insert_Reset_Password.php:48 html/UsersPage.php:303
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: Shortcodes/Insert_Confirm_Forgot_Password.php:50
+#: Shortcodes/Insert_Edit_Account.php:63 Shortcodes/Insert_Register_Form.php:84
+#: Shortcodes/Insert_Reset_Password.php:52 html/UsersPage.php:305
+msgid "Repeat Password"
+msgstr "Herhaal wachtwoord"
+
+#: Shortcodes/Insert_Edit_Account.php:21
+#: Shortcodes/Insert_Reset_Password.php:16
+msgid "Update Account"
+msgstr "Account updaten"
+
+#: Shortcodes/Insert_Edit_Account.php:31 Shortcodes/Insert_Edit_Profile.php:42
+#: Shortcodes/Insert_Reset_Password.php:24
+#: Shortcodes/Insert_User_Profile.php:38
+msgid "You must be logged in to access this page."
+msgstr "Je moet ingelogd zijn om toegang te krijgen tot deze pagina."
+
+#: Shortcodes/Insert_Edit_Account.php:32 Shortcodes/Insert_Edit_Profile.php:43
+#: Shortcodes/Insert_Reset_Password.php:25 Shortcodes/Insert_User_List.php:33
+#: Shortcodes/Insert_User_Profile.php:39 Shortcodes/Insert_User_Search.php:32
+#: Shortcodes/Privilege_Level.php:52
+msgid "Please"
+msgstr "Alsjeblieft"
+
+#: Shortcodes/Insert_Edit_Account.php:32 Shortcodes/Insert_Edit_Profile.php:43
+#: Shortcodes/Insert_Reset_Password.php:25 Shortcodes/Insert_User_List.php:33
+#: Shortcodes/Insert_User_Profile.php:39 Shortcodes/Insert_User_Search.php:32
+#: Shortcodes/Privilege_Level.php:52
+msgid "login"
+msgstr "inloggen"
+
+#: Shortcodes/Insert_Edit_Account.php:32 Shortcodes/Insert_Edit_Profile.php:43
+#: Shortcodes/Insert_Reset_Password.php:25 Shortcodes/Insert_User_List.php:33
+#: Shortcodes/Insert_User_Profile.php:39 Shortcodes/Insert_User_Search.php:32
+#: Shortcodes/Privilege_Level.php:52
+msgid "to continue."
+msgstr "om door te gaan."
+
+#: Shortcodes/Insert_Edit_Account.php:68 Shortcodes/Insert_Register_Form.php:89
+#: html/UsersPage.php:307
+msgid "Password Strength"
+msgstr "Wachtwoord sterkte"
+
+#: Shortcodes/Insert_Edit_Profile.php:31 Shortcodes/Insert_User_Profile.php:28
+#: html/OneClickInstall.php:5 html/OneClickInstall.php:56
+msgid "Edit Profile"
+msgstr "Profiel aanpassen"
+
+#: Shortcodes/Insert_Edit_Profile.php:82 html/UserDetails.php:222
+msgid "Current file:"
+msgstr "Huidige bestand:"
+
+#: Shortcodes/Insert_Edit_Profile.php:86 html/UserDetails.php:225
+msgid "Current Picture - "
+msgstr "Huidige Foto - "
+
+#: Shortcodes/Insert_Edit_Profile.php:88
+msgid "Update Picture - "
+msgstr "Update Foto - "
+
+#: Shortcodes/Insert_Forgot_Password.php:14
+msgid "Reset password"
+msgstr "Wachtwoord resetten"
+
+#: Shortcodes/Insert_Login_Form.php:24 html/OneClickInstall.php:7
+#: html/OneClickInstall.php:80
+msgid "Login"
+msgstr "Inloggen"
+
+#: Shortcodes/Insert_Login_Logout_Toggle.php:41 html/OneClickInstall.php:8
+#: html/OneClickInstall.php:92
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: Shortcodes/Insert_Logout.php:32
+msgid "You have been successfully logged out."
+msgstr "Je bent succesvol uitgelogd."
+
+#: Shortcodes/Insert_Register_Form.php:33 html/OneClickInstall.php:6
+#: html/OneClickInstall.php:68
+msgid "Register"
+msgstr "Registreren"
+
+#: Shortcodes/Insert_Register_Form.php:158
+msgid "Thanks for confirming your e-mail address!"
+msgstr "Bedankt voor het bevestigen van je e-mailadres!"
+
+#: Shortcodes/Insert_Register_Form.php:159
+msgid ""
+"The confirmation number provided was incorrect. Please contact the site "
+"administrator for assistance."
+msgstr ""
+"Het ingevoerde bevestigingsnummer is verkeerd. Contacteer alsjeblieft de "
+"site admin voor hulp."
+
+#: Shortcodes/Insert_User_Profile.php:21
+msgid "Please select a valid user profile"
+msgstr "Selecteer alsjeblieft een geldig gebruikersprofiel"
+
+#: Shortcodes/Insert_User_Search.php:37
+msgid ""
+"search_fields was left blank. Please make sure to include that attribute "
+"inside your shortcode."
+msgstr ""
+"search-fields was leeg gelaten. Zorg er alsjeblieft voor om deze in je "
+"shortcode toe te voegen."
+
+#: Shortcodes/Privilege_Level.php:39
+msgid "This content is only for non-logged in users"
+msgstr "Deze inhoud is alleen voor niet ingelogde gebruikers"
+
+#: Shortcodes/Privilege_Level.php:60
+msgid "Sorry, your account isn't a high enough level to access this content."
+msgstr ""
+"Sorry, je account niveau is niet hoog genoeg om toegang te krijgen tot deze "
+"inhoud."
+
+#: Shortcodes/Privilege_Level.php:63
+msgid "Sorry, your account level is too high to access this content."
+msgstr ""
+"Sorry, je account niveau is te hoog om toegang te krijgen tot deze inhoud."
+
+#: Shortcodes/Privilege_Level.php:64
+msgid "Sorry, your account isn't the correct level to acces this content."
+msgstr ""
+"Sorry, je account is niet het juiste niveau om toegang te krijgen tot deze "
+"inhoud."
+
+#: html/AdminHeader.php:2
+msgid "Front End Only Users Settings"
+msgstr "Front End Only Users Instellingen"
+
+#: html/CatalogueDetails.php:9 html/FieldDetails.php:8
+#: html/PaymentDetails.php:8 html/UserDetails.php:168
+msgid "Back"
+msgstr "Terug"
+
+#: html/CatalogueDetails.php:18 html/FieldDetails.php:16
+#: html/FieldsPage.php:187 html/LevelsPage.php:39 html/LevelsPage.php:47
+#: html/LevelsPage.php:102
+msgid "Name"
+msgstr "Naam"
+
+#: html/CatalogueDetails.php:20
+msgid ""
+"The name of the catalogue. This is for your own internal use, and to insert "
+"the catalogue into a page or post."
+msgstr ""
+"De naam van de catalogus. Dit is voor je eigen gebruik en om de catalogus in "
+"te voegen in je pagina of post."
+
+#: html/CatalogueDetails.php:23 html/FieldDetails.php:38 html/FieldsPage.php:65
+#: html/FieldsPage.php:99 html/FieldsPage.php:209
+msgid "Description"
+msgstr "Omschrijving"
+
+#: html/CatalogueDetails.php:25
+msgid "The description of the catalogue. What products are included in this?"
+msgstr ""
+"De omschrijving van je catalogus. Welke producten maken hier onderdeel van "
+"uit?"
+
+#: html/CatalogueDetails.php:28
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+#: html/CatalogueDetails.php:30
+msgid "Custom CSS styles that should be applied to this catalogue."
+msgstr "Custom CSS stijlen die moeten worden toegepast op deze catalogus."
+
+#: html/CatalogueDetails.php:34
+msgid "Edit Catalogue"
+msgstr "Catalogus aanpassen"
+
+#: html/CatalogueDetails.php:48
+msgid "Products"
+msgstr "Producten"
+
+#: html/CatalogueDetails.php:53 html/CatalogueDetails.php:103
+msgid "View All"
+msgstr "Alles weergeven"
+
+#: html/CatalogueDetails.php:88 html/CatalogueDetails.php:138
+msgid "Add to Catalogue"
+msgstr "Voeg toe aan catalogus"
+
+#: html/CatalogueDetails.php:98
+msgid "Categories"
+msgstr "Categorieën"
+
+#: html/CatalogueDetails.php:161 html/CatalogueDetails.php:168
+msgid "Delete?"
+msgstr "Verwijderen?"
+
+#: html/CatalogueDetails.php:162 html/CatalogueDetails.php:169
+msgid "Catalogue Item Name"
+msgstr "Naam van Catalogus Item"
+
+#: html/CatalogueDetails.php:163 html/CatalogueDetails.php:170
+msgid "Type of Catalogue Item"
+msgstr "Type van Catalogus Item"
+
+#: html/CatalogueDetails.php:179 html/FieldsPage.php:28 html/FieldsPage.php:128
+#: html/FieldsPage.php:152 html/LevelsPage.php:22 html/LevelsPage.php:64
+#: html/LevelsPage.php:78 html/PaymentsPage.php:28 html/PaymentsPage.php:142
+#: html/UsersPage.php:66 html/UsersPage.php:233
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: html/DashboardPage.php:9
+msgid "Full Version"
+msgstr "Volledige Versie"
+
+#: html/DashboardPage.php:11
+msgid "Upgrade to the full version "
+msgstr "Upgrade naar de volledige versie "
+
+#: html/DashboardPage.php:11
+msgid ""
+"to take advantage of all the available features of the Front-End Users for "
+"Wordpress!"
+msgstr ""
+"om gebruikt te kunnen maken van alle aanwezige eigenschappen van de Front-"
+"End Only Users voor Wordpress!"
+
+#: html/DashboardPage.php:15
+msgid "Product Key"
+msgstr "Productsleutel"
+
+#: html/DashboardPage.php:18
+msgid "Upgrade"
+msgstr "Upgraden"
+
+#: html/DashboardPage.php:31
+msgid "Thank You!"
+msgstr "Dankjewel!"
+
+#: html/DashboardPage.php:39
+msgid "Thanks for installing Front-End Only Users."
+msgstr "Bedankt voor het installeren van Front-End Only Users."
+
+#: html/DashboardPage.php:39
+msgid "Follow us on Facebook"
+msgstr "Volg ons op Facebook"
+
+#: html/DashboardPage.php:39
+msgid "to suggest new features or hear about upcoming ones!"
+msgstr ""
+"om nieuwe eigenschappen aan te dragen of om te horen over nieuwe aankomende "
+"eigenschappen!"
+
+#: html/DashboardPage.php:40
+msgid "Thanks for upgrading to version 2.6.13!"
+msgstr "Bedankt voor het upgraden naar versie 2.6.13!"
+
+#: html/DashboardPage.php:40
+msgid "Please rate our plugin"
+msgstr "Beoordeel alsjeblieft onze plugin"
+
+#: html/DashboardPage.php:40
+msgid "if you find Front-End Only Users useful!"
+msgstr "als je Front-End Only Users bruikbaar vindt!"
+
+#: html/DashboardPage.php:68
+msgid "Support Options:"
+msgstr "Ondersteuningsopties:"
+
+#: html/DashboardPage.php:161
+msgid "What you get by upgrading:"
+msgstr "Wat krijg je door te upgraden:"
+
+#: html/DashboardPage.php:203
+msgid "Unapproved Users"
+msgstr "Niet goedgekeurde Gebruikers"
+
+#: html/DashboardPage.php:205
+msgid "Recent Users"
+msgstr "Recente Gebruikers"
+
+#: html/DashboardPage.php:211
+msgid "Recent"
+msgstr "Recente"
+
+#: html/FieldDetails.php:18 html/FieldsPage.php:189
+msgid "The name of the field your users will see."
+msgstr "De naam van het veld dat de gebruikers zullen zien."
+
+#: html/FieldDetails.php:21 html/FieldsPage.php:58 html/FieldsPage.php:92
+#: html/FieldsPage.php:192
+msgid "Type"
+msgstr "Type"
+
+#: html/FieldDetails.php:35 html/FieldsPage.php:206
+msgid ""
+"The input method for the field and type of data that the field will hold."
+msgstr ""
+"De invoer methode voor het veld en het data type die het veld zal hebben."
+
+#: html/FieldDetails.php:40 html/FieldsPage.php:211
+msgid ""
+"The description of the field, which the user will see as the instruction for "
+"the field."
+msgstr ""
+"De omschrijving van het veld, welke de gebruiker zal zien als instructie "
+"voor het veld."
+
+#: html/FieldDetails.php:43 html/FieldsPage.php:214
+msgid "Input Values"
+msgstr "Invoer Waardes"
+
+#: html/FieldDetails.php:45 html/FieldsPage.php:216
+msgid ""
+"A comma-separated list of acceptable input values for this field. These "
+"values will be the options for select, checkbox, and radio inputs. All "
+"values will be accepted if left blank."
+msgstr ""
+"Een door komma's gescheiden lijst van acceptabele invoerwaardes voor dit "
+"veld. Deze waardes worden de opties voor de select, checkbox en radio "
+"knoppen invoer velden. Wanneer het leeg wordt gelaten, worden alle waardes "
+"geaccepteerd."
+
+#: html/FieldDetails.php:48 html/FieldsPage.php:219
+msgid "Show in Admin Table?"
+msgstr "Wil je dit laten zien in de Admin Tabel?"
+
+#: html/FieldDetails.php:51 html/FieldsPage.php:222
+msgid "Should this field appear in the users table in the admin area?"
+msgstr ""
+"Moet dit veld verschijnen in de gebruikers tabel in het admin gedeelte?"
+
+#: html/FieldDetails.php:54 html/FieldsPage.php:225
+msgid "Show in User Profile"
+msgstr "Laat zien in het Gebruikers Profiel"
+
+#: html/FieldDetails.php:57 html/FieldsPage.php:228
+msgid "Should this field appear in users' profiles in the front-end?"
+msgstr "Moet dit veld verschijnen in de gebruikersprofielen in de front-end?"
+
+#: html/FieldDetails.php:60 html/FieldsPage.php:72 html/FieldsPage.php:106
+#: html/FieldsPage.php:231
+msgid "Required?"
+msgstr "Is dit nodig?"
+
+#: html/FieldDetails.php:63 html/FieldsPage.php:234
+msgid "Area users required to fill out this field?"
+msgstr "Zijn er gebruikers van dit gebied nodig om dit veld in te vullen?"
+
+#: html/FieldDetails.php:66
+msgid "Edit Field"
+msgstr "Veld aanpassen"
+
+#: html/FieldsPage.php:27 html/FieldsPage.php:151 html/LevelsPage.php:21
+#: html/LevelsPage.php:77 html/PaymentsPage.php:27 html/UsersPage.php:65
+msgid "Bulk Actions"
+msgstr "Massa Acties"
+
+#: html/FieldsPage.php:30 html/FieldsPage.php:154 html/LevelsPage.php:24
+#: html/LevelsPage.php:80 html/PaymentsPage.php:30 html/UsersPage.php:78
+msgid "Apply"
+msgstr "Is van toepassing"
+
+#: html/FieldsPage.php:33 html/FieldsPage.php:157 html/PaymentsPage.php:33
+#: html/StatisticsPage.php:25 html/StatisticsPage.php:130
+#: html/StatisticsPage.php:163 html/StatisticsPage.php:266
+#: html/UsersPage.php:264
+msgid "items"
+msgstr "items"
+
+#: html/FieldsPage.php:37 html/FieldsPage.php:161 html/PaymentsPage.php:37
+#: html/StatisticsDetails.php:99 html/StatisticsPage.php:29
+#: html/StatisticsPage.php:134 html/StatisticsPage.php:167
+#: html/StatisticsPage.php:270 html/UserDetails.php:39 html/UserDetails.php:154
+#: html/UsersPage.php:86 html/UsersPage.php:268
+msgid "of"
+msgstr "van"
+
+#: html/FieldsPage.php:51 html/FieldsPage.php:85
+msgid "Field Name"
+msgstr "Veld Naam"
+
+#: html/FieldsPage.php:180 html/FieldsPage.php:237
+msgid "Add New Field"
+msgstr "Voeg een Nieuw Veld toe"
+
+#: html/LevelsPage.php:40 html/LevelsPage.php:48
+msgid "User Count"
+msgstr "Hoeveelheid gebruikers"
+
+#: html/LevelsPage.php:41 html/LevelsPage.php:49 html/LevelsPage.php:107
+msgid "Privilege Level"
+msgstr "Bevoorrecht Niveau"
+
+#: html/LevelsPage.php:95 html/LevelsPage.php:118
+msgid "Add New Level"
+msgstr "Voeg een Nieuw Niveau toe"
+
+#: html/LevelsPage.php:104
+msgid "The name of the level you will assign to a group of users."
+msgstr "De naam van het niveau dat je wilt toevoegen aan de gebruikersgroep."
+
+#: html/LevelsPage.php:115
+msgid ""
+"The privilege level for this user level. Privilege levels can affect who can "
+"see what content. Inserting a new level will increase the privilege level of "
+"all above levels."
+msgstr ""
+"Het bevoorrechte niveau voor dit gebruikersniveau. Bevoorrechte niveaus "
+"kunnen beïnvloeden wie de inhoud kan zien. Door een nieuw niveau toe te "
+"voegen wordt het bevoorrechte niveau van alle niveaus daarboven verhoogd."
+
+#: html/LevelsPage.php:128 html/StatisticsPage.php:315 html/UsersPage.php:374
+#: html/UsersPage.php:393
+msgid "Full Version Required!"
+msgstr "Hiervoor is de Volledige Versie nodig!"
+
+#: html/LevelsPage.php:130 html/UsersPage.php:376 html/UsersPage.php:395
+msgid "The full version of Front-End Only Users is required to use tags."
+msgstr ""
+"De volledige versie van Front-End Only Users is nodig om deze tags te kunnen "
+"gebruiken."
+
+#: html/LevelsPage.php:130 html/StatisticsPage.php:317 html/UsersPage.php:376
+#: html/UsersPage.php:395
+msgid " Please upgrade to unlock this page!"
+msgstr " Upgrade alsjeblieft om deze pagina te kunnen ontsluiten!"
+
+#: html/MainScreen.php:3
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: html/MainScreen.php:4
+msgid "Users"
+msgstr "Gebruikers"
+
+#: html/MainScreen.php:5
+msgid "Statistics"
+msgstr "Statistiek"
+
+#: html/MainScreen.php:6
+msgid "Fields"
+msgstr "Velden"
+
+#: html/MainScreen.php:7
+msgid "Levels"
+msgstr "Niveaus"
+
+#: html/MainScreen.php:8
+msgid "Options"
+msgstr "Opties"
+
+#: html/MainScreen.php:9
+msgid "Emails"
+msgstr "Emails"
+
+#: html/MainScreen.php:10
+msgid "Payments"
+msgstr "Betalingen"
+
+#: html/OneClickInstall.php:5 html/OneClickInstall.php:6
+#: html/OneClickInstall.php:7 html/OneClickInstall.php:8
+#: html/OneClickInstall.php:9 html/OneClickInstall.php:11
+#: html/OneClickInstall.php:12 html/OneClickInstall.php:13
+#: html/OneClickInstall.php:14 html/OneClickInstall.php:15
+#: html/OneClickInstall.php:16
+msgid "Newly Created"
+msgstr "Nieuw Aangemaakt"
+
+#: html/OneClickInstall.php:9 html/OneClickInstall.php:104
+msgid "Forgot Password"
+msgstr "Wachtwoord Vergeten"
+
+#: html/OneClickInstall.php:10
+msgid "Confirm Forgot Password"
+msgstr "Bevestig Vergeten Wachtwoord"
+
+#: html/OneClickInstall.php:10
+msgid "New"
+msgstr "Nieuwe"
+
+#: html/OneClickInstall.php:11 html/OneClickInstall.php:128
+msgid "Change Password"
+msgstr "Wachtwoord Aanpassen"
+
+#: html/OneClickInstall.php:12
+msgid "Login-Logout Toggle"
+msgstr "Inloggen-Uitloggen Knop"
+
+#: html/OneClickInstall.php:13
+msgid "User Profile"
+msgstr "Gebruikersprofiel"
+
+#: html/OneClickInstall.php:14
+msgid "User Search"
+msgstr "Gebruikers Doorzoeken"
+
+#: html/OneClickInstall.php:15
+msgid "User List"
+msgstr "Gebruikerslijst"
+
+#: html/OneClickInstall.php:16
+msgid "User Data"
+msgstr "Gebruikersdata"
+
+#: html/OneClickInstall.php:116
+msgid "Confirm Forgotten Password"
+msgstr "Bevestig Vergeten Wachtwoord"
+
+#: html/OneClickInstall.php:140
+msgid "Login-Logout Toggle (Optional)"
+msgstr "Inloggen-Uitloggen Knop (Optioneel)"
+
+#: html/OneClickInstall.php:152
+msgid "User Profile (Optional)"
+msgstr "Gebruikersprofiel (Optioneel)"
+
+#: html/OneClickInstall.php:164
+msgid "User Search (Optional)"
+msgstr "Gebruikers Doorzoeken (Optioneel)"
+
+#: html/OneClickInstall.php:176
+msgid "User List (Optional)"
+msgstr "Gebruikerslijst (Optioneel)"
+
+#: html/OneClickInstall.php:188
+msgid "User Data (Optional)"
+msgstr "Gebruikersdata (Optioneel)"
+
+#: html/OptionsPage.php:332
+msgid "Australian Dollar"
+msgstr "Australische Dollar"
+
+#: html/OptionsPage.php:333
+msgid "Brazilian Real"
+msgstr "Braziliaanse Real"
+
+#: html/OptionsPage.php:334
+msgid "Canadian Dollar"
+msgstr "Canadese Dollar"
+
+#: html/OptionsPage.php:335
+msgid "Czech Koruna"
+msgstr "Tsjechische Kroon"
+
+#: html/OptionsPage.php:336
+msgid "Danish Krone"
+msgstr "Deense Kroon"
+
+#: html/OptionsPage.php:337
+msgid "Euro"
+msgstr "Euro"
+
+#: html/OptionsPage.php:338
+msgid "Hong Kong Dollar"
+msgstr "Hong Kong Dollar"
+
+#: html/OptionsPage.php:339
+msgid "Hungarian Forint"
+msgstr "Hongaarse Forint"
+
+#: html/OptionsPage.php:340
+msgid "Israeli New Sheqel"
+msgstr "Nieuwe Israëlische Shekel"
+
+#: html/OptionsPage.php:341
+msgid "Japanese Yen"
+msgstr "Japanse Yen"
+
+#: html/OptionsPage.php:342
+msgid "Malaysian Ringgit"
+msgstr "Maleisische Ringgit"
+
+#: html/OptionsPage.php:343
+msgid "Mexican Peso"
+msgstr "Mexicaanse Peso"
+
+#: html/OptionsPage.php:344
+msgid "Norwegian Krone"
+msgstr "Noorse Kroon"
+
+#: html/OptionsPage.php:345
+msgid "New Zealand Dollar"
+msgstr "Nieuw-Zeelandse Dollar"
+
+#: html/OptionsPage.php:346
+msgid "Philippine Peso"
+msgstr "Filipijnse Peso"
+
+#: html/OptionsPage.php:347
+msgid "Polish Zloty"
+msgstr "Poolse Zloty"
+
+#: html/OptionsPage.php:348
+msgid "Pound Sterling"
+msgstr "Engelse Ponden"
+
+#: html/OptionsPage.php:349
+msgid "Russian Ruble"
+msgstr "Russische Roebel"
+
+#: html/OptionsPage.php:350
+msgid "Singapore Dollar"
+msgstr "Singapore Dollar"
+
+#: html/OptionsPage.php:351
+msgid "Swedish Krona"
+msgstr "Zweedse Kroon"
+
+#: html/OptionsPage.php:352
+msgid "Swiss Franc"
+msgstr "Zwitserse Frank"
+
+#: html/OptionsPage.php:353
+msgid "Taiwan New Dollar"
+msgstr "Nieuwe Taiwanese Dollar"
+
+#: html/OptionsPage.php:354
+msgid "Thai Baht"
+msgstr "Thaise Baht"
+
+#: html/OptionsPage.php:355
+msgid "Turkish Lira"
+msgstr "Turkse Lira"
+
+#: html/OptionsPage.php:356
+msgid "U.S. Dollar"
+msgstr "Amerikaanse Dollar"
+
+#: html/PaymentDetails.php:16
+msgid "User ID"
+msgstr "Gebruikers ID"
+
+#: html/PaymentDetails.php:18
+msgid "The user ID of the person who made the payment."
+msgstr "De gebruikers ID van de persoon die de betaling heeft gemaakt."
+
+#: html/PaymentDetails.php:23
+msgid "The username of the person who made the payment."
+msgstr "De gebruikersnaam van de persoon die de betaling heeft gemaakt."
+
+#: html/PaymentDetails.php:26
+msgid "Payer ID"
+msgstr "Betaler ID"
+
+#: html/PaymentDetails.php:28
+msgid "The PayPal payer ID of the person who made the payment."
+msgstr "De PayPal betaler ID vande persoon die de betaling heeft gemaakt."
+
+#: html/PaymentDetails.php:31
+msgid "PayPal Receipt Number"
+msgstr "PayPal Transactie Nummer"
+
+#: html/PaymentDetails.php:33
+msgid "The PayPal receipt number of this payment."
+msgstr "Het Paypal transactie nummer voor deze betaling."
+
+#: html/PaymentDetails.php:36 html/PaymentsPage.php:58 html/PaymentsPage.php:99
+msgid "Payment Date"
+msgstr "Betalingsdatum"
+
+#: html/PaymentDetails.php:38
+msgid "The date upon which the payment was made."
+msgstr "De datum waarop de betaling is gemaakt."
+
+#: html/PaymentDetails.php:41
+msgid "Next Payment Date"
+msgstr "Volgende Betalingsdatum"
+
+#: html/PaymentDetails.php:43
+msgid ""
+"The next date at which a payment is expected, if payments are recurring."
+msgstr ""
+"De volgende datum waarop de betaling wordt verwacht, als de betalingen "
+"periodiek zijn."
+
+#: html/PaymentDetails.php:46
+msgid "Payment Amount"
+msgstr "Betalings Hoeveelheid"
+
+#: html/PaymentDetails.php:48
+msgid "The amount that was received in this payment."
+msgstr "De hoeveelheid die ontvangen was in deze betaling."
+
+#: html/PaymentDetails.php:53
+msgid "The discount code for this payment, if any."
+msgstr "De kortingscode voor deze betaling, indien aanwezig."
+
+#: html/PaymentDetails.php:56
+msgid "Edit Payment"
+msgstr "Wijzig Betaling"
+
+#: html/PaymentsPage.php:65 html/PaymentsPage.php:106
+msgid "Amount"
+msgstr "Hoeveelheid"
+
+#: html/PaymentsPage.php:72 html/PaymentsPage.php:113
+msgid "Next Payment"
+msgstr "Volgende Betaling"
+
+#: html/StatisticsDetails.php:19
+msgid "Recent Clicks on"
+msgstr "Recent geklikt op"
+
+#: html/StatisticsDetails.php:95 html/UserDetails.php:35
+#: html/UserDetails.php:150
+msgid "events"
+msgstr "gebeurtenissen"
+
+#: html/StatisticsPage.php:42 html/StatisticsPage.php:75
+msgid "Page Title/Link"
+msgstr "Pagina Titel/Link"
+
+#: html/StatisticsPage.php:49 html/StatisticsPage.php:82
+msgid "Link Type"
+msgstr "Link Type"
+
+#: html/StatisticsPage.php:56 html/StatisticsPage.php:89
+msgid "Total Clicks"
+msgstr "Totale aantal klikken"
+
+#: html/StatisticsPage.php:63 html/StatisticsPage.php:96
+msgid "Last Click"
+msgstr "Laatst geklikt op"
+
+#: html/StatisticsPage.php:187 html/StatisticsPage.php:220
+msgid "Last Login"
+msgstr "Laatste inlog"
+
+#: html/StatisticsPage.php:194 html/StatisticsPage.php:227
+msgid "Total Logins"
+msgstr "Totale aantal inlogs"
+
+#: html/StatisticsPage.php:201 html/StatisticsPage.php:234
+msgid "Joined Date"
+msgstr "Toetredingsdatum"
+
+#: html/StatisticsPage.php:287
+msgid "Summary Statistics"
+msgstr "Samenvatting Statistiek"
+
+#: html/StatisticsPage.php:317
+msgid ""
+"The full version of Front-End Only Users is required to view statistics."
+msgstr ""
+"De volledige versie van Front-End Only Users is nodig om de statistiek in te "
+"zien."
+
+#: html/UserDetails.php:32
+msgid "Recent User Activity"
+msgstr "Recente Gebruikersactiviteiten"
+
+#: html/UserDetails.php:130
+msgid ""
+"The full version of Front-End Only Users is required to view user activity."
+msgstr ""
+"De volledige versie van Front-End Only Users is nodig om de "
+"gebruikersactiviteiten in te zien."
+
+#: html/UserDetails.php:132
+msgid " Please upgrade to view this information!"
+msgstr " Upgrade alsjeblieft om deze informatie in te zien!"
+
+#: html/UserDetails.php:169
+msgid "Edit User"
+msgstr "Gebruiker Aanpassen"
+
+#: html/UserDetails.php:170
+msgid "Delete User"
+msgstr "Gebruiker Verwijderen"
+
+#: html/UserDetails.php:171
+msgid "Member since "
+msgstr "Lid sinds "
+
+#: html/UserDetails.php:188 html/UsersPage.php:317
+msgid "Admin Approved"
+msgstr "Door Admin Goedgekeurd"
+
+#: html/UserDetails.php:193
+msgid "Email Confirmed"
+msgstr "Email Bevestigd"
+
+#: html/UserDetails.php:198
+msgid "Membership Fees Paid"
+msgstr "Lidmaatschapskosten Betaald"
+
+#: html/UserDetails.php:203
+msgid "Account Expiry Date"
+msgstr "Verloopdatum Account"
+
+#: html/UserDetails.php:246
+msgid "Edit User "
+msgstr "Gebruiker Aanpassen "
+
+#: html/UsersPage.php:67
+msgid "Approve"
+msgstr "Goedkeuren"
+
+#: html/UsersPage.php:79
+msgid "Delete All Users"
+msgstr "Verwijder Alle Gebruikers"
+
+#: html/UsersPage.php:82
+msgid "users"
+msgstr "gebruikers"
+
+#: html/UsersPage.php:286 html/UsersPage.php:352
+msgid "Add New User"
+msgstr "Voeg Nieuwe Gebruiker toe"
+
+#: html/UsersPage.php:309
+msgid "User Level"
+msgstr "Gebruikersniveau"
+
+#: html/UsersPage.php:357
+msgid "Add Users from Spreadsheet"
+msgstr "Voeg Gebruikers toe van Spreadsheet"
+
+#: html/UsersPage.php:364
+msgid "Spreadhseet Containing Users"
+msgstr "Spreadsheet Bevat Gebruikers"
+
+#: html/UsersPage.php:366
+msgid ""
+"The spreadsheet containing all of the users you wish to add. Make sure that "
+"the column title names are the same as the field names for users (ex: "
+"Username, Email, First Name, etc.)."
+msgstr ""
+"De spreadsheet die alle gebruikers bevat die je wilt toevoegen. Zorg ervoor "
+"dat de kolomnamen hetzelfde zijn als de veldnamen voor de gebruikers "
+"(bijvoorbeeld: Usernaam, Email, First Name, etc.)."
+
+#: html/UsersPage.php:368
+msgid "Add New Users"
+msgstr "Voeg Nieuwe Gebruikers toe"
+
+#: html/UsersPage.php:381
+msgid "Export Users to Spreadsheet"
+msgstr "Exporteer Gebruikers naar Spreadsheet"
+
+#: html/UsersPage.php:387
+msgid "Downloads all users currently in the database to Excel"
+msgstr "Download alle huidige gebruikers uit de database naar Excel"
+
+#. Plugin Name of the plugin/theme
+msgid "Front-End Users Plugin"
+msgstr "Front-End Users Plugin"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.etoilewebdesign.com/front-end-users-plugin/"
+msgstr "http://www.etoilewebdesign.com/front-end-users-plugin/"
+
+#. Description of the plugin/theme
+msgid ""
+"A plugin that creates a separate set of users that are front-end only users, "
+"who do not appear in the default WordPress users area, and allows content to "
+"be tailored based on user profiles"
+msgstr ""
+"Een plugin die een aparte set van gebruikers aanmaakt die alleen in de front-"
+"end bestaan. Ze verschijnen niet in de reguliere Wordpress gebruikers back-"
+"end. Ook kan met de plugin de inhoud worden aangepast, gebaseerd op de "
+"gebruikersprofielen."
+
+#. Author of the plugin/theme
+msgid "Etoile Web Design"
+msgstr "Etoile Web Design"
+
+#. Author URI of the plugin/theme
+msgid "http://www.EtoileWebDesign.com/"
+msgstr "http://www.EtoileWebDesign.com/"

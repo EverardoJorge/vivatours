@@ -1,0 +1,1443 @@
+# Copyright (C) 2016 Front-End Users Plugin
+# This file is distributed under the same license as the Front-End Users Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Front-End Users Plugin 2.8.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/front-end-only-"
+"users\n"
+"POT-Creation-Date: 2016-04-01 22:34:53+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-01-02 17:50+0100\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.5\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: it_IT\n"
+
+#: Functions/EWD_FEUP_Add_Captcha.php:11
+msgid "Image Number: "
+msgstr "Numero dell'immagine:"
+
+#: Functions/EWD_FEUP_Full_Page_Restriction.php:5
+#: Functions/EWD_FEUP_Full_Page_Restriction.php:12
+msgid "Front-End Users"
+msgstr "Utenti lato Frontend"
+
+#: Functions/EWD_FEUP_Full_Page_Restriction.php:88 html/WC_ProductPage.php:5
+msgid "Please log in to access this content."
+msgstr "Per accedere a questo contenuto è necessario eseguire il login."
+
+#: Functions/EWD_FEUP_Styling.php:5
+msgid "Styles have been succesfully reset."
+msgstr "Stili reimpostati correttamente"
+
+#: Functions/EWD_FEUP_Widgets.php:10
+msgid "FEUP Login/Logout Toggle"
+msgstr "Login/Logout modale FEUP"
+
+#: Functions/EWD_FEUP_Widgets.php:11
+msgid "Insert a login form or logout button, depending on login status"
+msgstr ""
+"Inserisci un modulo di login o un pulsante di logout, a seconda dello status "
+"di accesso"
+
+#: Functions/EWD_FEUP_Widgets.php:36
+msgid "Form Heading"
+msgstr "Titolo del Modulo"
+
+#: Functions/EWD_FEUP_Widgets.php:37
+msgid "Login Redirect Page"
+msgstr "Pagina di Redirect da Login"
+
+#: Functions/EWD_FEUP_Widgets.php:38
+msgid "Logout Redirect Page"
+msgstr "Pagina di Redirect da Logout"
+
+#: Functions/EWD_FEUP_Widgets.php:41
+msgid "Form Heading:"
+msgstr "Titolo del Modulo:"
+
+#: Functions/EWD_FEUP_Widgets.php:45
+msgid "Login Redirect Page:"
+msgstr "Pagina di Redirect da Login:"
+
+#: Functions/EWD_FEUP_Widgets.php:49
+msgid "Logout Redirect Page:"
+msgstr "Pagina di Redirect da Logout:"
+
+#: Functions/EWD_FEUP_Widgets.php:80
+msgid "FEUP User Data"
+msgstr "Dati Utente FEUP"
+
+#: Functions/EWD_FEUP_Widgets.php:81
+msgid "Insert a piece of user data, along with accompanying text."
+msgstr "Inserisci dei dati utente e del testo descrittivo."
+
+#: Functions/EWD_FEUP_Widgets.php:107 Shortcodes/Insert_Account_Payment.php:60
+#: Shortcodes/Insert_Edit_Account.php:24 Shortcodes/Insert_Login_Form.php:24
+#: Shortcodes/Insert_Register_Form.php:18
+#: Shortcodes/Insert_Register_Form.php:22 html/PaymentDetails.php:21
+#: html/PaymentsPage.php:51 html/PaymentsPage.php:92
+#: html/StatisticsPage.php:303 html/StatisticsPage.php:336
+#: html/UsersPage.php:301
+msgid "Username"
+msgstr "Nome Utente"
+
+#: Functions/EWD_FEUP_Widgets.php:108 Functions/Initial_Data.php:16
+#: Functions/Initial_Data.php:17 Functions/Initial_Data.php:18
+#: Functions/Initial_Data.php:26 Functions/Initial_Data.php:27
+#: Functions/Initial_Data.php:28
+msgid "Yes"
+msgstr "Sì"
+
+#: Functions/EWD_FEUP_Widgets.php:113
+msgid "Field to Display:"
+msgstr "Campo da Visualizzare:"
+
+#: Functions/EWD_FEUP_Widgets.php:126
+msgid "Plain Text:"
+msgstr "Testo Semplice:"
+
+#: Functions/EWD_FEUP_Widgets.php:133
+msgid "Before Text:"
+msgstr "Prima del Testo:"
+
+#: Functions/EWD_FEUP_Widgets.php:137
+msgid "After Text:"
+msgstr "Dopo il Testo:"
+
+#: Functions/Initial_Data.php:13
+msgid "First Name"
+msgstr "Nome"
+
+#: Functions/Initial_Data.php:14
+msgid "Your first name."
+msgstr "Il tuo nome."
+
+#: Functions/Initial_Data.php:23
+msgid "Last Name"
+msgstr "Cognome"
+
+#: Functions/Initial_Data.php:24
+msgid "Your last name."
+msgstr "Il tuo cognome."
+
+#: Functions/Initial_Data.php:34
+msgid "Regular User"
+msgstr "Utente Base"
+
+#: Functions/Prepare_Data_For_Insertion.php:31
+msgid "The Captcha text did not match the image"
+msgstr "Il testo inserito non corrisponde a quello visualizzato"
+
+#: Functions/Prepare_Data_For_Insertion.php:41
+msgid "You are currently logged in. Please log out to create a new account."
+msgstr ""
+"Login eseguito. Per creare un nuovo utente è necessario fare il logout."
+
+#: Functions/Prepare_Data_For_Insertion.php:95
+msgid "The passwords you entered did not match."
+msgstr "Le password inserite non corrispondono."
+
+#: Functions/Prepare_Data_For_Insertion.php:97
+msgid "The password entered was too short."
+msgstr "La password inserita è troppo corta."
+
+#: Functions/Prepare_Data_For_Insertion.php:99
+msgid ""
+"There is already a user with that Username, please select a different one."
+msgstr "Esiste già un utente con questo Username. Sceglietene uno diverso."
+
+#: Functions/Prepare_Data_For_Insertion.php:100
+msgid "Username must be at least 3 characters."
+msgstr "Il nome utente dev’essere lungo almeno 3 caratteri."
+
+#: Functions/Prepare_Data_For_Insertion.php:129
+msgid ""
+"There is already an account with that Username. Please select a different "
+"one."
+msgstr ""
+"Esiste già un account con lo stesso nome utente. Sceglietene uno diverso."
+
+#: Functions/Prepare_Data_For_Insertion.php:145
+msgid "Your account has been succesfully created."
+msgstr "Account creato correttamente."
+
+#: Functions/Prepare_Data_For_Insertion.php:302
+#: Functions/Prepare_Data_For_Insertion.php:370
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr ""
+"Il file caricato è superiore alla direttiva upload_max_filesize in php.ini"
+
+#: Functions/Prepare_Data_For_Insertion.php:305
+#: Functions/Prepare_Data_For_Insertion.php:373
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form"
+msgstr ""
+"Il file caricato è superiore alla direttiva MAX_FILE_SIZE specificato nel "
+"modulo HTML"
+
+#: Functions/Prepare_Data_For_Insertion.php:308
+#: Functions/Prepare_Data_For_Insertion.php:376
+msgid "The uploaded file was only partially uploaded"
+msgstr "Il file è stato caricato solo parzialmente"
+
+#: Functions/Prepare_Data_For_Insertion.php:311
+#: Functions/Prepare_Data_For_Insertion.php:379
+#: Functions/Prepare_Data_For_Insertion.php:424
+#: Functions/Prepare_Data_For_Insertion.php:426
+msgid "No file was uploaded."
+msgstr "Nessun file caricato."
+
+#: Functions/Prepare_Data_For_Insertion.php:315
+#: Functions/Prepare_Data_For_Insertion.php:383
+msgid "Missing a temporary folder"
+msgstr "Cartella temporanea mancante"
+
+#: Functions/Prepare_Data_For_Insertion.php:318
+#: Functions/Prepare_Data_For_Insertion.php:386
+msgid "Failed to write file to disk"
+msgstr "Impossibile scrivere sul disco"
+
+#: Functions/Prepare_Data_For_Insertion.php:321
+#: Functions/Prepare_Data_For_Insertion.php:389
+msgid "File upload stopped by extension"
+msgstr "Caricamento file annullato per l’estensione"
+
+#: Functions/Prepare_Data_For_Insertion.php:325
+#: Functions/Prepare_Data_For_Insertion.php:393
+msgid "No error code avaiable"
+msgstr "Nessun codice errore disponibile"
+
+#: Functions/Prepare_Data_For_Insertion.php:330
+#: Functions/Prepare_Data_For_Insertion.php:398
+msgid "No file was uploaded here.."
+msgstr "Nessun file caricato qui.."
+
+#: Functions/Prepare_Data_For_Insertion.php:334
+msgid "File must be .csv, .xls or .xlsx"
+msgstr "Il file dev’essere di tipo ..csv, .xls o .xlsx"
+
+#: Functions/Prepare_Data_For_Insertion.php:469
+#: Functions/Prepare_Data_For_Insertion.php:530
+msgid "Users have been successfully deleted."
+msgstr "Utenti eliminati correttamente."
+
+#: Functions/Prepare_Data_For_Insertion.php:498
+msgid "Users have been successfully approved."
+msgstr "Utenti approvati correttamente."
+
+#: Functions/Prepare_Data_For_Insertion.php:513
+msgid "User levels have been successfully updated."
+msgstr "Livelli utente aggiornati correttamente."
+
+#: Functions/Prepare_Data_For_Insertion.php:580
+#: Functions/Prepare_Data_For_Insertion.php:676
+msgid "Fields have been successfully deleted."
+msgstr "Campi eliminati correttamente."
+
+#: Functions/Prepare_Data_For_Insertion.php:633
+msgid "Payments have been successfully deleted."
+msgstr "Pagamenti eliminati correttamente."
+
+#: Functions/Prepare_Data_For_Insertion.php:707
+msgid ""
+"Pages have been successfully added. Check the 'Pages' section to modify them."
+msgstr ""
+"Pagine aggiunte correttamente. Verificate la sezione ‘Pagine’ per "
+"modificarle."
+
+#: Functions/Process_Front_End_Forms.php:38
+msgid "Login successful "
+msgstr "Login eseguito "
+
+#: Functions/Process_Front_End_Forms.php:40
+msgid "Login failed - you need to confirm your e-mail before you can log in"
+msgstr ""
+"Login fallito - dovete confermare la vostra email prima di potere accedere"
+
+#: Functions/Process_Front_End_Forms.php:42
+msgid ""
+"Login failed - an administrator needs to approve your registration before "
+"you can log in"
+msgstr ""
+"Login fallito - la vostra registrazione deve essere approvata da un "
+"amministratore prima di potere accedere"
+
+#: Functions/Process_Front_End_Forms.php:44
+msgid ""
+"Payment required. Please use the form below to pay your membership or "
+"subscription fee."
+msgstr ""
+"Pagamento obbligatorio. Utilizzate il modulo sottostante per il pagamento "
+"della vostra sottoscrizione."
+
+#: Functions/Process_Front_End_Forms.php:46
+msgid "Login failed - incorrect username or password"
+msgstr "Login fallito - nome utente o password non corretti"
+
+#: Functions/Process_Front_End_Forms.php:182
+msgid "Password reset requested from "
+msgstr "Reimpostazione Password richiesta da "
+
+#: Functions/Process_Front_End_Forms.php:188
+msgid "Greetings from "
+msgstr "Saluti da "
+
+#: Functions/Process_Front_End_Forms.php:189
+msgid ""
+"Somebody requested a password reset for you. If this wasn't you, you can "
+"ignore this mail."
+msgstr ""
+"Qualcuno ha richiesto la reimpostazione della password per te. Se non sei "
+"stato tu, puoi tranquillamente ignorare questo messaggio."
+
+#: Functions/Process_Front_End_Forms.php:190
+msgid "If you want to reset the password, please visit "
+msgstr "Se vuoi reimpostare la password vai a "
+
+#: Functions/Process_Front_End_Forms.php:191
+msgid "If the link above doesn't work, go to "
+msgstr "Se il link precedente non funziona, vai a "
+
+#: Functions/Process_Front_End_Forms.php:191
+msgid " and enter your email address and the following code:"
+msgstr " e inserisci il tuo indirizzo email e il codice seguente: "
+
+#: Functions/Process_Front_End_Forms.php:201
+#: Functions/Process_Front_End_Forms.php:210
+msgid ""
+"For completing the password reset procedure, please follow the instructions "
+"in your email."
+msgstr ""
+"Per completare la procedura di reimpostazione della password segui le "
+"istruzioni che abbiamo inviato al tuo indirizzo email."
+
+#: Functions/Process_Front_End_Forms.php:204
+msgid ""
+"There is no user listed for the username/email address you entered in the "
+"database. Please go to the registration page to sign up."
+msgstr ""
+"Non esiste alcun utente associato al nome utente/indirizzo email inserito. "
+"Vai alla pagina di registrazione per accedere."
+
+#: Functions/Process_Front_End_Forms.php:280
+msgid ""
+"Your password has been successfully changed. You can log in using your new "
+"password now."
+msgstr ""
+"Password modificata correttamente. Ora puoi accedere utilizzando la tua "
+"nuova password."
+
+#: Functions/Process_Front_End_Forms.php:282
+msgid ""
+"The password reset code you entered was wrong. You need to get a new one "
+"before using this function again."
+msgstr ""
+"Il codice di reimpostazione della password inserito non è corretto. "
+"Richiedine uno nuovo usando nuovamente questa funzionalità."
+
+#: Functions/Process_Front_End_Forms.php:295
+msgid ""
+"This password reset code is too old and we have disabled it for your "
+"security. Please use the 'I forgot my password' function to acquire a new "
+"one."
+msgstr ""
+"Questo codice di reimpostazione della password è scaduto ed è stato "
+"disabilitato per ragioni di sicurezza. Utilizzate la funzione “Password "
+"dimenticata” per ottenerne uno nuovo."
+
+#: Functions/Process_Front_End_Forms.php:298
+#: Functions/Process_Front_End_Forms.php:307
+msgid ""
+"You need a password reset code to reset your password. Please use the 'I "
+"forgot my password' function first to acquire one."
+msgstr ""
+"Serve un codice di reimpostazione per reimpostare la password. Utilizzate la "
+"funzione “Password dimenticata” per ottenerne uno."
+
+#: Functions/Process_Front_End_Forms.php:301
+msgid "Please select a longer password"
+msgstr "&Egrave; necessario scegliere una password più lunga "
+
+#: Functions/Process_Front_End_Forms.php:304
+msgid "The passwords you entered did not match"
+msgstr "Le password inserite non corrispondono"
+
+#: Functions/Process_Front_End_Forms.php:395
+#: Functions/Process_Front_End_Forms.php:409
+msgid "Login successful"
+msgstr "Login eseguito"
+
+#: Functions/Update_Admin_Databases.php:10
+msgid "User has been successfully created."
+msgstr "Utente creato correttamente."
+
+#: Functions/Update_Admin_Databases.php:44
+msgid "User has been successfully edited."
+msgstr "Utente modificato correttamente."
+
+#: Functions/Update_Admin_Databases.php:63
+msgid "User has been successfully deleted."
+msgstr "Utente eliminato correttamente."
+
+#: Functions/Update_Admin_Databases.php:79
+msgid "There has been a validation error."
+msgstr "C’è stato un errore di validazione."
+
+#: Functions/Update_Admin_Databases.php:114
+msgid "You have a column which is not recognized: "
+msgstr "E’ presente una colonna non riconosciuta: "
+
+#: Functions/Update_Admin_Databases.php:114
+msgid ""
+". <br>Please make sure that the column names match the user field labels "
+"exactly."
+msgstr ""
+". <br>Accertatevi che i nomi delle colonne corrispondano esattamente ai nomi "
+"dei campi."
+
+#: Functions/Update_Admin_Databases.php:119
+msgid ""
+"You have a blank column that has been edited.<br>Please delete that column "
+"and re-upload your spreadsheet."
+msgstr ""
+"E’ presente una colonna vuota che è stata modificata.<br>Eliminate la "
+"colonna e ricaricate il foglio."
+
+#: Functions/Update_Admin_Databases.php:203
+msgid "Users added successfully."
+msgstr "Utenti aggiunti correttamente."
+
+#: Functions/Update_Admin_Databases.php:224
+#: Functions/Update_Admin_Databases.php:274
+msgid "Field has been successfully created."
+msgstr "Campo creato correttamente."
+
+#: Functions/Update_Admin_Databases.php:244
+#: Functions/Update_Admin_Databases.php:290
+msgid "Field has been successfully edited."
+msgstr "Campo modificato correttamente."
+
+#: Functions/Update_Admin_Databases.php:257
+#: Functions/Update_Admin_Databases.php:303
+msgid "Field has been successfully deleted."
+msgstr "Campo eliminato correttamente."
+
+#: Functions/Update_Admin_Databases.php:322
+msgid "Payment has been successfully created."
+msgstr "Pagamento creato correttamente."
+
+#: Functions/Update_Admin_Databases.php:342
+msgid "Payment has been successfully edited."
+msgstr "Pagamento modificato correttamente."
+
+#: Functions/Update_Admin_Databases.php:355
+msgid "Payment has been successfully deleted."
+msgstr "Pagamento eliminato correttamente."
+
+#: Functions/Update_Admin_Databases.php:370
+msgid "Level has been successfully created."
+msgstr "Livello creato correttamente."
+
+#: Functions/Update_Admin_Databases.php:385
+msgid "Level has been successfully edited."
+msgstr "Livello modificato correttamente."
+
+#: Functions/Update_Admin_Databases.php:399
+msgid "Level has been successfully deleted."
+msgstr "Livello eliminato correttamente."
+
+#: Functions/Update_Admin_Databases.php:422
+msgid "Event has been successfully created."
+msgstr "Evento creato correttamente."
+
+#: Functions/Update_Admin_Databases.php:605
+msgid "Options have been succesfully updated."
+msgstr "Opzione aggiornata correttamente."
+
+#: Functions/Update_Admin_Databases.php:659
+msgid "Email options have been succesfully updated."
+msgstr "Opzioni email aggiornate correttamente."
+
+#: Main.php:242 Shortcodes/Insert_Account_Payment.php:62
+msgid "Next"
+msgstr "Prossimo"
+
+#: Main.php:243
+msgid "Close"
+msgstr "Chiudi"
+
+#: Shortcodes/Insert_Account_Payment.php:58
+msgid "Upgrade Account"
+msgstr "Aggiorna Account"
+
+#: Shortcodes/Insert_Account_Payment.php:59
+msgid "Select the level you'd like to upgrade to using the form below:"
+msgstr "Scegli il livello a cui aggiornare utilizzando il modulo sottostante:"
+
+#: Shortcodes/Insert_Account_Payment.php:61
+msgid "Level"
+msgstr "Livello"
+
+#: Shortcodes/Insert_Account_Payment.php:63
+msgid "Have a discount code? Enter it below."
+msgstr "Hai un codice sconto? Inseriscilo sotto."
+
+#: Shortcodes/Insert_Account_Payment.php:64 html/PaymentDetails.php:51
+#: html/PaymentsPage.php:79 html/PaymentsPage.php:120
+msgid "Discount Code"
+msgstr "Codice Sconto"
+
+#: Shortcodes/Insert_Account_Payment.php:65
+msgid "Use Discount Code"
+msgstr "Usa Codice Sconto"
+
+#: Shortcodes/Insert_Confirm_Forgot_Password.php:12
+#: Shortcodes/Insert_Edit_Account.php:22
+#: Shortcodes/Insert_Forgot_Password.php:20 Shortcodes/Insert_Login_Form.php:22
+#: Shortcodes/Insert_Register_Form.php:20
+#: Shortcodes/Insert_Reset_Password.php:20 html/UsersPage.php:298
+msgid "Email"
+msgstr "Email"
+
+#: Shortcodes/Insert_Confirm_Forgot_Password.php:14
+msgid "Reset Code"
+msgstr "Codice di Reimpostazione"
+
+#: Shortcodes/Insert_Confirm_Forgot_Password.php:16
+#: Shortcodes/Insert_Edit_Account.php:26 Shortcodes/Insert_Login_Form.php:26
+#: Shortcodes/Insert_Register_Form.php:24
+#: Shortcodes/Insert_Reset_Password.php:22 html/UsersPage.php:304
+msgid "Password"
+msgstr "Password"
+
+#: Shortcodes/Insert_Confirm_Forgot_Password.php:18
+#: Shortcodes/Insert_Edit_Account.php:28 Shortcodes/Insert_Register_Form.php:26
+#: Shortcodes/Insert_Reset_Password.php:24 html/UsersPage.php:306
+msgid "Repeat Password"
+msgstr "Ripeti Password"
+
+#: Shortcodes/Insert_Confirm_Forgot_Password.php:32
+msgid "Change password"
+msgstr "Modifica Password"
+
+#: Shortcodes/Insert_Edit_Account.php:16 Shortcodes/Insert_Edit_Profile.php:27
+#: Shortcodes/Insert_Reset_Password.php:14 Shortcodes/Insert_User_List.php:12
+#: Shortcodes/Insert_User_Profile.php:36 Shortcodes/Insert_User_Search.php:12
+#: Shortcodes/Privilege_Level.php:13
+msgid "Please"
+msgstr "Prego"
+
+#: Shortcodes/Insert_Edit_Account.php:18 Shortcodes/Insert_Edit_Profile.php:29
+#: Shortcodes/Insert_Reset_Password.php:16 Shortcodes/Insert_User_List.php:14
+#: Shortcodes/Insert_User_Profile.php:38 Shortcodes/Insert_User_Search.php:14
+#: Shortcodes/Privilege_Level.php:15
+msgid "To Continue"
+msgstr "Continuare"
+
+#: Shortcodes/Insert_Edit_Account.php:20 Shortcodes/Insert_Edit_Profile.php:31
+#: Shortcodes/Insert_Login_Form.php:20 Shortcodes/Insert_Login_Form.php:36
+#: Shortcodes/Insert_Reset_Password.php:18 Shortcodes/Insert_User_List.php:16
+#: Shortcodes/Insert_User_Profile.php:40 Shortcodes/Insert_User_Search.php:16
+#: Shortcodes/Privilege_Level.php:17 html/OneClickInstall.php:7
+#: html/OneClickInstall.php:80
+msgid "Login"
+msgstr "Login"
+
+#: Shortcodes/Insert_Edit_Account.php:30 Shortcodes/Insert_Register_Form.php:28
+#: html/UsersPage.php:308
+msgid "Password Strength"
+msgstr "Forza della Password"
+
+#: Shortcodes/Insert_Edit_Account.php:32 Shortcodes/Insert_Edit_Profile.php:25
+#: Shortcodes/Insert_Reset_Password.php:12 Shortcodes/Insert_User_List.php:10
+#: Shortcodes/Insert_User_Profile.php:34 Shortcodes/Insert_User_Search.php:10
+#: Shortcodes/Privilege_Level.php:11
+msgid "You must be logged in to access this page."
+msgstr ""
+"Devi avere eseguito l’accesso per visualizzare il contenuto di questa pagina."
+
+#: Shortcodes/Insert_Edit_Account.php:40
+#: Shortcodes/Insert_Reset_Password.php:32
+msgid "Update Account"
+msgstr "Aggiorna Account"
+
+#: Shortcodes/Insert_Edit_Profile.php:33 html/UserDetails.php:222
+msgid "Current file:"
+msgstr "File selezionato:"
+
+#: Shortcodes/Insert_Edit_Profile.php:35 html/UserDetails.php:225
+msgid "Current Picture - "
+msgstr "Immagine attuale - "
+
+#: Shortcodes/Insert_Edit_Profile.php:37
+msgid "Update Picture - "
+msgstr "Aggiorna immagine - "
+
+#: Shortcodes/Insert_Edit_Profile.php:46 Shortcodes/Insert_User_Profile.php:28
+#: html/OneClickInstall.php:5 html/OneClickInstall.php:56
+msgid "Edit Profile"
+msgstr "Modifica Profilo"
+
+#: Shortcodes/Insert_Forgot_Password.php:15
+msgid "Reset password"
+msgstr "Reimposta password"
+
+#: Shortcodes/Insert_Login_Form.php:80
+msgid ""
+"If you signed up using an external login, you can use the links below to log "
+"in."
+msgstr ""
+"Se ti sei iscritto tramite un accesso esterno, puoi usare i link sottostanti "
+"per accedere."
+
+#: Shortcodes/Insert_Login_Form.php:142 Shortcodes/Insert_Login_Form.php:154
+#: Shortcodes/Insert_Login_Logout_Toggle.php:11 html/OneClickInstall.php:8
+#: html/OneClickInstall.php:92
+msgid "Logout"
+msgstr "Logout"
+
+#: Shortcodes/Insert_Logout.php:11
+msgid "You have been successfully logged out."
+msgstr "Logout eseguito correttamente."
+
+#: Shortcodes/Insert_Register_Form.php:30
+msgid "Too Short"
+msgstr "Troppo corta"
+
+#: Shortcodes/Insert_Register_Form.php:32
+msgid "Thanks for confirming your e-mail address!"
+msgstr "Grazie per avere confermato l’indirizzo email|"
+
+#: Shortcodes/Insert_Register_Form.php:34
+msgid ""
+"The confirmation number provided was incorrect. Please contact the site "
+"administrator for assistance."
+msgstr ""
+"Il codice conferma inserito non era corretto. Contattate l’amministratore "
+"del sito se avete bisogno di assistenza."
+
+#: Shortcodes/Insert_Register_Form.php:64 html/OneClickInstall.php:6
+#: html/OneClickInstall.php:68
+msgid "Register"
+msgstr "Registrazione"
+
+#: Shortcodes/Insert_Register_Form.php:118
+msgid ""
+"No email address from your profile, please hit 'Logout' and use the full "
+"form."
+msgstr ""
+"Nessun indirizzo email presente nel profilo. Premete ’Logout’ e usate il "
+"modulo completo."
+
+#: Shortcodes/Insert_Register_Form.php:129
+msgid "Logging in with "
+msgstr "Accesso con "
+
+#: Shortcodes/Insert_User_Profile.php:42
+msgid "Please select a valid user profile"
+msgstr "Scegli un profilo utente valido"
+
+#: Shortcodes/Insert_User_Search.php:46
+msgid ""
+"search_fields was left blank. Please make sure to include that attribute "
+"inside your shortcode."
+msgstr ""
+"search_fields è vuoto. Accertati di includere l’attributo nel shortcode."
+
+#: Shortcodes/Privilege_Level.php:19
+msgid "This content is only for non-logged in users"
+msgstr "Questo contenuto è solo per utenti che non hanno eseguito l’accesso"
+
+#: Shortcodes/Privilege_Level.php:21
+msgid "Sorry, your account level is too low to access this content."
+msgstr ""
+"Spiacente, il livello del tuo account è tropo basso per accedere a questo "
+"contenuto."
+
+#: Shortcodes/Privilege_Level.php:23
+msgid "Sorry, your account level is too high to access this content."
+msgstr ""
+"Spiacente, il livello del tuo account è tropo alto per accedere a questo "
+"contenuto."
+
+#: Shortcodes/Privilege_Level.php:25
+msgid "Sorry, your account isn't the correct level to access this content."
+msgstr ""
+"Spiacente, il tuo account è del livello sbagliato per l’accesso a questi "
+"contenuti."
+
+#: html/AdminHeader.php:2
+msgid "Front End Only Users Settings"
+msgstr "Impostazioni Front End Only Users"
+
+#: html/CatalogueDetails.php:9 html/FieldDetails.php:8
+#: html/PaymentDetails.php:8 html/UserDetails.php:168
+msgid "Back"
+msgstr "Indietro"
+
+#: html/CatalogueDetails.php:18 html/FieldDetails.php:16
+#: html/FieldsPage.php:191 html/LevelsPage.php:39 html/LevelsPage.php:47
+#: html/LevelsPage.php:102
+msgid "Name"
+msgstr "Nome"
+
+#: html/CatalogueDetails.php:20
+msgid ""
+"The name of the catalogue. This is for your own internal use, and to insert "
+"the catalogue into a page or post."
+msgstr ""
+"Il nome del catalogo. Serve solo ad uso interno e per inserire il catalogo "
+"in una pagina o articolo."
+
+#: html/CatalogueDetails.php:23 html/FieldDetails.php:38 html/FieldsPage.php:69
+#: html/FieldsPage.php:103 html/FieldsPage.php:213
+msgid "Description"
+msgstr "Descrizione"
+
+#: html/CatalogueDetails.php:25
+msgid "The description of the catalogue. What products are included in this?"
+msgstr "La descrizione del catalogo. Che prodotti include?"
+
+#: html/CatalogueDetails.php:28
+msgid "Custom CSS"
+msgstr "CSS Personalizzato"
+
+#: html/CatalogueDetails.php:30
+msgid "Custom CSS styles that should be applied to this catalogue."
+msgstr "Stili CSS personalizzati da applicare a questo catalogo."
+
+#: html/CatalogueDetails.php:34
+msgid "Edit Catalogue"
+msgstr "Modifica Catalogo"
+
+#: html/CatalogueDetails.php:48
+msgid "Products"
+msgstr "Prodotti"
+
+#: html/CatalogueDetails.php:53 html/CatalogueDetails.php:103
+msgid "View All"
+msgstr "Visualizza Tutto"
+
+#: html/CatalogueDetails.php:88 html/CatalogueDetails.php:138
+msgid "Add to Catalogue"
+msgstr "Aggiungi al Catalogo"
+
+#: html/CatalogueDetails.php:98
+msgid "Categories"
+msgstr "Categorie"
+
+#: html/CatalogueDetails.php:161 html/CatalogueDetails.php:168
+msgid "Delete?"
+msgstr "Elimina?"
+
+#: html/CatalogueDetails.php:162 html/CatalogueDetails.php:169
+msgid "Catalogue Item Name"
+msgstr "Nome Oggetto Catalogo"
+
+#: html/CatalogueDetails.php:163 html/CatalogueDetails.php:170
+msgid "Type of Catalogue Item"
+msgstr "Tipo Oggetto Catalogo"
+
+#: html/CatalogueDetails.php:179 html/FieldsPage.php:32 html/FieldsPage.php:132
+#: html/FieldsPage.php:156 html/LevelsPage.php:22 html/LevelsPage.php:64
+#: html/LevelsPage.php:78 html/PaymentsPage.php:28 html/PaymentsPage.php:142
+#: html/UsersPage.php:66 html/UsersPage.php:233
+msgid "Delete"
+msgstr "Elimina"
+
+#: html/DashboardPage.php:9
+msgid "Full Version"
+msgstr "Versione Completa"
+
+#: html/DashboardPage.php:11
+msgid "Upgrade to the full version "
+msgstr "Aggiorna alla versione completa"
+
+#: html/DashboardPage.php:11
+msgid ""
+"to take advantage of all the available features of the Front-End Users for "
+"Wordpress!"
+msgstr ""
+"per godere dei vantaggi di tutte le caratteristiche disponibili di Front-End "
+"Users per Wordpress!"
+
+#: html/DashboardPage.php:15
+msgid "Product Key"
+msgstr "Codice Prodotto"
+
+#: html/DashboardPage.php:18
+msgid "Upgrade"
+msgstr "Aggiorna"
+
+#: html/DashboardPage.php:31
+msgid "Thank You!"
+msgstr "Grazie!"
+
+#: html/DashboardPage.php:39
+msgid "Thanks for installing Front-End Only Users."
+msgstr "Grazie per avere installato Front-End Only Users."
+
+#: html/DashboardPage.php:39
+msgid "Follow us on Facebook"
+msgstr "Seguici su Facebook"
+
+#: html/DashboardPage.php:39
+msgid "to suggest new features or hear about upcoming ones!"
+msgstr ""
+"per suggerire nuove funzionalità o essere informato su quelle in arrivo!"
+
+#: html/DashboardPage.php:40
+msgid "Thanks for upgrading to version 2.8.3!"
+msgstr "Grazie per avere aggiornato alla versione 2.8.3!"
+
+#: html/DashboardPage.php:40
+msgid "Please rate our plugin"
+msgstr "Valutate il nostro plugin"
+
+#: html/DashboardPage.php:40
+msgid "if you find Front-End Only Users useful!"
+msgstr "se trovate utile Front-End Only Users!"
+
+#: html/DashboardPage.php:68
+msgid "Support Options:"
+msgstr "Opzioni di Assistenza:"
+
+#: html/DashboardPage.php:161
+msgid "What you get by upgrading:"
+msgstr "Cosa ottieni aggiornando: "
+
+#: html/DashboardPage.php:203
+msgid "Unapproved Users"
+msgstr "Utenti non Approvati"
+
+#: html/DashboardPage.php:205
+msgid "Recent Users"
+msgstr "Utenti Recenti"
+
+#: html/DashboardPage.php:211
+msgid "Recent"
+msgstr "Recente"
+
+#: html/FieldDetails.php:18 html/FieldsPage.php:193
+msgid "The name of the field your users will see."
+msgstr "Il nome del campo che i tuoi utenti vedranno."
+
+#: html/FieldDetails.php:21 html/FieldsPage.php:62 html/FieldsPage.php:96
+#: html/FieldsPage.php:196
+msgid "Type"
+msgstr "Tipo"
+
+#: html/FieldDetails.php:35 html/FieldsPage.php:210
+msgid ""
+"The input method for the field and type of data that the field will hold."
+msgstr ""
+"Il metodo di inserimento per il campo e il tipo di dato che dev’essere "
+"inserito."
+
+#: html/FieldDetails.php:40 html/FieldsPage.php:215
+msgid ""
+"The description of the field, which the user will see as the instruction for "
+"the field."
+msgstr ""
+"La descrizione del campo che sarà visualizzata dall’utente, come istruzione "
+"di compilazione."
+
+#: html/FieldDetails.php:43 html/FieldsPage.php:218
+msgid "Input Values"
+msgstr "Inserisci Valori"
+
+#: html/FieldDetails.php:45 html/FieldsPage.php:220
+msgid ""
+"A comma-separated list of acceptable input values for this field. These "
+"values will be the options for select, checkbox, and radio inputs. All "
+"values will be accepted if left blank."
+msgstr ""
+"Una lista separata da virgole di valori accettabili per questo campo. Questi "
+"valori saranno le opzioni per gli campi select, checkbox e radio. Se "
+"lasciato vuoto saranno accettati tutti i valori."
+
+#: html/FieldDetails.php:48 html/FieldsPage.php:223
+msgid "Show in Admin Table?"
+msgstr "Mostra nella Tabella Amministratore?"
+
+#: html/FieldDetails.php:51 html/FieldsPage.php:226
+msgid "Should this field appear in the users table in the admin area?"
+msgstr ""
+"Questo campo deve apparire nella tabella utenti dell’area amministrativa?"
+
+#: html/FieldDetails.php:54 html/FieldsPage.php:229
+msgid "Show in User Profile"
+msgstr "Mostra nel Profilo Utente"
+
+#: html/FieldDetails.php:57 html/FieldsPage.php:232
+msgid "Should this field appear in users' profiles in the front-end?"
+msgstr "Questo campo deve apparire nei profili utente lato front-end?"
+
+#: html/FieldDetails.php:60 html/FieldsPage.php:76 html/FieldsPage.php:110
+#: html/FieldsPage.php:235
+msgid "Required?"
+msgstr "Campo obbligatorio?"
+
+#: html/FieldDetails.php:63 html/FieldsPage.php:238
+msgid "Area users required to fill out this field?"
+msgstr "Gli utenti devono compilare questo campo obbligatoriamente?"
+
+#: html/FieldDetails.php:67 html/FieldsPage.php:241
+msgid "Field Meaning"
+msgstr "Scopo Campo"
+
+#: html/FieldDetails.php:80
+msgid ""
+"The meaning of the field. This field is only necessary if WordPress users "
+"are being created using the plugin, or if data is being pulled from Facebook."
+msgstr ""
+"Lo scopo del campo. Questo campo serve solo se gli utenti Wordpress vengono "
+"creati usando il plugin o se i dati sono prelevati da Facebook."
+
+#: html/FieldDetails.php:83
+msgid "Edit Field"
+msgstr "Modifica Campo"
+
+#: html/FieldsPage.php:31 html/FieldsPage.php:155 html/LevelsPage.php:21
+#: html/LevelsPage.php:77 html/PaymentsPage.php:27 html/UsersPage.php:65
+msgid "Bulk Actions"
+msgstr "Azioni di Massa"
+
+#: html/FieldsPage.php:34 html/FieldsPage.php:158 html/LevelsPage.php:24
+#: html/LevelsPage.php:80 html/PaymentsPage.php:30 html/UsersPage.php:78
+msgid "Apply"
+msgstr "Applica"
+
+#: html/FieldsPage.php:37 html/FieldsPage.php:161 html/PaymentsPage.php:33
+#: html/StatisticsPage.php:25 html/StatisticsPage.php:115
+#: html/StatisticsPage.php:148 html/StatisticsPage.php:253
+#: html/StatisticsPage.php:286 html/StatisticsPage.php:389
+#: html/UsersPage.php:264
+msgid "items"
+msgstr "oggetti"
+
+#: html/FieldsPage.php:41 html/FieldsPage.php:165 html/PaymentsPage.php:37
+#: html/StatisticsDetails.php:100 html/StatisticsPage.php:29
+#: html/StatisticsPage.php:119 html/StatisticsPage.php:152
+#: html/StatisticsPage.php:257 html/StatisticsPage.php:290
+#: html/StatisticsPage.php:393 html/UserDetails.php:39 html/UserDetails.php:154
+#: html/UsersPage.php:86 html/UsersPage.php:268
+msgid "of"
+msgstr "di"
+
+#: html/FieldsPage.php:55 html/FieldsPage.php:89
+msgid "Field Name"
+msgstr "Nome Campo"
+
+#: html/FieldsPage.php:184 html/FieldsPage.php:260
+msgid "Add New Field"
+msgstr "Aggiungi Nuovo Campo"
+
+#: html/FieldsPage.php:256
+msgid ""
+"The meaning of the field. This field is only necessary if WordPress users "
+"are being created using the plugin."
+msgstr ""
+"Lo scopo del campo. Questo campo serve solo se gli utenti Wordpress vengono "
+"creati usando il plugin."
+
+#: html/LevelsPage.php:40 html/LevelsPage.php:48
+msgid "User Count"
+msgstr "Conteggio Utenti"
+
+#: html/LevelsPage.php:41 html/LevelsPage.php:49 html/LevelsPage.php:107
+msgid "Privilege Level"
+msgstr "Livello Privilegi"
+
+#: html/LevelsPage.php:95 html/LevelsPage.php:118
+msgid "Add New Level"
+msgstr "Aggiungi Nuovo Livello"
+
+#: html/LevelsPage.php:104
+msgid "The name of the level you will assign to a group of users."
+msgstr "Il nome del livello che assegnerai ad un gruppo di utenti."
+
+#: html/LevelsPage.php:115
+msgid ""
+"The privilege level for this user level. Privilege levels can affect who can "
+"see what content. Inserting a new level will increase the privilege level of "
+"all above levels."
+msgstr ""
+"Il livello di privilegi per questo livello utente. I privilegi possono "
+"influire sulla visualizzazione del contenuto. Inserire un nuovo livello "
+"aumenterà il livello di privilegi di tutti i livelli superiori."
+
+#: html/LevelsPage.php:128 html/StatisticsPage.php:440 html/UsersPage.php:375
+#: html/UsersPage.php:394
+msgid "Full Version Required!"
+msgstr "Richiesta Versione Completa!"
+
+#: html/LevelsPage.php:130 html/UsersPage.php:377 html/UsersPage.php:396
+msgid "The full version of Front-End Only Users is required to use tags."
+msgstr ""
+"Serve la versione completa di Front-End Only Users per utilizzare i tag."
+
+#: html/LevelsPage.php:130 html/StatisticsPage.php:442 html/UsersPage.php:377
+#: html/UsersPage.php:396
+msgid " Please upgrade to unlock this page!"
+msgstr " Aggiorna per sbloccare questa pagina!"
+
+#: html/MainScreen.php:3
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: html/MainScreen.php:4
+msgid "Users"
+msgstr "Utenti"
+
+#: html/MainScreen.php:5
+msgid "Statistics"
+msgstr "Statistiche"
+
+#: html/MainScreen.php:6
+msgid "Fields"
+msgstr "Campi"
+
+#: html/MainScreen.php:7
+msgid "Levels"
+msgstr "Livelli"
+
+#: html/MainScreen.php:8
+msgid "Options"
+msgstr "Opzioni"
+
+#: html/MainScreen.php:9
+msgid "Emails"
+msgstr "Email"
+
+#: html/MainScreen.php:10
+msgid "Payments"
+msgstr "Pagamenti"
+
+#: html/OneClickInstall.php:5 html/OneClickInstall.php:6
+#: html/OneClickInstall.php:7 html/OneClickInstall.php:8
+#: html/OneClickInstall.php:9 html/OneClickInstall.php:11
+#: html/OneClickInstall.php:12 html/OneClickInstall.php:13
+#: html/OneClickInstall.php:14 html/OneClickInstall.php:15
+#: html/OneClickInstall.php:16
+msgid "Newly Created"
+msgstr "Creati di Recente"
+
+#: html/OneClickInstall.php:9 html/OneClickInstall.php:104
+msgid "Forgot Password"
+msgstr "Password Dimenticata"
+
+#: html/OneClickInstall.php:10
+msgid "Confirm Forgot Password"
+msgstr "Conferma Password Dimenticata"
+
+#: html/OneClickInstall.php:10
+msgid "New"
+msgstr "Nuovo"
+
+#: html/OneClickInstall.php:11 html/OneClickInstall.php:128
+msgid "Change Password"
+msgstr "Cambia Password"
+
+#: html/OneClickInstall.php:12
+msgid "Login-Logout Toggle"
+msgstr "Login/Logout Modale"
+
+#: html/OneClickInstall.php:13
+msgid "User Profile"
+msgstr "Profilo Utente"
+
+#: html/OneClickInstall.php:14
+msgid "User Search"
+msgstr "Ricerca Utente"
+
+#: html/OneClickInstall.php:15
+msgid "User List"
+msgstr "Lista Utenti"
+
+#: html/OneClickInstall.php:16
+msgid "User Data"
+msgstr "Dati Utente"
+
+#: html/OneClickInstall.php:116
+msgid "Confirm Forgotten Password"
+msgstr "Conferma Password Dimenticata"
+
+#: html/OneClickInstall.php:140
+msgid "Login-Logout Toggle (Optional)"
+msgstr "Login-Logout Modale (Opzionale)"
+
+#: html/OneClickInstall.php:152
+msgid "User Profile (Optional)"
+msgstr "Profilo Utente (Opzionale)"
+
+#: html/OneClickInstall.php:164
+msgid "User Search (Optional)"
+msgstr "Ricerca Utente (Opzionale)"
+
+#: html/OneClickInstall.php:176
+msgid "User List (Optional)"
+msgstr "Lista Utenti (Opzionale)"
+
+#: html/OneClickInstall.php:188
+msgid "User Data (Optional)"
+msgstr "Dati Utente (Opzionale)"
+
+#: html/OptionsPage.php:450
+msgid "Australian Dollar"
+msgstr "Dollaro Australiano"
+
+#: html/OptionsPage.php:451
+msgid "Brazilian Real"
+msgstr "Real Brasiliano"
+
+#: html/OptionsPage.php:452
+msgid "Canadian Dollar"
+msgstr "Dollaro Canadese"
+
+#: html/OptionsPage.php:453
+msgid "Czech Koruna"
+msgstr "Koruna Ceca"
+
+#: html/OptionsPage.php:454
+msgid "Danish Krone"
+msgstr "Krone Danese"
+
+#: html/OptionsPage.php:455
+msgid "Euro"
+msgstr "Euro"
+
+#: html/OptionsPage.php:456
+msgid "Hong Kong Dollar"
+msgstr "Dollaro Hong Kong"
+
+#: html/OptionsPage.php:457
+msgid "Hungarian Forint"
+msgstr "Forint Ungherese"
+
+#: html/OptionsPage.php:458
+msgid "Israeli New Sheqel"
+msgstr "Nuovo Sheqel Israeliano"
+
+#: html/OptionsPage.php:459
+msgid "Japanese Yen"
+msgstr "Yen Giapponese"
+
+#: html/OptionsPage.php:460
+msgid "Malaysian Ringgit"
+msgstr "Ringgit Malese"
+
+#: html/OptionsPage.php:461
+msgid "Mexican Peso"
+msgstr "Peso Messicano"
+
+#: html/OptionsPage.php:462
+msgid "Norwegian Krone"
+msgstr "Krone Norvegese"
+
+#: html/OptionsPage.php:463
+msgid "New Zealand Dollar"
+msgstr "Dollaro Neozelandese"
+
+#: html/OptionsPage.php:464
+msgid "Philippine Peso"
+msgstr "Peso Filippino"
+
+#: html/OptionsPage.php:465
+msgid "Polish Zloty"
+msgstr "Zloty Polacco"
+
+#: html/OptionsPage.php:466
+msgid "Pound Sterling"
+msgstr "Sterlina"
+
+#: html/OptionsPage.php:467
+msgid "Russian Ruble"
+msgstr "Rublo Russo"
+
+#: html/OptionsPage.php:468
+msgid "Singapore Dollar"
+msgstr "Dollaro Singapore"
+
+#: html/OptionsPage.php:469
+msgid "Swedish Krona"
+msgstr "Krona Svedese"
+
+#: html/OptionsPage.php:470
+msgid "Swiss Franc"
+msgstr "Franco Svizzero"
+
+#: html/OptionsPage.php:471
+msgid "Taiwan New Dollar"
+msgstr "Nuovo Dollaro Taiwanese"
+
+#: html/OptionsPage.php:472
+msgid "Thai Baht"
+msgstr "Baht Tailandese"
+
+#: html/OptionsPage.php:473
+msgid "Turkish Lira"
+msgstr "lira Turca"
+
+#: html/OptionsPage.php:474
+msgid "U.S. Dollar"
+msgstr "Dollaro U.S."
+
+#: html/PaymentDetails.php:16
+msgid "User ID"
+msgstr "ID Utente"
+
+#: html/PaymentDetails.php:18
+msgid "The user ID of the person who made the payment."
+msgstr "L’ID Utente della persona che ha effettuato il pagamento."
+
+#: html/PaymentDetails.php:23
+msgid "The username of the person who made the payment."
+msgstr "Il nome utente della persona che ha effettuato il pagamento."
+
+#: html/PaymentDetails.php:26
+msgid "Payer ID"
+msgstr "ID Pagatore"
+
+#: html/PaymentDetails.php:28
+msgid "The PayPal payer ID of the person who made the payment."
+msgstr "L’ID Pagatore PayPal della persona che ha effettuato il pagamento."
+
+#: html/PaymentDetails.php:31
+msgid "PayPal Receipt Number"
+msgstr "Numero Ricevuta PayPal"
+
+#: html/PaymentDetails.php:33
+msgid "The PayPal receipt number of this payment."
+msgstr "Il numero di ricevuta PayPal per questo pagamento."
+
+#: html/PaymentDetails.php:36 html/PaymentsPage.php:58 html/PaymentsPage.php:99
+msgid "Payment Date"
+msgstr "Data Pagamento"
+
+#: html/PaymentDetails.php:38
+msgid "The date upon which the payment was made."
+msgstr "La data in cui è stato effettuato il pagamento."
+
+#: html/PaymentDetails.php:41
+msgid "Next Payment Date"
+msgstr "Data Prossimo Pagamento"
+
+#: html/PaymentDetails.php:43
+msgid ""
+"The next date at which a payment is expected, if payments are recurring."
+msgstr ""
+"La prossima data in cui dev’essere effettuato un pagamento, se i pagamenti "
+"sono periodici."
+
+#: html/PaymentDetails.php:46
+msgid "Payment Amount"
+msgstr "Ammontare Pagamento"
+
+#: html/PaymentDetails.php:48
+msgid "The amount that was received in this payment."
+msgstr "L’ammontare del pagamento ricevuto."
+
+#: html/PaymentDetails.php:53
+msgid "The discount code for this payment, if any."
+msgstr "Il codice sconto per questo pagamento, se presente."
+
+#: html/PaymentDetails.php:56
+msgid "Edit Payment"
+msgstr "Modifica Pagamento"
+
+#: html/PaymentsPage.php:65 html/PaymentsPage.php:106
+msgid "Amount"
+msgstr "Ammontare"
+
+#: html/PaymentsPage.php:72 html/PaymentsPage.php:113
+msgid "Next Payment"
+msgstr "Prossimo Pagamento"
+
+#: html/StatisticsDetails.php:20
+msgid "Recent Clicks on"
+msgstr "Click Recenti su"
+
+#: html/StatisticsDetails.php:96 html/UserDetails.php:35
+#: html/UserDetails.php:150
+msgid "events"
+msgstr "eventi"
+
+#: html/StatisticsPage.php:42 html/StatisticsPage.php:68
+msgid "Page Title"
+msgstr "Titolo Pagina"
+
+#: html/StatisticsPage.php:49 html/StatisticsPage.php:75
+msgid "Page Views"
+msgstr "Visualizzazioni Pagina"
+
+#: html/StatisticsPage.php:56 html/StatisticsPage.php:82
+msgid "Last View"
+msgstr "Ultima Visualizzazione"
+
+#: html/StatisticsPage.php:165 html/StatisticsPage.php:198
+msgid "Page Title/Link"
+msgstr "Titolo Pagina/Collegamento"
+
+#: html/StatisticsPage.php:172 html/StatisticsPage.php:205
+msgid "Link Type"
+msgstr "Tipo Collegamento"
+
+#: html/StatisticsPage.php:179 html/StatisticsPage.php:212
+msgid "Total Clicks"
+msgstr "Click Totali"
+
+#: html/StatisticsPage.php:186 html/StatisticsPage.php:219
+msgid "Last Click"
+msgstr "Ultimo Click"
+
+#: html/StatisticsPage.php:310 html/StatisticsPage.php:343
+msgid "Last Login"
+msgstr "Ultimo Login"
+
+#: html/StatisticsPage.php:317 html/StatisticsPage.php:350
+msgid "Total Logins"
+msgstr "Login Totali"
+
+#: html/StatisticsPage.php:324 html/StatisticsPage.php:357
+msgid "Joined Date"
+msgstr "Iscritto dal "
+
+#: html/StatisticsPage.php:410
+msgid "Summary Statistics"
+msgstr "Sommario Statistiche"
+
+#: html/StatisticsPage.php:442
+msgid ""
+"The full version of Front-End Only Users is required to view statistics."
+msgstr ""
+"Per visualizzare le statistiche è necessaria la versione completa di Front-"
+"End Only Users."
+
+#: html/UserDetails.php:32
+msgid "Recent User Activity"
+msgstr "Attività Utente Recente"
+
+#: html/UserDetails.php:130
+msgid ""
+"The full version of Front-End Only Users is required to view user activity."
+msgstr ""
+"Per visualizzare l’attività utente recente è necessaria la versione completa "
+"di Front-End Only Users."
+
+#: html/UserDetails.php:132
+msgid " Please upgrade to view this information!"
+msgstr " Aggiornate per visualizzare queste informazioni!"
+
+#: html/UserDetails.php:169
+msgid "Edit User"
+msgstr "Modifica Utente"
+
+#: html/UserDetails.php:170
+msgid "Delete User"
+msgstr "Elimina Utente"
+
+#: html/UserDetails.php:171
+msgid "Member since "
+msgstr "Membro dal"
+
+#: html/UserDetails.php:188 html/UsersPage.php:318
+msgid "Admin Approved"
+msgstr "Approvazione Amministratore"
+
+#: html/UserDetails.php:193
+msgid "Email Confirmed"
+msgstr "Email Confermata"
+
+#: html/UserDetails.php:198
+msgid "Membership Fees Paid"
+msgstr "Quota di Iscrizione Pagata"
+
+#: html/UserDetails.php:203
+msgid "Account Expiry Date"
+msgstr "Data di Scadenza Account"
+
+#: html/UserDetails.php:246
+msgid "Edit User "
+msgstr "Modifica Utente"
+
+#: html/UsersPage.php:67
+msgid "Approve"
+msgstr "Approva"
+
+#: html/UsersPage.php:79
+msgid "Delete All Users"
+msgstr "Elimina Tutti Utenti"
+
+#: html/UsersPage.php:82
+msgid "users"
+msgstr "utenti"
+
+#: html/UsersPage.php:286 html/UsersPage.php:353
+msgid "Add New User"
+msgstr "Aggiungi Nuovo Utente"
+
+#: html/UsersPage.php:310
+msgid "User Level"
+msgstr "Livello Utente"
+
+#: html/UsersPage.php:358
+msgid "Add Users from Spreadsheet"
+msgstr "Aggiungi Utente da Foglio di Calcolo"
+
+#: html/UsersPage.php:365
+msgid "Spreadhseet Containing Users"
+msgstr "Foglio di Calcolo con Utenti"
+
+#: html/UsersPage.php:367
+msgid ""
+"The spreadsheet containing all of the users you wish to add. Make sure that "
+"the column title names are the same as the field names for users (ex: "
+"Username, Email, First Name, etc.)."
+msgstr ""
+"Il foglio di calcolo che contiene gli utenti che volete aggiungere. "
+"Accertatevi che il nome delle colonne sia uguale al nome dei campi "
+"dell’utente (ad es.: Nome Utente, Email, Nome, etc.)."
+
+#: html/UsersPage.php:369
+msgid "Add New Users"
+msgstr "Aggiungi Nuovo Utente"
+
+#: html/UsersPage.php:382
+msgid "Export Users to Spreadsheet"
+msgstr "Esporta Utenti"
+
+#: html/UsersPage.php:388
+msgid "Downloads all users currently in the database to Excel"
+msgstr "Scarica tutti gli utenti attualmente memorizzati in un file Excel"
+
+#. Plugin Name of the plugin/theme
+msgid "Front-End Users Plugin"
+msgstr "Plugin Front-End Users"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.etoilewebdesign.com/front-end-users-plugin/"
+msgstr "http://www.etoilewebdesign.com/front-end-users-plugin/"
+
+#. Description of the plugin/theme
+msgid ""
+"A plugin that creates a separate set of users that are front-end only users, "
+"who do not appear in the default WordPress users area, and allows content to "
+"be tailored based on user profiles"
+msgstr ""
+"Un plugin che crea una lista utenti separata che sono utenti solo front-end, "
+"che non appaiono nell’area utenti predefinita di Wordpress e permette di "
+"personalizzare i contenuti in base ai profili utente"
+
+#. Author of the plugin/theme
+msgid "Etoile Web Design"
+msgstr "Etoile Web Design"
+
+#. Author URI of the plugin/theme
+msgid "http://www.EtoileWebDesign.com/"
+msgstr "http://www.EtoileWebDesign.com/"

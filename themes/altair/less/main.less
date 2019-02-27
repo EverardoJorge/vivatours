@@ -1,0 +1,162 @@
+/*Colores*/
+
+@rosa: #e50076;
+@azul: #29a1a7;
+@amarillo: #f9b000;
+/*Ajustes Generales */
+
+a.button,
+.button {
+    color: #fff !important;
+    border: none !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.page_content_wrapper{
+    width: 1000px;
+}
+
+/*-----------------------------
+Tours
+-------------------------------*/
+
+.tours-section {
+    #tour_book_btn {
+        background-color: @rosa;
+    }
+
+    a.button,
+    .button {
+        background-color: @azul;
+    }
+    .tour_meta_wrapper {
+        background: #ececec;
+    }
+
+    #page_content_wrapper .page_content_wrapper {
+        color: #000;
+        font-size: 1.2em;
+
+
+        p,
+        ol,
+        ul,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: left;
+        }
+
+        h2 {
+            color: @azul;
+            margin-top: 50px;
+        }
+
+        h3 {
+            color: @amarillo;
+            font-size: 1.5em;
+        }
+        
+        p{
+            font-size: 1.2em;
+        }
+
+        ol {
+            border-bottom: 2px solid @amarillo;
+            padding: 20px 20px 10px 0;
+            margin: 0;
+            font-size: 1.2em;
+            list-style: none;
+        }
+
+        ul {
+            margin-bottom: 50px;
+            font-size: 1.2em;
+        }
+
+        blockquote {
+            background: #f7f7f7;
+            padding: 20px;
+        }
+
+
+        /*Estilo para tablas*/
+        table {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.1);
+            margin: 50px 0;
+            width: 100%;
+            &:hover {
+                box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        table tbody tr {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        table td {
+            color: #000;
+            line-height: 1.4;
+            transition: all 0.3s ease-in-out;
+        }
+
+        table th {
+            color: #fff;
+            line-height: 1.4;
+            text-transform: uppercase;
+            background-color: @azul;
+        }
+
+        table tbody td:hover {
+            transform: scale(1.05);
+            background-color: @amarillo;
+            color: #fff;
+            box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+    }
+
+    /* Sección Reservar del footer*/
+    .tour_call_to_action_price {
+        font-size: 1.5em;
+    }
+
+}
+
+
+#footer {
+    background: #292929 !important;
+    padding: 50px 0;
+
+    input[type=submit],
+    input[type=button],
+    a.button,
+    .button,
+    .woocommerce .page_slider a.button {
+        background: @amarillo;
+        color: #fff;
+        font-size: 1.3em;
+        border: none;
+    }
+    .sidebar_widget .widget {
+        &:nth-child(2) {
+            a {
+                color: @amarillo;
+            }
+            p{
+                font-size: 1.1em !important;
+            }
+        }
+
+    }
+    label {
+        padding: 0;
+        color: @amarillo !important;
+    }
+}

@@ -1,0 +1,63 @@
+/**************************
+* WP Dashboard Review Ask
+***************************/
+.uwpm-hidden {
+  display: none;
+}
+.ewd-uwpm-clear {
+  clear: both;
+}
+.ewd-uwpm-main-dashboard-review-ask {
+  border-left-color: #6026b4;
+}
+.ewd-uwpm-review-ask-plugin-icon {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 12px 24px 16px 10px;
+  background-image: url(../images/ewd-uwpm-icon.png);
+  background-size: contain;
+}
+.ewd-uwpm-review-ask-text p {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.ewd-uwpm-review-ask-action {
+  width: 90px;
+  padding: 6px;
+  margin-right: 18px;
+  text-align: center;
+  float: left;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ewd-uwpm-review-ask-white {
+  color: #999999;
+  border: 1px solid #bbbbbb;
+}
+.ewd-uwpm-review-ask-green {
+  color: #ffffff;
+  background: #22C9A3;
+  border: 1px solid #22C9A3;
+  font-weight: 600;
+}
+.ewd-uwpm-review-ask-green a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.ewd-uwpm-review-ask-feedback-form {
+  position: relative;
+  float: left;
+}.ewd-uwpm-review-ask-feedback-explanation textarea {
+  height: 70px;
+  width: 480px;
+}
+.ewd-uwpm-review-ask-send-feedback {
+  margin: 10px 0px;
+}
+
+.ewd-uwpm-review-ask-review-text span {
+  font-size: .8em;
+  font-weight: normal;
+}

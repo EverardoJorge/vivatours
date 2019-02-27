@@ -1,0 +1,240 @@
+﻿<style>
+
+.addwindow {
+	
+	position:relative:
+	border: 2px;
+	display: none;
+	
+}
+.edititem {
+	
+	position:relative:
+	border: 2px;
+	display: none;
+	
+}
+</style>
+    <script type="text/javascript">
+
+        jQuery(document).ready( function () { 
+          
+		 
+	jQuery('.additem').click(function() {
+		
+		
+		
+	//jQuery('.widget-wp_sliderpro-__i__-savewidget').trigger('click');
+	jQuery('input[name=operation]').val('1');
+	jQuery('.addwindow').show();
+	
+	
+	
+	return false;
+	
+	
+})
+
+	jQuery('.deleteitem').click(function() {
+		
+		
+		
+	//jQuery('.widget-wp_sliderpro-__i__-savewidget').trigger('click');
+	jQuery('input[name=operation]').val('2');
+	jQuery('.addwindow').show();
+	
+	
+	
+	return false;
+	
+	
+})
+
+	jQuery('.cancel').click(function() {
+		
+		
+		
+	//jQuery('.widget-wp_sliderpro-__i__-savewidget').trigger('click');
+	jQuery('input[name=operation]').val('0');
+	jQuery('.addwindow').hide();
+	
+	
+	
+	return false;
+	
+	
+})
+
+jQuery('.editbutton').click(function() {
+		
+		
+		
+	//jQuery('.widget-wp_sliderpro-__i__-savewidget').trigger('click');
+	
+
+	if(jQuery(this).text()=='+') { 
+		
+		jQuery('#edit'+jQuery(this).attr("rel")).show()
+		//jQuery(this).text("-")
+	}
+	else { 
+		//jQuery(this).text('+')
+		jQuery('#edit'+jQuery(this).attr("rel")).hide()
+	}
+	return false;
+	
+	
+})
+
+		  
+        });
+
+    </script>
+
+<div class="wrap"> 
+	<form method="post" action="">
+		<fieldset>
+	  <legend><strong>carousel GALLERY <?php echo $id; ?>. Write in your Posts: [carousel_video <?php echo $id; ?> /]</strong></legend>
+
+
+
+
+
+<p><label for="<?php echo $this->get_field_id('title'); ?>">Title: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo attribute_escape($title); ?>" /></label></p>
+              <hr />
+             
+              <input name="operation" type="hidden" id="operation" value="0" />
+              
+            <button class="additem">Add Item</button> <button class="deleteitem">Delete Items</button> <input type="submit" name="savewidget" id="widget-advertisement-__i__-savewidget" class="button-primary widget-control-save" value="Save"  />
+            <div class="addwindow">
+             <hr />
+            <input type="submit" name="savewidget" id="widget-advertisement-__i__-savewidget" class="button-primary widget-control-save" value="OK"  /><button class="cancel">Cancel</button>
+            
+            </div>
+             <hr />
+            <ul>
+            <?php
+			
+			// items
+			$cont=0;
+			if($values!="") {
+				$items=explode("kh6gfd57hgg", $values);
+				$cont=1;
+				foreach ($items as &$value) {
+					if(count($items)>$cont) {
+					$item=explode("t6r4nd", $value);
+					
+					 
+					 echo '<li><input name="item'.$cont.'" type="checkbox" value="hide" /><img src="'.$item[2].'" width="20px"/><input name="title'.$cont.'" type="text" value="'.$item[0].'" /><button class="editbutton" rel="'.$cont.'">+</button>
+					 
+					 <div id="edit'.$cont.'" class="edititem">
+					 
+					 Description: <input name="description'.$cont.'" type="text" value="'.$item[1].'" /><br/>
+					 
+					 Url image: <input name="image'.$cont.'" type="text" value="'.$item[2].'" /><br/>
+					 
+					 Link: <input name="link'.$cont.'" type="text" value="'.$item[3].'" /><br/>
+					 
+					  <hr />
+					 </div>
+					 </li>';
+					 $cont++;
+					}
+					 
+				}
+			}
+			 $cont--;
+			echo '</ul><input class="widefat" name="total" type="hidden" id="total" value="'.$cont.'" />';
+			?>
+ 
+            <hr />
+            <p><label for="<?php echo $this->get_field_id('width'); ?>">Slider width: <input class="widefat" id="<?php echo $this->get_field_id('width'); ?>" name="<?php echo $this->get_field_name('width'); ?>" type="text" value="<?php echo attribute_escape($width); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('height'); ?>">Slider height: <input class="widefat" id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo $this->get_field_name('height'); ?>" type="text" value="<?php echo attribute_escape($height); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('border'); ?>">Slider border: <input class="widefat" id="<?php echo $this->get_field_id('border'); ?>" name="<?php echo $this->get_field_name('border'); ?>" type="text" value="<?php echo attribute_escape($border); ?>" /></label></p>
+            
+           
+            
+            
+              <p><input name="<?php echo $this->get_field_name('round'); ?>" type="checkbox" value="hide" <?php echo $borderround['hide']; ?> /> Slider round?</p>
+                                    
+                                    
+            
+            <p><label for="<?php echo $this->get_field_id('width_thumbnail'); ?>">Thumbnail width: <input class="widefat" id="<?php echo $this->get_field_id('width_thumbnail'); ?>" name="<?php echo $this->get_field_name('width_thumbnail'); ?>" type="text" value="<?php echo attribute_escape($width_thumbnail); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('height_thumbnail'); ?>">Thumbnail height: <input class="widefat" id="<?php echo $this->get_field_id('height_thumbnail'); ?>" name="<?php echo $this->get_field_name('height_thumbnail'); ?>" type="text" value="<?php echo attribute_escape($height_thumbnail); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('thumbnail_border'); ?>">Thumbnail border: <input class="widefat" id="<?php echo $this->get_field_id('thumbnail_border'); ?>" name="<?php echo $this->get_field_name('thumbnail_border'); ?>" type="text" value="<?php echo attribute_escape($thumbnail_border); ?>" /></label></p>
+                        
+            
+            			<p><input name="<?php echo $this->get_field_name('thumbnail_round'); ?>" type="checkbox" value="hide" <?php echo $tborderround['hide']; ?> /> Thumbnail round?</p>
+            
+            
+            
+            <p><label for="<?php echo $this->get_field_id('number_thumbnails'); ?>">Number thumbnails: <input class="widefat" id="<?php echo $this->get_field_id('number_thumbnails'); ?>" name="<?php echo $this->get_field_name('number_thumbnails'); ?>" type="text" value="<?php echo attribute_escape($number_thumbnails); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('sizetitle'); ?>">Title font size: <input class="widefat" id="<?php echo $this->get_field_id('sizetitle'); ?>" name="<?php echo $this->get_field_name('sizetitle'); ?>" type="text" value="<?php echo attribute_escape($sizetitle); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('sizedescription'); ?>">Description font size: <input class="widefat" id="<?php echo $this->get_field_id('sizedescription'); ?>" name="<?php echo $this->get_field_name('sizedescription'); ?>" type="text" value="<?php echo attribute_escape($sizedescription); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('sizethumbnail'); ?>">Thumbnail font size: <input class="widefat" id="<?php echo $this->get_field_id('sizethumbnail'); ?>" name="<?php echo $this->get_field_name('sizethumbnail'); ?>" type="text" value="<?php echo attribute_escape($sizethumbnail); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('font'); ?>">Text Font: <input class="widefat" id="<?php echo $this->get_field_id('font'); ?>" name="<?php echo $this->get_field_name('font'); ?>" type="text" value="<?php echo attribute_escape($font); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('color1'); ?>">Color 1: <input class="widefat" id="<?php echo $this->get_field_id('color1'); ?>" name="<?php echo $this->get_field_name('color1'); ?>" type="text" value="<?php echo attribute_escape($color1); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('color2'); ?>">Color 2: <input class="widefat" id="<?php echo $this->get_field_id('color2'); ?>" name="<?php echo $this->get_field_name('color2'); ?>" type="text" value="<?php echo attribute_escape($color2); ?>" /></label></p>
+            
+            <p><label for="<?php echo $this->get_field_id('color3'); ?>">Color 3: <input class="widefat" id="<?php echo $this->get_field_id('color3'); ?>" name="<?php echo $this->get_field_name('color3'); ?>" type="text" value="<?php echo attribute_escape($color3); ?>" /></label></p>
+
+
+
+
+
+
+
+			  <table width="100%" border="0" cellspacing="8" cellpadding="0">
+			    <tr>
+			      <td>Video URL's (Write the url for the youtube videos or the flv videos, a url video for line):</td>
+			      <td><textarea name="video<?php echo $id; ?>" cols="40" rows="8" id="video<?php echo $id; ?>"><?php echo $video; ?></textarea></td>
+			      <td>Video titles( a text for line):</td>
+			      <td><textarea name="titles<?php echo $id; ?>" cols="40" rows="8" id="titles<?php echo $id; ?>"><?php echo $titles; ?></textarea></td>
+		        </tr>
+                
+                
+			    <tr>
+                <td>Gallery Width(Number with px or %, default: 100%):</td>
+			      <td><input type='text' id='width<?php echo $id; ?>'  name='width<?php echo $id; ?>'  value='<?php echo $width; ?>'/></td>
+			      <td>Gallery Height (Number with px, default 300px):</td>
+			      <td><input type='text' id='height<?php echo $id; ?>'  name='height<?php echo $id; ?>'  value='<?php echo $height; ?>'/></td>
+			      
+		        </tr>
+                <tr>
+			      <td colspan="2">Thumbnail video capture size, number > 0 and  < 10 </td>
+			      <td colspan="2"><input type='text' id='row<?php echo $id; ?>'  name='row<?php echo $id; ?>'  value='<?php echo $row; ?>'/></td>
+			      
+		        </tr>
+			    <tr>
+			      <td>Thumbnail Width</td>
+			      <td><input type='text' id='widthi<?php echo $id; ?>'  name='widthi<?php echo $id; ?>'  value='<?php echo $widthi; ?>'/></td>
+			      <td>Thumbnail Height</td>
+			      <td><input type='text' id='heighti<?php echo $id; ?>'  name='heighti<?php echo $id; ?>'  value='<?php echo $heighti; ?>'/></td>
+		        </tr>
+			    <tr>
+			      <td>&nbsp;</td>
+			      <td></td>
+			      <td>&nbsp;</td>
+			      <td></td>
+		        </tr>
+      </table> <input name="id" type="hidden" id="id" value="<?php echo $id; ?>" /></td>
+	<input type='submit' name='' value='SAVE carousel <?php echo $id; ?>' />
+		 
+      </fieldset>
+	</form>		 
+  <form method="post" action="">
+	  <input name="borrar" type="hidden" id="borrar" value="<?php echo $id; ?>">
+     <input type='submit' name='' value='Delete carousel gallery <?php echo $id; ?>' />
+    </form>
+  <hr />
+</div>

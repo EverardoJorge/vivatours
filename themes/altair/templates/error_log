@@ -1,0 +1,42 @@
+[10-Nov-2017 19:00:14 UTC] PHP Warning:  Error while sending QUERY packet. PID=9256 in /home/viajesvi/public_html/wp-includes/wp-db.php on line 1942
+[21-Nov-2017 18:50:42 UTC] PHP Parse error:  syntax error, unexpected ''' (T_ENCAPSED_AND_WHITESPACE) in /tmp/theme_temp_setupbeNU1R on line 43
+[22-Nov-2017 03:14:22 UTC] PHP Strict Standards:  Redefining already defined constructor for class WP_exec_PHP in /home/viajesvi/public_html/wp-content/plugins/wp-exec-php/wp-exec-php.php on line 151
+[22-Nov-2017 03:14:22 UTC] PHP Deprecated:  Assigning the return value of new by reference is deprecated in /home/viajesvi/public_html/wp-content/plugins/wp-exec-php/wp-exec-php.php on line 987
+[22-Nov-2017 03:14:23 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /home/viajesvi/public_html/wp-content/themes/altair/functions.php on line 87
+[22-Nov-2017 03:15:12 UTC] PHP Strict Standards:  Redefining already defined constructor for class WP_exec_PHP in /home/viajesvi/public_html/wp-content/plugins/wp-exec-php/wp-exec-php.php on line 151
+[22-Nov-2017 03:15:12 UTC] PHP Deprecated:  Assigning the return value of new by reference is deprecated in /home/viajesvi/public_html/wp-content/plugins/wp-exec-php/wp-exec-php.php on line 987
+[22-Nov-2017 03:15:12 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /home/viajesvi/public_html/wp-content/themes/altair/functions.php on line 87
+[22-Nov-2017 05:37:34 UTC] PHP Strict Standards:  Redefining already defined constructor for class WP_exec_PHP in /home/viajesvi/public_html/wp-content/plugins/wp-exec-php/wp-exec-php.php on line 151
+[22-Nov-2017 05:37:34 UTC] PHP Deprecated:  Assigning the return value of new by reference is deprecated in /home/viajesvi/public_html/wp-content/plugins/wp-exec-php/wp-exec-php.php on line 987
+[22-Nov-2017 05:37:34 UTC] PHP Strict Standards:  Redefining already defined constructor for class WP_exec_PHP in /home/viajesvi/public_html/wp-content/plugins/wp-exec-php/wp-exec-php.php on line 151
+[22-Nov-2017 05:37:34 UTC] PHP Deprecated:  Assigning the return value of new by reference is deprecated in /home/viajesvi/public_html/wp-content/plugins/wp-exec-php/wp-exec-php.php on line 987
+[22-Nov-2017 05:37:34 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /home/viajesvi/public_html/wp-content/themes/altair/functions.php on line 87
+[22-Nov-2017 05:37:34 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /home/viajesvi/public_html/wp-content/themes/altair/functions.php on line 87
+[24-Dec-2017 21:59:50 UTC] PHP Warning:  Error while sending QUERY packet. PID=21202 in /home/viajesvi/public_html/wp-includes/wp-db.php on line 1942
+[04-Jan-2018 19:39:21 UTC] PHP Parse error:  syntax error, unexpected ''' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home/viajesvi/public_html/wp-content/plugins/front-end-only-users/Functions/Process_Front_End_Forms.php on line 200
+[21-Feb-2018 19:01:09 UTC] PHP Fatal error:  Out of memory (allocated 6553600) (tried to allocate 12288 bytes) in /home/viajesvi/public_html/wp-includes/theme.php on line 3127
+[21-Feb-2018 19:01:16 UTC] PHP Fatal error:  Out of memory (allocated 26738688) (tried to allocate 12288 bytes) in /home/viajesvi/public_html/wp-content/plugins/responsive-gallery-with-lightbox/responsive-gallery-with-lightbox.php on line 490
+[21-Feb-2018 19:01:24 UTC] PHP Fatal error:  Out of memory (allocated 1310720) (tried to allocate 12288 bytes) in /home/viajesvi/public_html/wp-includes/functions.php on line 1393
+[21-Feb-2018 19:01:26 UTC] PHP Fatal error:  Out of memory (allocated 8126464) (tried to allocate 49152 bytes) in /home/viajesvi/public_html/wp-includes/general-template.php on line 3370
+[21-Feb-2018 19:01:27 UTC] PHP Fatal error:  Out of memory (allocated 4718592) (tried to allocate 49152 bytes) in /home/viajesvi/public_html/wp-includes/formatting.php on line 183
+[21-Feb-2018 19:01:38 UTC] PHP Fatal error:  Out of memory (allocated 24379392) (tried to allocate 3072 bytes) in /home/viajesvi/public_html/wp-content/plugins/ninja-forms/ninja-forms.php on line 464
+[28-Feb-2018 06:08:05 UTC] PHP Fatal error:  Call to undefined function getBrowser() in /home/viajesvi/public_html/wp-content/themes/altair/templates/custom-css.php on line 101
+[02-Mar-2018 18:39:02 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/viajesvi/public_html/wp-content/plugins/front-end-only-users/Shortcodes/Insert_Login_Form.php on line 119
+[02-Mar-2018 19:00:32 UTC] PHP Fatal error:  Out of memory (allocated 30932992) (tried to allocate 3072 bytes) in /home/viajesvi/public_html/wp-includes/widgets/class-wp-widget-text.php on line 33
+[05-Mar-2018 03:27:10 UTC] PHP Fatal error:  Out of memory (allocated 14155776) (tried to allocate 12288 bytes) in /home/viajesvi/public_html/wp-includes/media.php on line 2854
+[05-Apr-2018 04:57:16 UTC] PHP Warning:  Error while sending QUERY packet. PID=28620 in /home/viajesvi/public_html/wp-includes/wp-db.php on line 1942
+[05-Apr-2018 04:57:25 UTC] Error MySQL server has gone away de la base de datos de WordPress para la consulta SELECT   wp_posts.* FROM wp_posts  WHERE 1=1  AND wp_posts.post_type = 'galleries' AND ((wp_posts.post_status = 'publish'))  ORDER BY wp_posts.post_date DESC  realizada por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/altair/functions.php'), include('/themes/altair/fields/page.fields.php'), get_posts, WP_Query->query, WP_Query->get_posts
+[22-Jan-2019 23:33:57 UTC] PHP Fatal error:  Cannot redeclare VoucherReceptivo() (previously declared in /home/viajesvi/public_html/wp-content/plugins/emi-voucher/voucher.php:11) in /home/viajesvi/public_html/wp-content/plugins/recep-voucher/voucher.php on line 437
+[22-Jan-2019 23:33:57 UTC] PHP Fatal error:  Cannot redeclare VoucherReceptivo() (previously declared in /home/viajesvi/public_html/wp-content/plugins/emi-voucher/voucher.php:11) in /home/viajesvi/public_html/wp-content/plugins/recep-voucher/voucher.php on line 437
+[22-Jan-2019 23:35:23 UTC] PHP Fatal error:  Cannot redeclare VoucherReceptivo() (previously declared in /home/viajesvi/public_html/wp-content/plugins/emi-voucher/voucher.php:11) in /home/viajesvi/public_html/wp-content/plugins/recep-voucher/voucher.php on line 437
+[22-Jan-2019 23:35:23 UTC] PHP Fatal error:  Cannot redeclare VoucherReceptivo() (previously declared in /home/viajesvi/public_html/wp-content/plugins/emi-voucher/voucher.php:11) in /home/viajesvi/public_html/wp-content/plugins/recep-voucher/voucher.php on line 437
+[22-Jan-2019 23:36:17 UTC] PHP Fatal error:  Cannot redeclare VoucherReceptivo() (previously declared in /home/viajesvi/public_html/wp-content/plugins/emi-voucher/voucher.php:11) in /home/viajesvi/public_html/wp-content/plugins/recep-voucher/voucher.php on line 437
+[22-Jan-2019 23:36:17 UTC] PHP Fatal error:  Cannot redeclare VoucherReceptivo() (previously declared in /home/viajesvi/public_html/wp-content/plugins/emi-voucher/voucher.php:11) in /home/viajesvi/public_html/wp-content/plugins/recep-voucher/voucher.php on line 437
+[26-Feb-2019 03:41:13 UTC] WordPress database error Got error 28 from storage engine for query SHOW FULL COLUMNS FROM `vvt_wfblocks7` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/wordfence/wordfence.php'), wordfence::install_actions, wfBlock::lockoutForIP
+[26-Feb-2019 03:41:13 UTC] WordPress database error Got error 28 from storage engine for query SHOW FULL COLUMNS FROM `vvt_wfblocks7` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/wordfence/wordfence.php'), wordfence::install_actions, wfBlock::lockoutForIP
+[26-Feb-2019 03:41:13 UTC] WordPress database error Table 'vvt_auto_updates' already exists for query CREATE TABLE vvt_auto_updates (
+		id INT(9) NOT NULL AUTO_INCREMENT,
+		name VARCHAR(255) NOT NULL,
+		onoroff VARCHAR(99999) NOT NULL,
+		UNIQUE KEY id (id)
+	) made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('

@@ -1,0 +1,624 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Front-End Only Users plugin\n"
+"POT-Creation-Date: 2015-10-23 12:53-0500\n"
+"PO-Revision-Date: 2015-10-23 13:18-0500\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"Last-Translator: \n"
+"Language: es_MX\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../Functions/Initial_Data.php:13
+msgid "First Name"
+msgstr "Nombre"
+
+#: ../Functions/Initial_Data.php:14
+msgid "Your first name."
+msgstr "Su primer nombre."
+
+#: ../Functions/Initial_Data.php:16 ../Functions/Initial_Data.php:17
+#: ../Functions/Initial_Data.php:18 ../Functions/Initial_Data.php:26
+#: ../Functions/Initial_Data.php:27 ../Functions/Initial_Data.php:28
+#: ../Functions/Initial_Data.php:36 ../Functions/Initial_Data.php:37
+#: ../Functions/Initial_Data.php:38
+msgid "Yes"
+msgstr "Si"
+
+#: ../Functions/Initial_Data.php:23
+msgid "Last Name"
+msgstr "Apellido"
+
+#: ../Functions/Initial_Data.php:24
+msgid "Your last name."
+msgstr "Su apellido."
+
+#: ../Functions/Initial_Data.php:33
+msgid "Email"
+msgstr "Email"
+
+#: ../Functions/Initial_Data.php:34
+msgid "Your e-mail address."
+msgstr "Su correo electrónico."
+
+#: ../Functions/Initial_Data.php:44
+msgid "Regular User"
+msgstr "Usuario Regular"
+
+#: ../Functions/Prepare_Data_For_Insertion.php:23
+msgid "The passwords you entered did not match."
+msgstr "Las contraseñas que ingreso no coinciden."
+
+#: ../Functions/Prepare_Data_For_Insertion.php:27
+msgid ""
+"There is already a user with that Username, please select a different one."
+msgstr ""
+"Ya existe un usuario con ese Nombre de Usuario, por favor seleccione uno "
+"diferente."
+
+#: ../Functions/Prepare_Data_For_Insertion.php:47
+msgid ""
+"There is already an account with that Username. Please select a different "
+"one."
+msgstr ""
+"Ya existe una cuenta con ese Nombre de Usuario. Por favor seleccione uno "
+"diferente."
+
+#: ../Functions/Prepare_Data_For_Insertion.php:57
+msgid "Your account has been succesfully created."
+msgstr "Su cuenta ha sido creada con éxito."
+
+#: ../Functions/Prepare_Data_For_Insertion.php:151
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr ""
+"El archivo subido excede la directiva de upload_max_filezise en php.ini"
+
+#: ../Functions/Prepare_Data_For_Insertion.php:154
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form"
+msgstr ""
+"El archivo subido excede la directiva de MAX_FILE_SIZE que ha sido "
+"especificada en la forma HTML"
+
+#: ../Functions/Prepare_Data_For_Insertion.php:157
+msgid "The uploaded file was only partially uploaded"
+msgstr "El archivo subido sólo se subió parcialmente"
+
+#: ../Functions/Prepare_Data_For_Insertion.php:160
+#: ../Functions/Prepare_Data_For_Insertion.php:205
+#: ../Functions/Prepare_Data_For_Insertion.php:207
+msgid "No file was uploaded."
+msgstr "No se subió ningún archivo"
+
+#: ../Functions/Prepare_Data_For_Insertion.php:164
+msgid "Missing a temporary folder"
+msgstr "Falta una carpeta temporal"
+
+#: ../Functions/Prepare_Data_For_Insertion.php:167
+msgid "Failed to write file to disk"
+msgstr "Fallo al escribir el archivo al disco"
+
+#: ../Functions/Prepare_Data_For_Insertion.php:170
+msgid "File upload stopped by extension"
+msgstr "La subida del archivo fue detenida por extensión"
+
+#: ../Functions/Prepare_Data_For_Insertion.php:174
+msgid "No error code avaiable"
+msgstr "No hay código de error disponible"
+
+#: ../Functions/Prepare_Data_For_Insertion.php:179
+msgid "No file was uploaded here.."
+msgstr "Ningún archivo se ha subido aquí.."
+
+#: ../Functions/Prepare_Data_For_Insertion.php:241
+msgid "Users have been successfully deleted."
+msgstr "Los Usuarios se han eliminado con éxito."
+
+#: ../Functions/Prepare_Data_For_Insertion.php:290
+#: ../Functions/Prepare_Data_For_Insertion.php:333
+msgid "Fields have been successfully deleted."
+msgstr "Los Campos se han eliminado con éxito."
+
+#: ../Functions/Process_Front_End_Forms.php:33
+msgid "Login succesful"
+msgstr "Inicio de Sesión exitoso"
+
+#: ../Functions/Process_Front_End_Forms.php:35
+msgid "Login failed - you need to confirm your e-mail before you can log in"
+msgstr ""
+"Error de inicio de sesión - debe confirmar su mail antes de poder iniciar "
+"sesión"
+
+#: ../Functions/Process_Front_End_Forms.php:37
+msgid ""
+"Login failed - an administrator needs to approve your registration before "
+"you can log in"
+msgstr ""
+"Error de inicio de sesión - un administrador debe aprobar su registro antes "
+"de poder iniciar sesión"
+
+#: ../Functions/Process_Front_End_Forms.php:39
+msgid "Login failed - incorrect username or password"
+msgstr "Error de inicio de sesión - usuario o contraseña incorrectos"
+
+#: ../Functions/Update_Admin_Databases.php:10
+msgid "User has been successfully created."
+msgstr "Usuario se ha creado con éxito."
+
+#: ../Functions/Update_Admin_Databases.php:24
+msgid "User has been successfully edited."
+msgstr "Usuario se ha editado con éxito."
+
+#: ../Functions/Update_Admin_Databases.php:38
+msgid "User has been successfully deleted."
+msgstr "Usuario se ha eliminado con éxito."
+
+#: ../Functions/Update_Admin_Databases.php:57
+#: ../Functions/Update_Admin_Databases.php:105
+msgid "Field has been successfully created."
+msgstr "Campo se ha creado con éxito."
+
+#: ../Functions/Update_Admin_Databases.php:76
+#: ../Functions/Update_Admin_Databases.php:121
+msgid "Field has been successfully edited."
+msgstr "Campo se ha editado con éxito."
+
+#: ../Functions/Update_Admin_Databases.php:89
+#: ../Functions/Update_Admin_Databases.php:134
+msgid "Field has been successfully deleted."
+msgstr "Campo se ha eliminado con éxito."
+
+#: ../Functions/Update_Admin_Databases.php:174
+msgid "Level has been successfully created."
+msgstr "Nivel se ha creado con éxito."
+
+#: ../Functions/Update_Admin_Databases.php:189
+msgid "Level has been successfully edited."
+msgstr "Nivel se ha editado con éxito."
+
+#: ../Functions/Update_Admin_Databases.php:203
+msgid "Level has been successfully deleted."
+msgstr "Nivel se ha eliminado con éxito."
+
+#: ../Functions/Update_Admin_Databases.php:213
+msgid "Options have been succesfully updated."
+msgstr "Las opciones se han actualizado con éxito."
+
+#: ../Functions/Update_EWD_FEUP_Content.php:47
+msgid "The form has not worked correctly. Please contact the plugin developer."
+msgstr ""
+"La forma no ha funcionado de manera correcta. Por favor contacte al "
+"desarrollador del plugin."
+
+#: ../Shortcodes/Insert_Edit_Account.php:20
+msgid "Update Account"
+msgstr "Actualizar Cuenta"
+
+#: ../Shortcodes/Insert_Edit_Account.php:30
+#: ../Shortcodes/Insert_Edit_Profile.php:34
+msgid "You must be logged in to access this page."
+msgstr "Debe iniciar sesión para acceder a esta página."
+
+#: ../Shortcodes/Insert_Edit_Account.php:31
+#: ../Shortcodes/Insert_Edit_Profile.php:35
+#: ../Shortcodes/Insert_User_List.php:24
+#: ../Shortcodes/Insert_User_Search.php:28 ../Shortcodes/Privilege_Level.php:37
+msgid "Please"
+msgstr "Por favor"
+
+#: ../Shortcodes/Insert_Edit_Account.php:31
+#: ../Shortcodes/Insert_Edit_Profile.php:35
+#: ../Shortcodes/Insert_User_List.php:24
+#: ../Shortcodes/Insert_User_Search.php:28 ../Shortcodes/Privilege_Level.php:37
+msgid "login"
+msgstr "inicie sesión"
+
+#: ../Shortcodes/Insert_Edit_Account.php:31
+#: ../Shortcodes/Insert_Edit_Profile.php:35
+#: ../Shortcodes/Insert_User_List.php:24
+#: ../Shortcodes/Insert_User_Search.php:28 ../Shortcodes/Privilege_Level.php:37
+msgid "to continue."
+msgstr "para continuar."
+
+#: ../Shortcodes/Insert_Edit_Account.php:43
+#: ../Shortcodes/Insert_Login_Form.php:38
+#: ../Shortcodes/Insert_Login_Form.php:39
+#: ../Shortcodes/Insert_Register_Form.php:43
+#: ../Shortcodes/Insert_Register_Form.php:45 ../html/UsersPage.php:181
+msgid "Username"
+msgstr "Usuario"
+
+#: ../Shortcodes/Insert_Edit_Account.php:45
+#: ../Shortcodes/Insert_Login_Form.php:42
+#: ../Shortcodes/Insert_Register_Form.php:48 ../html/UsersPage.php:183
+msgid "Password"
+msgstr "Contraseña"
+
+#: ../Shortcodes/Insert_Edit_Account.php:47
+#: ../Shortcodes/Insert_Register_Form.php:53 ../html/UsersPage.php:185
+msgid "Repeat Password"
+msgstr "Repetir Contraseña"
+
+#: ../Shortcodes/Insert_Edit_Profile.php:24
+msgid "Edit Profile"
+msgstr "Editar Perfil"
+
+#: ../Shortcodes/Insert_Edit_Profile.php:68 ../html/UserDetails.php:40
+msgid "Current file:"
+msgstr "Archivo actual:"
+
+#: ../Shortcodes/Insert_Login_Form.php:18
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: ../Shortcodes/Insert_Logout.php:26
+msgid "You have been successfully logged out."
+msgstr "Has cerrado sesión con éxito."
+
+#: ../Shortcodes/Insert_Register_Form.php:23
+msgid "Register"
+msgstr "Registrar"
+
+#: ../Shortcodes/Insert_User_List.php:23
+#: ../Shortcodes/Insert_User_Search.php:27 ../Shortcodes/Privilege_Level.php:36
+msgid "Please log in to access this content."
+msgstr "Por favor inicie sesión para acceder a este contenido."
+
+#: ../Shortcodes/Insert_User_List.php:29
+msgid ""
+"Either field_name or field_value was left blank. Please make sure to include "
+"both attributes inside your shortcode."
+msgstr ""
+"Ya sea field_name o field_value fueron dejados en blanco. Por favor "
+"asegúrese de incluir ambos atributos dentro del shortcode."
+
+#: ../Shortcodes/Insert_User_Search.php:33
+msgid ""
+"search_fields was left blank. Please make sure to include that attribute "
+"inside your shortcode."
+msgstr ""
+"search_fields fue dejado en blanco. Por favor asegúrese de incluir ese "
+"atributo dentro del shortcode."
+
+#: ../Shortcodes/Privilege_Level.php:44
+msgid "Sorry, your account isn't a high enough level to access this content."
+msgstr ""
+"Lo sentimos, su cuenta no tiene el nivel suficiente para acceder a este "
+"contenido."
+
+#: ../Shortcodes/Privilege_Level.php:45
+msgid "Sorry, your account level is too high to access this content."
+msgstr ""
+"Lo sentimos, el nivel de su cuenta es demasiado alto para acceder a este "
+"contenido."
+
+#: ../Shortcodes/Privilege_Level.php:46
+msgid "Sorry, your account isn't the correct level to acces this content."
+msgstr ""
+"Lo sentimos, su cuenta no tiene el nivel correcto para acceder a este "
+"contenido."
+
+#: ../Shortcodes/Privilege_Level.php:51
+msgid "Sorry, this content is only for those whose "
+msgstr "Lo sentimos, este contenido es sólo para aquellos que"
+
+#: ../html/AdminHeader.php:2
+msgid "Front End Only Users Settings"
+msgstr "Configuración de Front End Only Users"
+
+#: ../html/CatalogueDetails.php:9 ../html/FieldDetails.php:8
+#: ../html/UserDetails.php:10
+msgid "Back"
+msgstr "Atrás"
+
+#: ../html/CatalogueDetails.php:18 ../html/FieldDetails.php:16
+#: ../html/FieldsPage.php:188 ../html/LevelsPage.php:38
+#: ../html/LevelsPage.php:46 ../html/LevelsPage.php:101
+msgid "Name"
+msgstr "Nombre"
+
+#: ../html/CatalogueDetails.php:20
+msgid ""
+"The name of the catalogue. This is for your own internal use, and to insert "
+"the catalogue into a page or post."
+msgstr ""
+"El nombre del catálogo. Esto es para uso interno, y para insertar el "
+"catálogo en una página o publicación."
+
+#: ../html/CatalogueDetails.php:23 ../html/DashboardPage.php:104
+#: ../html/DashboardPage.php:138 ../html/FieldDetails.php:37
+#: ../html/FieldsPage.php:66 ../html/FieldsPage.php:100
+#: ../html/FieldsPage.php:209
+msgid "Description"
+msgstr "Descripción"
+
+#: ../html/CatalogueDetails.php:25
+msgid "The description of the catalogue. What products are included in this?"
+msgstr "La descripción del catálogo. ¿Qué productos están incluidos en éste?"
+
+#: ../html/CatalogueDetails.php:28
+msgid "Custom CSS"
+msgstr "CSS Personalizado"
+
+#: ../html/CatalogueDetails.php:30
+msgid "Custom CSS styles that should be applied to this catalogue."
+msgstr "Los estilos Personalizados de CSS que serán aplicados a este catálogo."
+
+#: ../html/CatalogueDetails.php:34
+msgid "Edit Catalogue"
+msgstr "Editar Catálogo"
+
+#: ../html/CatalogueDetails.php:48
+msgid "Products"
+msgstr "Productos"
+
+#: ../html/CatalogueDetails.php:53 ../html/CatalogueDetails.php:103
+msgid "View All"
+msgstr "Ver Todos"
+
+#: ../html/CatalogueDetails.php:88 ../html/CatalogueDetails.php:138
+msgid "Add to Catalogue"
+msgstr "Agregar al Catálogo"
+
+#: ../html/CatalogueDetails.php:98
+msgid "Categories"
+msgstr "Categorías"
+
+#: ../html/CatalogueDetails.php:161 ../html/CatalogueDetails.php:168
+msgid "Delete?"
+msgstr "¿Eliminar?"
+
+#: ../html/CatalogueDetails.php:162 ../html/CatalogueDetails.php:169
+msgid "Catalogue Item Name"
+msgstr "Nombre del Item del Catálogo"
+
+#: ../html/CatalogueDetails.php:163 ../html/CatalogueDetails.php:170
+msgid "Type of Catalogue Item"
+msgstr "Tipo del Item de Catálogo"
+
+#: ../html/CatalogueDetails.php:179 ../html/DashboardPage.php:67
+#: ../html/DashboardPage.php:167 ../html/DashboardPage.php:191
+#: ../html/FieldsPage.php:29 ../html/FieldsPage.php:129
+#: ../html/FieldsPage.php:153 ../html/LevelsPage.php:21
+#: ../html/LevelsPage.php:62 ../html/LevelsPage.php:76 ../html/UsersPage.php:35
+#: ../html/UsersPage.php:127 ../html/UsersPage.php:147
+msgid "Delete"
+msgstr "Eliminar"
+
+#: ../html/DashboardPage.php:9
+msgid "Full Version"
+msgstr "Versión Completa"
+
+#: ../html/DashboardPage.php:11
+msgid "Upgrade to the full version "
+msgstr "Obtenga la versión completa"
+
+#: ../html/DashboardPage.php:11
+msgid ""
+"to take advantage of all the available features of the Ultimate Product "
+"Catalogue for Wordpress!"
+msgstr ""
+"para aprovechar todas las características disponibles del Ultimate Product "
+"Catalogue para Wordpress!"
+
+#: ../html/DashboardPage.php:15
+msgid "Product Key"
+msgstr "Llave de Producto"
+
+#: ../html/DashboardPage.php:18
+msgid "Upgrade"
+msgstr "Upgradear"
+
+#: ../html/DashboardPage.php:28
+msgid "Thank You!"
+msgstr "¡Gracias!"
+
+#: ../html/DashboardPage.php:31
+msgid ""
+"Thanks for being an early adopter! Anyone who installs before July 15th will "
+"always have access to new features, updates and full product support."
+msgstr ""
+"¡Gracias por ser un early adopter! Cualquiera que instale antes del 15 de "
+"Julio siempre tendrá acceso a nuevas características, actualizaciones y "
+"soporte completo."
+
+#: ../html/DashboardPage.php:32
+msgid "Follow us on Facebook "
+msgstr "Síguenos en Facebook"
+
+#: ../html/DashboardPage.php:32
+msgid "to stay up to date with new features and plugins."
+msgstr "para mantenerte al tanto de nuevas características y plugins."
+
+#: ../html/DashboardPage.php:66 ../html/DashboardPage.php:190
+#: ../html/FieldsPage.php:28 ../html/FieldsPage.php:152
+#: ../html/LevelsPage.php:20 ../html/LevelsPage.php:75 ../html/UsersPage.php:34
+#: ../html/UsersPage.php:146
+msgid "Bulk Actions"
+msgstr "Acciones en Lote"
+
+#: ../html/DashboardPage.php:69 ../html/DashboardPage.php:193
+#: ../html/FieldsPage.php:31 ../html/FieldsPage.php:155
+#: ../html/LevelsPage.php:23 ../html/LevelsPage.php:78 ../html/UsersPage.php:37
+#: ../html/UsersPage.php:149
+msgid "Apply"
+msgstr "Aplicar"
+
+#: ../html/DashboardPage.php:72 ../html/DashboardPage.php:196
+#: ../html/FieldsPage.php:34 ../html/FieldsPage.php:158
+#: ../html/UsersPage.php:40 ../html/UsersPage.php:152
+msgid "items"
+msgstr "items"
+
+#: ../html/DashboardPage.php:76 ../html/DashboardPage.php:200
+#: ../html/FieldsPage.php:38 ../html/FieldsPage.php:162
+#: ../html/UsersPage.php:44 ../html/UsersPage.php:156
+msgid "of"
+msgstr "de"
+
+#: ../html/DashboardPage.php:90 ../html/DashboardPage.php:124
+#: ../html/FieldsPage.php:52 ../html/FieldsPage.php:86
+msgid "Field Name"
+msgstr "Nombre del Campo"
+
+#: ../html/DashboardPage.php:97 ../html/DashboardPage.php:131
+#: ../html/FieldDetails.php:21 ../html/FieldsPage.php:59
+#: ../html/FieldsPage.php:93 ../html/FieldsPage.php:193
+msgid "Type"
+msgstr "Tipo"
+
+#: ../html/DashboardPage.php:111 ../html/DashboardPage.php:145
+#: ../html/FieldDetails.php:59 ../html/FieldsPage.php:73
+#: ../html/FieldsPage.php:107 ../html/FieldsPage.php:231
+msgid "Required?"
+msgstr "¿Requerido?"
+
+#: ../html/DashboardPage.php:232
+msgid "Unapproved Users"
+msgstr "Usuarios no aprobados"
+
+#: ../html/DashboardPage.php:234
+msgid "Recent Users"
+msgstr "Usuarios recientes"
+
+#: ../html/DashboardPage.php:240
+msgid "Recent"
+msgstr "Reciente"
+
+#: ../html/FieldDetails.php:18 ../html/FieldsPage.php:190
+msgid "The name of the field your users will see."
+msgstr "El nombre del campo que verán sus usuarios."
+
+#: ../html/FieldDetails.php:34 ../html/FieldsPage.php:206
+msgid ""
+"The input method for the field and type of data that the field will hold."
+msgstr ""
+"El método de entrada para los campos y tipos de datos que el campo tendrá."
+
+#: ../html/FieldDetails.php:39 ../html/FieldsPage.php:211
+msgid ""
+"The description of the field, which the user will see as the instruction for "
+"the field."
+msgstr ""
+"La descripción del campo, que el usuario vera como la instrucción para ese "
+"campo."
+
+#: ../html/FieldDetails.php:42 ../html/FieldsPage.php:214
+msgid "Input Values"
+msgstr "Valores de Entrada"
+
+#: ../html/FieldDetails.php:44 ../html/FieldsPage.php:216
+msgid ""
+"A comma-separated list of acceptable input values for this field. These "
+"values will be the options for select, checkbox, and radio inputs. All "
+"values will be accepted if left blank."
+msgstr ""
+"Una lista separada por comas es un valor de entrada aceptable para este "
+"campo. Estos valores serán las opciones para seleccionar, casilla de "
+"selección y de radio. Todos los valores serán aceptados si se dejan en "
+"blanco."
+
+#: ../html/FieldDetails.php:47 ../html/FieldsPage.php:219
+msgid "Show in Admin Table?"
+msgstr "¿Mostrar en Tabla de Administración?"
+
+#: ../html/FieldDetails.php:50 ../html/FieldsPage.php:222
+msgid "Should this field appear in the users table in the admin area?"
+msgstr ""
+"¿Debería este campo aparecer en la tabla de usuarios en el área de "
+"administración?"
+
+#: ../html/FieldDetails.php:53 ../html/FieldsPage.php:225
+msgid "Show in User Profile"
+msgstr "Mostrar en Perfil de Usuario"
+
+#: ../html/FieldDetails.php:56 ../html/FieldsPage.php:228
+msgid "Should this field appear in users' profiles in the front-end?"
+msgstr ""
+"¿Debería este campo aparecer en los perfiles de usuario en el front-end?"
+
+#: ../html/FieldDetails.php:62 ../html/FieldsPage.php:234
+msgid "Area users required to fill out this field?"
+msgstr "¿Es un área que los usuarios deben llenar?"
+
+#: ../html/FieldDetails.php:65
+msgid "Edit Field"
+msgstr "Editar Campo"
+
+#: ../html/FieldsPage.php:181 ../html/FieldsPage.php:237
+msgid "Add New Field"
+msgstr "Agregar Nuevo Campo"
+
+#: ../html/LevelsPage.php:39 ../html/LevelsPage.php:47
+msgid "User Count"
+msgstr "Cuenta de Usuarios"
+
+#: ../html/LevelsPage.php:40 ../html/LevelsPage.php:48
+#: ../html/LevelsPage.php:106
+msgid "Privilege Level"
+msgstr "Nivel de Privilegio"
+
+#: ../html/LevelsPage.php:94 ../html/LevelsPage.php:116
+msgid "Add New Level"
+msgstr "Agregar Nuevo Nivel"
+
+#: ../html/LevelsPage.php:103
+msgid "The name of the level you will assign to a group of users."
+msgstr "El nombre del nivel que asignarás a ese grupo de usuarios."
+
+#: ../html/LevelsPage.php:113
+msgid ""
+"The privilege level for this user level. Privilege levels can affect who can "
+"see what content. Inserting a new level will increase the privilege level of "
+"all above levels."
+msgstr ""
+"El nivel de privilegio para este nivel de usuarios. Los niveles de "
+"Privilegios pueden afectar quien ve que contenido. Insertar un nuevo nivel "
+"incrementará el nivel del privilegio de todos los niveles superiores."
+
+#: ../html/MainScreen.php:3
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: ../html/MainScreen.php:4
+msgid "Users"
+msgstr "Usuarios"
+
+#: ../html/MainScreen.php:5
+msgid "Fields"
+msgstr "Campos"
+
+#: ../html/MainScreen.php:6
+msgid "Levels"
+msgstr "Niveles"
+
+#: ../html/MainScreen.php:7
+msgid "Options"
+msgstr "Opciones"
+
+#: ../html/MainScreen.php:8
+msgid "Emails"
+msgstr "Emails"
+
+#: ../html/UserDetails.php:11
+msgid "Edit User"
+msgstr "Editar Usuario"
+
+#: ../html/UserDetails.php:20 ../html/UsersPage.php:188
+msgid "Admin Approved"
+msgstr "Aprobado por Administrador"
+
+#: ../html/UserDetails.php:59
+msgid "Edit User "
+msgstr "Editar Usuario"
+
+#: ../html/UsersPage.php:174 ../html/UsersPage.php:220
+msgid "Add New User"
+msgstr "Agregar Nuevo Usuario"
