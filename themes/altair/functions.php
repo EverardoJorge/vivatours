@@ -1,11 +1,6 @@
 <?php
 
 
-function eliminar_doble_registro(){	
-	echo "hola estoy aqui";
-	remove_action('wp', 'EWD_FEUP_Track_Page_Load');
-}
-add_action( 'init', 'eliminar_doble_registro', 11 );
 
 
 /*

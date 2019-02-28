@@ -34,5 +34,5 @@ $registros = $wpdb->get_results( "SELECT * FROM wp_divisas", ARRAY_A );
     }
 } 
     add_shortcode('divisas', 'mi_divisas');
-    // Funcion del shortcode para crear un div flotante:
+    // Funcion del shortcode para crear un div flotante
     ?>
