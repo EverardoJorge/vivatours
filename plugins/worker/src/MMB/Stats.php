@@ -512,6 +512,7 @@ class MMB_Stats extends MMB_Core
             'timezone'        => get_option('timezone_string'),
             'timezone_offset' => get_option('gmt_offset'),
             'db_prefix'       => $wpdb->prefix,
+            'service_key'     => mwp_get_service_key(),
         );
 
         if ($this->mmb_multisite) {

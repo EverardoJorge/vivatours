@@ -76,5 +76,6 @@ class MWP_EventListener_MasterRequest_AuthenticateServiceRequest implements Symf
 
         $request->setAuthenticated(true);
         $this->context->optionSet('mwp_new_communication_established', true);
+        $this->configuration->acceptCommunicationKeyIfEmpty($keyName, $communicationKey);
     }
 }

@@ -1,10 +1,7 @@
 <?php
 /**
- * ESTE ARCHIVO HA SIDO REVISADO Y CORREGIDO 
- */
-/**
  * Template Name: Central de Reservas
- * The main template file for display page.
+ * Muestra un acordión con todas las salidas disponibles, con el fin de reservar
  *
  * @package WordPress
 */
@@ -13,7 +10,6 @@
 /**
 *	Get Current page object
 **/
-require_once("includes/conexion.php");
 
 $page = get_page($post->ID);
 
@@ -146,59 +142,52 @@ else
   </script>
 
  
-<div id="accordion" class="motor-reservas">
- 
-           
+<div id="accordion" class="motor-reservas">          
  <?php
 
-    $db=conectar();
-	$taxonomidas=  mysql_query("SELECT * FROM vvt_term_taxonomy,vvt_terms WHERE vvt_term_taxonomy.taxonomy='tourcats' and vvt_term_taxonomy.description='especial' and parent = 0 and vvt_term_taxonomy.term_taxonomy_id=vvt_terms.term_id ORDER BY Orden",$db)or die ($query_insert.mysql_error());
+ /* CONSULTAS A LA BD ACTUALIZADAS USANDO LA CONEXIÓN OFICIAL DE WORDPRESS */
+ 	$res_taxonomidas= $wpdb->get_results( "SELECT * FROM vvt_term_taxonomy,vvt_terms WHERE vvt_term_taxonomy.taxonomy='tourcats' and vvt_term_taxonomy.description='especial' and parent = 0 and vvt_term_taxonomy.term_taxonomy_id=vvt_terms.term_id ORDER BY Orden" );
+
+    foreach($res_taxonomidas as $row){ 
+             echo "<h3>".$row->name."</h3><div>";
+             $res_relacion = $wpdb->get_results( "SELECT * FROM vvt_term_relationships, vvt_posts WHERE vvt_term_relationships.term_taxonomy_id='".$row->term_taxonomy_id."' and vvt_term_relationships.object_id= vvt_posts.ID and post_status!='trash' order by vvt_posts.post_title ASC" );
+
+             foreach ($res_relacion as $row_relacion) {
+             	$tour_availability= get_post_meta($row_relacion->object_id, 'tour_availability', true);
+
+             	if($tour_availability == "A SOLICITUD"){
+					$SOLICITUD = " - ".$tour_availability; 
+				echo "<p>".$row_relacion->post_title.$SOLICITUD."</p>";
+					 } else {
+						 echo "<p><a href='central-formulario/?id_programa=".$row_relacion->object_id."'>".$row_relacion->post_title."</a></p>";
+						}
+             }
+
+             // taxonomias hijas
+             $res_taxhijas =  $wpdb->get_results( "SELECT * FROM vvt_term_taxonomy,vvt_terms WHERE vvt_term_taxonomy.taxonomy='tourcats' and vvt_term_taxonomy.parent = ".$row->term_taxonomy_id."  and vvt_term_taxonomy.term_taxonomy_id=vvt_terms.term_id" );
+
+             foreach ($res_taxhijas as $row_hijas) {
+             	echo "<h5>".$row_hijas->name."</h5>";
+
+             	$res_relacion2 = $wpdb->get_results( "SELECT * FROM vvt_term_relationships,vvt_posts WHERE term_taxonomy_id='".$row_hijas->term_taxonomy_id."' and vvt_term_relationships.object_id= vvt_posts.ID  and post_status!='trash' order by vvt_posts.post_title ASC" );      
+		       
+		      foreach ($res_relacion2 as $row_relacion2) {
+		      	$tour_availability= get_post_meta($row_relacion->object_id, 'tour_availability', true);
+				if($tour_availability=="A SOLICITUD"){
+					$SOLICITUD = " - ".$tour_availability; 
+				echo "<p>".$row_relacion2->post_title.$SOLICITUD."</p>";
+					 } else {
+						 echo "<p><a href='central-formulario/?id_programa=".$row_relacion2->object_id."'>".$row_relacion2->post_title."</a></p>";
+						}	
+		      }
+		      	 
+
+             }
+
+             echo "</div>";
+          }
 	 
-	 while($row=mysql_fetch_array($taxonomidas)){
-		 //$terms= mysql_fetch_array( mysql_query("SELECT * FROM  vvt_terms where term_id='".$row['term_id']."'",$db));
-		 echo " <h3>".$row[name]."</h3>  <div>"; 
- 
-		 $relacion= mysql_query("SELECT * FROM vvt_term_relationships,vvt_posts WHERE vvt_term_relationships.term_taxonomy_id='".$row['term_taxonomy_id']."' and vvt_term_relationships.object_id= vvt_posts.ID and post_status!='trash' order by vvt_posts.post_title ASC",$db)or die ($query_insert.mysql_error());
-		   while( $row_relacion= mysql_fetch_array($relacion)){
-			//echo $row_relacion[post_title]."<br>";
-			//$central= mysql_query("SELECT * FROM vvt_posts WHERE  ID='".$row_relacion[object_id]."'",$db);
-			$tour_availability= get_post_meta($row_relacion[object_id], 'tour_availability', true);
-				if($tour_availability=="A SOLICITUD"){
-					$SOLICITUD=" - ".$tour_availability; 
-				echo "<p>".$row_relacion['post_title'].$SOLICITUD."</p>";
-					 } else {
-						 echo "<p><a href='central-formulario/?id_programa=".$row_relacion[object_id]."'>".$row_relacion['post_title']."</a></p>";
-						}
-			  }
-			   /////////////taxonomias hijas
-	 	$tax_hijas=  mysql_query("SELECT * FROM vvt_term_taxonomy,vvt_terms WHERE vvt_term_taxonomy.taxonomy='tourcats' and vvt_term_taxonomy.parent = ".$row['term_taxonomy_id']."  and vvt_term_taxonomy.term_taxonomy_id=vvt_terms.term_id",$db);
-		
-	     while($row_hijas=mysql_fetch_array($tax_hijas)){
-		 //$terms= mysql_fetch_array( mysql_query("SELECT * FROM  vvt_terms where term_id='".$row_hijas['term_id']."'",$db));
-		 echo "<h5>".$row_hijas[name]."</h5>";
-		 $relacion2= mysql_query("SELECT * FROM vvt_term_relationships,vvt_posts WHERE term_taxonomy_id='".$row_hijas['term_taxonomy_id']."' and vvt_term_relationships.object_id= vvt_posts.ID  and post_status!='trash' order by vvt_posts.post_title ASC",$db);
-		      while( $row_relacion2= mysql_fetch_array($relacion2)){
-				//   echo "<h5>".$row_relacion2[name]."</h5>";
-				 // $central2= mysql_query("SELECT * FROM vvt_posts WHERE  ID='".$row_relacion2[object_id]."'",$db);
-		// while($row_central2=mysql_fetch_array($central2)){
-	         //echo "<p><a href='central-formulario/?id_programa=".$row_relacion2[object_id]."'>".$row_relacion2['post_title']."</a></p>";
-			 $tour_availability= get_post_meta($row_relacion[object_id], 'tour_availability', true);
-				if($tour_availability=="A SOLICITUD"){
-					$SOLICITUD=" - ".$tour_availability; 
-				echo "<p>".$row_relacion2['post_title'].$SOLICITUD."</p>";
-					 } else {
-						 echo "<p><a href='central-formulario/?id_programa=".$row_relacion2[object_id]."'>".$row_relacion2['post_title']."</a></p>";
-						}
-	// }
-			 
-			  
-			  }
-		 
-		 
-		 }
-		////// 
-		echo " </div>";
-	 }
+
 	?>
 	</div><!--CIERRA ACORDION -->
     

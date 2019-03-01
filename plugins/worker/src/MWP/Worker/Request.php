@@ -62,6 +62,8 @@ class MWP_Worker_Request
      */
     protected $communicationKeyHeaderName = 'MWP-Communication-Key';
 
+    protected $siteIdHeaderName = 'MWP-Site-Id';
+
     protected $protocolVersionHeaderName = 'MWP-Protocol';
 
     /**
@@ -121,13 +123,13 @@ class MWP_Worker_Request
     private $method;
 
     /**
-     * @param array       $query The GET parameters.
-     * @param array       $request The POST parameters.
+     * @param array       $query      The GET parameters.
+     * @param array       $request    The POST parameters.
      * @param array       $attributes The request attributes.
-     * @param array       $cookies The COOKIE parameters.
-     * @param array       $files The FILES parameters.
-     * @param array       $server The SERVER parameters.
-     * @param null|string $content The raw request body data. If null, it will be lazy-loaded.
+     * @param array       $cookies    The COOKIE parameters.
+     * @param array       $files      The FILES parameters.
+     * @param array       $server     The SERVER parameters.
+     * @param null|string $content    The raw request body data. If null, it will be lazy-loaded.
      */
     public function __construct($query = array(), $request = array(), $attributes = array(), $cookies = array(), $files = array(), $server = array(), $content = null)
     {
@@ -195,6 +197,7 @@ class MWP_Worker_Request
         $this->attributes['key_name']          = $this->getHeader($this->keyNameHeaderName);
         $this->attributes['service_signature'] = $this->getHeader($this->serviceSignatureHeaderName);
         $this->attributes['communication_key'] = $this->getHeader($this->communicationKeyHeaderName);
+        $this->attributes['site_id']           = $this->getHeader($this->siteIdHeaderName);
         $this->attributes['data']              = null;
         $this->attributes['params']            = null;
         $this->attributes['setting']           = null;
@@ -319,6 +322,14 @@ class MWP_Worker_Request
     public function getCommunicationKey()
     {
         return !empty($this->attributes['communication_key']) ? $this->attributes['communication_key'] : '';
+    }
+
+    /**
+     * @return string
+     */
+    public function getSiteId()
+    {
+        return !empty($this->attributes['site_id']) ? $this->attributes['site_id'] : '';
     }
 
     /**

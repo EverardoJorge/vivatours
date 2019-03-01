@@ -290,7 +290,7 @@ class WDW_S_Library {
         <input type="search"
                id="search_value"
                name="search_value"
-               value="<?php echo esc_html($search_value); ?>"
+               value="<?php echo esc_attr($search_value); ?>"
                onkeypress="spider_search(event)" />
         <input type="button" value="<?php _e('Search', WDS()->prefix); ?>" onclick="spider_search()" class="button" />
       </div>
@@ -430,8 +430,8 @@ class WDW_S_Library {
       ?>
       </span>
     </div>
-    <input type="hidden" id="page_number" name="page_number" value="<?php echo ((isset($_POST['page_number'])) ? (int) $_POST['page_number'] : 1); ?>" />
-    <input type="hidden" id="search_or_not" name="search_or_not" value="<?php echo ((isset($_POST['search_or_not'])) ? esc_html($_POST['search_or_not']) : ''); ?>"/>
+    <input type="hidden" id="page_number" name="page_number" value="<?php echo ((isset($_POST['page_number'])) ? (int) esc_attr($_POST['page_number']) : 1); ?>" />
+    <input type="hidden" id="search_or_not" name="search_or_not" value="<?php echo ((isset($_POST['search_or_not'])) ? esc_attr($_POST['search_or_not']) : ''); ?>"/>
     <?php
   }
 
@@ -540,8 +540,8 @@ class WDW_S_Library {
       ?>
       </span>
     </div>
-    <input type="hidden" id="page_number" name="page_number" value="<?php echo ((isset($_POST['page_number'])) ? (int) $_POST['page_number'] : 1); ?>" />
-    <input type="hidden" id="search_or_not" name="search_or_not" value="<?php echo ((isset($_POST['search_or_not'])) ? esc_html($_POST['search_or_not']) : ''); ?>"/>
+    <input type="hidden" id="page_number" name="page_number" value="<?php echo ((isset($_POST['page_number'])) ? (int) esc_attr($_POST['page_number']) : 1); ?>" />
+    <input type="hidden" id="search_or_not" name="search_or_not" value="<?php echo ((isset($_POST['search_or_not'])) ? esc_attr($_POST['search_or_not']) : ''); ?>"/>
     <?php
   }
 
@@ -2427,7 +2427,7 @@ class WDW_S_Library {
    * @return string Top bar html.
    */
   public static function topbar() {
-    $page = isset($_GET['page']) ? esc_html($_GET['page']) : '';
+    $page = isset($_GET['page']) ? $_GET['page'] : '';
     $user_guide_link = 'https://help.10web.io/hc/en-us/articles/';
     $show_content = true;
     $show_guide_link = true;
@@ -2581,11 +2581,11 @@ class WDW_S_Library {
     }
     $data_slider_id = array();
     $dest_dir = ABSPATH . WDS()->upload_dir;
-    $filename = basename( $zipfilepath );
+    $filename = basename($zipfilepath);
     if ( ! file_exists( $dest_dir ) ) {
       mkdir( $dest_dir, 0777, true );
     }
-    if( copy( $zipfilepath, $dest_dir.'/'.$filename ) ) {
+    if(copy( $zipfilepath, $dest_dir.'/'.$filename )) {
       $data_slider_id = self::wds_import_zip_action( $dest_dir, $filename );
     }
     return $data_slider_id;
@@ -2762,7 +2762,7 @@ class WDW_S_Library {
     } else return $flag;
   }
 
-  public static function get_unique_file_name($filename, $foldername, $zip_name) {
+  public static function get_unique_file_name( $filename, $foldername, $zip_name ) {
     if (file_exists($foldername . $filename)) {
       $p = 1;
       $fileName1 = $zip_name;
@@ -2775,5 +2775,4 @@ class WDW_S_Library {
     }
     return $zip_name;
   }
-
 }

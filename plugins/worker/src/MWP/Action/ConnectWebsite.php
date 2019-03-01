@@ -17,11 +17,13 @@ class MWP_Action_ConnectWebsite extends MWP_Action_Abstract
             throw new MWP_Worker_Exception(MWP_Worker_Exception::CONNECTION_PUBLIC_KEY_NOT_PROVIDED);
         }
 
+        $siteId            = $request->getSiteId();
+        $communicationKey  = mwp_get_communication_key();
         $publicKey         = base64_decode($params['public_key']);
         $configuration     = $this->container->getConfiguration();
         $existingPublicKey = $configuration->getPublicKey();
 
-        if (!empty($existingPublicKey) && ($publicKey !== $existingPublicKey)) {
+        if (empty($siteId) && ((!empty($existingPublicKey) && $publicKey !== $existingPublicKey) || !empty($communicationKey))) {
             throw new MWP_Worker_Exception(MWP_Worker_Exception::CONNECTION_PUBLIC_KEY_EXISTS, "Sorry, the site appears to be already added to a ManageWP account. Please deactivate, then activate ManageWP Worker plugin on your website and try again or contact our support.");
         }
 
@@ -36,7 +38,10 @@ class MWP_Action_ConnectWebsite extends MWP_Action_Abstract
             }
         }
 
-        $configuration->setPublicKey($publicKey);
+        if (empty($existingPublicKey)) {
+            $configuration->setPublicKey($publicKey);
+        }
+
         mwp_accept_potential_key($request->getCommunicationKey());
 
         $this->setBrand($params);

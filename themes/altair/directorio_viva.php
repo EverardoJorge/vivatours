@@ -6,13 +6,13 @@
  * @package WordPress
 */
 
+get_header(); 
 
 /**
 *	Get Current page object
 **/
-require_once("includes/conexion.php");
-$db=conectar();
 $page = get_page($post->ID);
+
 
 
 /**
@@ -25,7 +25,7 @@ if(isset($page->ID))
     $current_page_id = $page->ID;
 }
 
-get_header(); 
+
 ?>
 
 <?php
@@ -137,20 +137,15 @@ if(empty($page_hide_header) && ($page_revslider == -1 OR empty($page_revslider) 
     <td height="30" align="right" valign="middle" style="padding-right:30px;"><span style="color:#205776; font-size:16px;  font-weight:bold; ">Selecciona tu Ciudad</span></td>
     <td align="left" valign="middle"><select name="ciudad" class="ewd-feup-select"  id="ciudad" onchange="this.form.submit();">
       <option value="">VER CIUDADES</option>
-      <?php
-	  
-		 // $query_ciudad=;
-          $res_ciudad= mysql_query("SELECT Ciudad, Estado FROM vvt_directorio WHERE Ciudad <> '' GROUP BY Ciudad",$db);
+      <?php	  
+		    // Corección de query a versión Wordpress
+          $res_ciudad= $wpdb->get_results( "SELECT Ciudad, Estado FROM vvt_directorio WHERE Ciudad <> '' GROUP BY Ciudad" );
+                
+          foreach($res_ciudad as $row){ 
+            echo '<option value="'.$row->Ciudad.'">'.$row->Ciudad.", ".$row->Estado.'</option>'; 
+          }
+          
 
-          while($row_ciudad = mysql_fetch_array($res_ciudad)){
-		  	//$query_estado = 
-
-		  ?>
-      <option value="<?php=$row_ciudad['Ciudad']?>"  <?php=($row_ciudad['Ciudad'] == $_POST[ciudad]) ? "selected" : ""?>>
-        <?php=$row_ciudad['Ciudad'].", ".$row_ciudad['Estado']?>
-        </option>
-      <?php
-		  }
 		  ?>
     </select>    
    </td>
@@ -159,7 +154,7 @@ if(empty($page_hide_header) && ($page_revslider == -1 OR empty($page_revslider) 
     <td height="30" align="right" valign="middle" style="padding-right:30px;"><span style="color:#205776; font-size:16px; font-weight:bold;">Buscar por Agencia:</span>
     </td>
     <td height="30" align="left" valign="middle">
-            <input name="nombre_agencia" type="text" id="nombre_agencia" value="<?phpphp=$_POST[nombre_agencia]?>"  class="ewd-feup-text-input"/>
+            <input name="nombre_agencia" type="text" id="nombre_agencia" value="<?php echo $_POST['nombre_agencia']; ?>"  class="ewd-feup-text-input"/>
               
              <input type="submit" class="feup-pure-button-primary" value="BUSCAR">
                </span> <div id="resultado" ></div>   </td>
@@ -171,7 +166,7 @@ if(empty($page_hide_header) && ($page_revslider == -1 OR empty($page_revslider) 
 if(($_POST )and (empty($_GET['agencia']))){
 	  
 	  /////SI SE SELECCIONO SOLO CIUDAD////
-	 if((!empty($_POST['ciudad'])) and (empty($_POST[nombre_agencia]) ) ){
+	 if((!empty($_POST['ciudad'])) and (empty($_POST['nombre_agencia']) ) ){
 	    		
 $_pagi_sql = "SELECT * FROM vvt_directorio where Ciudad='".$_POST['ciudad']."' ORDER BY rand(" . time() . " * " . time() . " )";
 

@@ -16,7 +16,7 @@ class WDSControllerUninstall_wds {
   }
 
   public function execute() {
-    $task = ((isset($_POST['task'])) ? esc_html(stripslashes($_POST['task'])) : '');
+    $task = ((isset($_POST['task'])) ? sanitize_text_field($_POST['task']) : '');
     if (method_exists($this, $task)) {
       check_admin_referer('nonce_wd', 'nonce_wd');
       $this->$task();

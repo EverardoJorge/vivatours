@@ -5,6 +5,10 @@
                 <th></th>
                 <td><?php printf( __( 'Form Imported Successfully. %sView Form%s', 'ninja-forms' ), '<a id="nf-import-url" href="#">', '</a>' ); ?></td>
             </tr>
+            <tr id="row-nf-import-response-error" style="display:none;background-color:#ffc;color:red;">
+                <th></th>
+                <td></td>
+            </tr>
             <tr id="row_nf_import_form">
                 <th scope="row">
                     <label for="nf-import-file"><?php echo __( 'Select a file', 'ninja-forms' ); ?></label>

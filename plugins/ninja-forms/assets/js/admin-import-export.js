@@ -33,8 +33,28 @@ jQuery( document ).ready( function( $ ) {
     			if ( 'undefined' == typeof response.form_id ) return false;
 
     			jQuery( '#nf-import-file' ).val('');;
-    			jQuery( '#nf-import-url' ).attr( 'href', nfAdmin.builderURL + response.form_id );
-    			jQuery( '#row-nf-import-response' ).show();
+				jQuery( '#nf-import-url' ).attr( 'href', nfAdmin.builderURL + response.form_id );
+				var blockingErrors = false;
+				// If we have errors...
+				if ( 'undefined' != typeof response.errors ) {
+					var errorOutput = '';
+					// Record them.
+					response.errors.forEach(
+						function( error ) {
+							// Block success if one was fatal.
+							if ( 'fatal' == error.type ) {
+								blockingErrors = true;
+							}
+							console.error( error.type + ': ' + error.code );
+							errorOutput += '<p>' + error.message + '</p>';
+						}
+					);
+					jQuery( '#row-nf-import-response-error td' ).html( errorOutput );
+					jQuery( '#row-nf-import-response-error' ).show();
+				}
+				if ( ! blockingErrors ) {
+					jQuery( '#row-nf-import-response' ).show();
+				}
     		}
     	}
 
@@ -63,6 +83,7 @@ jQuery( document ).ready( function( $ ) {
 	$( document ).on( 'change', '#nf-import-file', function( e ) {
 		// Hide our success message.
 		jQuery( '#row-nf-import-response' ).hide();
+		jQuery( '#row-nf-import-response-error' ).hide();
 		// Hide our extension type error.
 		jQuery( '#row-nf-import-type-error' ).hide();
 

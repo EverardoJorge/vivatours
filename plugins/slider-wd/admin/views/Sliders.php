@@ -115,7 +115,7 @@ class SlidersView_wds extends AdminView_wds {
 							  <input type="text" value='[wds id="<?php echo $row->id; ?>"]' onclick="spider_select_value(this)" size="11" readonly="readonly" />
 							</td>
 							<td data-colname="<?php _e('PHP function', WDS()->prefix); ?>">
-							  <input type="text" value="&#60;?php wd_slider(<?php echo $row->id; ?>); ?&#62;" onclick="spider_select_value(this)" size="17" readonly="readonly" />
+							  <input type="text" value="&#60;?php if( function_exists('wd_slider') ) { wd_slider(<?php echo $row->id; ?>); } ?&#62;" onclick="spider_select_value(this)" size="17" readonly="readonly" />
 							</td>
 						</tr>
 					<?php

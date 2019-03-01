@@ -193,6 +193,7 @@ class NF_Updates_CacheCollateForms extends NF_Abstracts_RequiredUpdate
      * Also checks meta values against our $this->blacklist.
      * 
      * @since  3.4.0
+     * @updated 3.4.4
      * @return [type]  [description]
      */
     private function update_form()
@@ -202,7 +203,7 @@ class NF_Updates_CacheCollateForms extends NF_Abstracts_RequiredUpdate
         
         // Get our seq_number from meta.
         $sql = "SELECT `value` FROM `{$this->meta_table}` WHERE `key` = '_seq_num' AND `parent_id` = " . intval( $this->form[ 'ID' ] );
-        $result = $this->db->query( $sql, 'ARRAY_A' );
+        $result = $this->db->get_results( $sql, 'ARRAY_A' );
         // Default to 1.
         $seq_num = 1;
         if ( ! empty( $result[ 0 ][ 'value' ] ) ) {

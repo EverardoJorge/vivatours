@@ -142,7 +142,7 @@ class MWP_Configuration_Conf
      */
     public function getNetworkNotice()
     {
-        return $this->getNoticeHtml('Add this website to <a href="https://managewp.com" target="_blank">ManageWP</a> or <a href="https://godaddy.com/pro" target="_blank">GoDaddy Pro</a> dashboard to enable backups, uptime monitoring, website cleanup and a lot more! Use a <strong>network administrator</strong> account when adding the website.<br>If prompted, provide the <strong>connection key</strong> (found on the Plugins page, in the Worker description) to verify that you are the website administrator.');
+        return $this->getNoticeHtml('Add this website to <a href="https://managewp.com" target="_blank">ManageWP</a> or <a href="https://godaddy.com/pro" target="_blank">GoDaddy Pro</a> dashboard to enable backups, uptime monitoring, website cleanup and a lot more! Use a <strong>network administrator</strong> account when adding the website.<br>If prompted, provide the <strong>connection key</strong> (found on the Plugins page, in the Worker description under Connection Management) to verify that you are the website administrator.');
     }
 
     /**
@@ -280,7 +280,7 @@ class MWP_Configuration_Conf
 
     private function getDefaultNoticeText()
     {
-        return 'Add this website to <a href="https://managewp.com" target="_blank">ManageWP</a> or <a href="https://godaddy.com/pro" target="_blank">GoDaddy Pro</a> dashboard to enable backups, uptime monitoring, website cleanup and a lot more!<br>If prompted, provide the <strong>connection key</strong> (found on the Plugins page, in the Worker description) to verify that you are the website administrator.';
+        return 'Add this website to <a href="https://managewp.com" target="_blank">ManageWP</a> or <a href="https://godaddy.com/pro" target="_blank">GoDaddy Pro</a> dashboard to enable backups, uptime monitoring, website cleanup and a lot more!<br>If prompted, provide the <strong>connection key</strong> (found on the Plugins page, in the Worker description under Connection Management) to verify that you are the website administrator.';
     }
 
     private function getNoticeHtml($message)
