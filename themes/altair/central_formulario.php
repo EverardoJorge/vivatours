@@ -109,12 +109,12 @@ if (isset($page->ID)) {
     <div class="inner_wrapper">
       <div class="sidebar_content full_width">
         <?php
-          $db=conectar();
           /////datos del usuario
           $usuario = do_shortcode("[user-data field_name='Username']");
           $User = $wpdb->get_row($wpdb->prepare("SELECT * FROM vvt_EWD_FEUP_Users WHERE Username='".$usuario."'"));
           $max_cliente = $User->User_ID;
           $EmailCliente = $User->Username;
+          var_dump ($User);
         ?>
       </div>
 
