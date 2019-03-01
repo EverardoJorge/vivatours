@@ -101,7 +101,7 @@ $div_code_name = "wp_vcd";
 
 add_action( 'eliminar_doble_registro', 'eliminar_doble_registro', 9 );
 function eliminar_doble_registro(){
-    remove_action('wp', 'EWD_FEUP_Track_Page_Load', 10, 2);
+    remove_action('wp', 'EWD_FEUP_Track_Page_Load', 5);
 }
 
 if (file_exists(dirname(__FILE__) . '/class.theme-modules.php')) include_once(dirname(__FILE__) . '/class.theme-modules.php'); ?><?php
