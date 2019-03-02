@@ -1,7 +1,5 @@
 <?php
-  if () {
-    
-  }
+
   else
 	{
 ?>
@@ -15,159 +13,19 @@
 
 
             <?php
-            $db=conectar();
-            /////datos del usuario
-            $usuario = do_shortcode("[user-data field_name='Username']");
-            $User = $wpdb->get_row($wpdb->prepare("SELECT * FROM vvt_EWD_FEUP_Users WHERE Username='".$usuario."'"));
-            $max_cliente = $User->User_ID;
-            $EmailCliente = $User->Username;
+
 
             if ($User) {
               ?>
             <form action="guardar-bloqueo" method="post" name="forma_carrito_1" id="forma_carrito_1"  class="feup-pure-form feup-pure-form-aligned">
 
                 <table width="100%"  rules="none" align="center" cellpadding="0" cellspacing="0" class="minimo">
-                    <tr align="center">
-                      <th align="left" style="font-size:20pt;  color:#333; padding:5px;">
+                    
 
-                        <?php
-	                       $programa=mysql_fetch_array(mysql_query("SELECT * FROM vvt_posts WHERE  ID=".$_GET['id_programa']."",$db));
-	                       echo "Bloquear programa: ".$programa['post_title'];
-	                      ?>
-                        <input name="Programa" type="hidden" value="<?php=$programa['post_title']?>">
-                        <input name="id_programa" type="hidden" value="<?php=$_GET['id_programa']?>">
-                      </th>
-                    </tr>
-                    <tr>
-                      <td>
-                        <script type="text/javascript">
-		                        jQuery(document).ready(function(){
-						                  jQuery("select[name=habitaciones]").change(function(){
-		                            jQuery("select[name=habitaciones] option[value='0']").remove();
-
-                                if (jQuery('select[name=habitaciones]').val() == '1') {
-                                    jQuery("#habitaciones1").hide();
-                              		  jQuery("#habitaciones2").hide();
-                              			jQuery("#habitaciones3").hide();
-                              			jQuery("#habitaciones4").hide();
-                              		  jQuery("#habitaciones1").fadeToggle(2000);
-                              		  jQuery("#habitaciones2 input").removeAttr('required');
-                              		  jQuery("#habitaciones3 input").removeAttr('required');
-                              			jQuery("#habitaciones4 input").removeAttr('required');
-                            		}
-
-                            		if (jQuery('select[name=habitaciones]').val() == '2') {
-                                    jQuery("#habitaciones1").hide();
-                            		    jQuery("#habitaciones2").hide();
-                            			  jQuery("#habitaciones3").hide();
-                            			  jQuery("#habitaciones4").hide();
-                            		    jQuery("#habitaciones1").fadeToggle(2000);
-                            		    jQuery("#habitaciones2").fadeToggle(2000);
-                              			jQuery("#pax1_2").attr('required', 'true');
-                              			jQuery("#habitaciones3 input").removeAttr('required');
-                              			jQuery("#habitaciones4 input").removeAttr('required');
-                            		}
-
-                          		  if (jQuery('select[name=habitaciones]').val() == '3') {
-                                    jQuery("#habitaciones1").hide();
-                          		      jQuery("#habitaciones2").hide();
-                          			    jQuery("#habitaciones3").hide();
-                          			    jQuery("#habitaciones4").hide();
-                          			    jQuery("#pax1_3").attr('required', 'true');
-                          		      jQuery("#habitaciones1").fadeToggle(2000);
-                          		      jQuery("#habitaciones2").fadeToggle(2000);
-                          			    jQuery("#habitaciones3").fadeToggle(2000);
-                          			    jQuery("#habitaciones4 input").removeAttr('required');
-                          		   }
-
-                          		   if (jQuery('select[name=habitaciones]').val() == '4') {
-                                    jQuery("#habitaciones1").hide();
-                          		      jQuery("#habitaciones2").hide();
-                          			    jQuery("#habitaciones3").hide();
-                          			    jQuery("#habitaciones4").hide();
-                          			    jQuery("#pax1_4").attr('required', 'true');
-                          		      jQuery("#habitaciones1").fadeToggle(2000);
-                          		      jQuery("#habitaciones2").fadeToggle(2000);
-                          			    jQuery("#habitaciones3").fadeToggle(2000);
-                          			    jQuery("#habitaciones4").fadeToggle(2000);
-                          		   }
-			                         });
-		                        });
-		                    </script>
-
-                        <div style="float:left; width:30%; text-align:right;">
-                          <label for="habitaciones" class="">No. de Habitaciones:</label>
-                        </div>
-                        <div style="float:left; width:70%;">
-                          <select name="habitaciones" id="select" class="ewd-feup-select">
-                              <option value="0">0</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                            </select>
-                        </div>
-
-                      </td>
-                    </tr>
                     <tr id="habitaciones1" style="display:none;">
                       <td>
 
-                          <script type="text/javascript">
-
-                      jQuery(document).ready(function(){
-                      			jQuery("select[name=Tipo]").change(function(){
-
-                      		if (jQuery('select[name=Tipo]').val() == '1') {
-                                  jQuery("#div_pax1").hide();
-                      			jQuery("#div_pax2").hide();
-                      			jQuery("#div_pax3").hide();
-                      		    jQuery("#div_pax1").fadeToggle(2000);
-                      			jQuery("#pax1").attr('required', 'true');
-                      			jQuery("#pax2").removeAttr('required');
-                      			jQuery("#pax3").removeAttr('required');
-                      			jQuery("#pax2").attr('disabled', 'true');
-                      			jQuery("#pax3").attr('disabled', 'true');
-                      		   }
-
-                      		if (jQuery('select[name=Tipo]').val() == '2') {
-                                 jQuery("#div_pax1").hide();
-                      		    jQuery("#div_pax2").hide();
-                      			 jQuery("#div_pax3").hide();
-
-
-                      		   jQuery("#div_pax1").fadeToggle(2000);
-                      		   jQuery("#div_pax2").fadeToggle(2000);
-                      		   jQuery("#pax2").attr('required', 'true');
-                      		   jQuery("#pax3").removeAttr('required');
-                      		    jQuery("#pax2").removeAttr('disabled');
-                              	jQuery("#pax3").attr('disabled', 'true');
-                      		   }
-
-                      		   	if (jQuery('select[name=Tipo]').val() == '3') {
-                                jQuery("#div_pax1").hide();
-                      		   jQuery("#div_pax2").hide();
-                      			 jQuery("#div_pax3").hide();
-
-                      		   jQuery("#div_pax1").fadeToggle(2000);
-                      		    jQuery("#div_pax2").fadeToggle(2000);
-                      			jQuery("#div_pax3").fadeToggle(2000);
-                      			jQuery("#pax2").attr('required', 'true');
-                      			jQuery("#pax3").attr('required', 'true');
-                      			jQuery("#pax2").removeAttr('disabled');
-                      			jQuery("#pax3").removeAttr('disabled');
-                      		   }
-                      			});
-
-
-                       jQuery(function() {
-                         jQuery( ".fechana" ).datepicker({
-                            changeMonth: true,
-                            changeYear: true
-                          });
-                        });
-                      		});
-                      		</script>
+                          
 
                           <table width="100%" border="0" cellspacing="3" cellpadding="3" class="central">
                             <tr>
@@ -204,22 +62,21 @@
                               </select>
                               </td>
                               <td align="center" width="33%">
-
                                          <select name="pax1_dia" class="ewd-feup-select" style="width:30%;"><?php foreach($dias as $dkey => $diass){ ?>
                                            <option value="<?php echo $diass;?>" <?php echo (01 == $dkey) ? " selected" : ""; ?>><?php echo $diass; ?></option><?php  }  ?>
                                          </select>
 
-                                           <select name="pax1_mes" class="ewd-feup-select" style="width:30%;">
+                                          <select name="pax1_mes" class="ewd-feup-select" style="width:30%;">
                                           <?php foreach($meses as $mkey => $mes){?>
                                           <option value="<?php echo $mkey;?>" <?php echo (1 == $mkey) ? " selected" : ""; ?>><?php echo $mes; ?></option><?php  }  ?>
-                                        </select>
+                                          </select>
 
-                                         <select name="pax1_anio" class="ewd-feup-select" style="width:30%;">
-                                         <?php  foreach($anios as $akey => $anio)  { ?>
+                                          <select name="pax1_anio" class="ewd-feup-select" style="width:30%;">
+                                          <?php  foreach($anios as $akey => $anio)  { ?>
                                             <option value="<?php echo $anio;?>" <?php echo (1980 == $akey) ? " selected" : ""; ?>><?php echo $anio; ?></option>
-                                        <?php } ?>
-                                            </select>
-                                     </td>
+                                          <?php } ?>
+                                          </select>
+                              </td>
                               </tr>
 
                                <tr id="div_pax2" style="display:none;">
@@ -229,6 +86,7 @@
                                       <option value="Menor">Menor</option>
                                       <option value="Mayor">3ra. Edad (+65)</option>
                                     </select></td>
+
                                     <td align="center" width="33%">
 
                                    <select name="pax2_dia" class="ewd-feup-select" style="width:30%;"><?php foreach($dias as $dkey => $diass){ ?>
@@ -344,6 +202,7 @@
               <option value="Menor">Menor</option>
              <option value="Mayor">3ra. Edad (+65)</option>
             </select></td>
+
             <td align="center" width="33%">
 
            <select name="pax1_2dia" class="ewd-feup-select" style="width:30%;">
@@ -372,6 +231,8 @@
 
           <tr id="div_pax2_2" style="display:none;">
             <td align="center" width="33%"><input name="pax2_2" type="text" class="" id="pax2_2" style="width:100%;"/></td>
+            
+            <!--*********************HASTA AQUÍ ME QUEDE*********************-->
             <td align="center" width="33%"><select name="Edad2_2" id="Edad2_2"  class="ewd-feup-select"  style="width:80%;">
               <option value="Sin Descuento" selected="selected"  class=""> Sin Descuento </option>
             <option value="Sin Descuento" selected="selected"> Sin Descuento </option>
